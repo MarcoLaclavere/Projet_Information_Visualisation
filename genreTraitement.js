@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Charger le fichier JSON
-const data = require('C:/Users/33652/Desktop/SI5/Information_Visu/Projet/projet/data/artist-without-members.json');
+const data = require('./json/artist-without-members.json');
 
 // Fonction pour regrouper les genres selon les catégories Wikipédia
 function groupGenresByCategory(data) {
@@ -475,6 +475,8 @@ function groupGenresByCategory(data) {
 const updatedData = groupGenresByCategory(data);
 
 // Sauvegarder les données JSON modifiées dans un nouveau fichier
-fs.writeFileSync('artist-with-new-genres.json', JSON.stringify(updatedData, null, 2));
+//fs.writeFileSync('artist-with-new-genres.json', JSON.stringify(updatedData, null, 2));
 
 console.log("Le fichier JSON a été mis à jour avec les nouveaux genres.");
+
+module.exports = groupGenresByCategory;

@@ -12,12 +12,23 @@ function removeDuplicates(data, key) {
 }
 
 // 2. normalizeGenres: Normalise les genres avec une table de correspondance
-function normalizeGenres(data, genreMap) {
-  return data.map(item => {
-    const normalizedGenre = genreMap[item.genre] || item.genre;
-    return { ...item, genre: normalizedGenre };
-  });
+const groupGenresByCategory = require('./genreTraitement.js'); // Importer la fonction depuis genreNormalize.js
+const data = require('./json/artist-without-members.json'); // Charger les données JSON
+
+// Fonction normalizeGenres qui appelle la fonction groupGenresByCategory
+function normalizeGenres(data) {
+  // Appel à la fonction groupGenresByCategory qui fait tout le travail
+  return groupGenresByCategory(data);
 }
+
+// Appel de la fonction normalizeGenres
+const updatedData = normalizeGenres(data);
+
+// Sauvegarder les données JSON modifiées dans un nouveau fichier
+fs.writeFileSync('artist-with-normalized-genres.json', JSON.stringify(updatedData, null, 2));
+
+console.log("Le fichier JSON a été mis à jour avec les genres normalisés.");
+
 
 // 3. filterIncompleteEntries: Filtre les entrées avec des champs manquants
 function filterIncompleteEntries(data, requiredFields) {
