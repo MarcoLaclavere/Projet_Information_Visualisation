@@ -10,7 +10,6 @@
     <h2>Availability of Albums by Platform</h2>
     <div id="chart"></div>
     <style>
-        /* Style pour les interrupteurs */
         .switch {
             position: relative;
             display: inline-block;
@@ -150,9 +149,19 @@
                     .attr("x", d => xScale(d.platform))
                     .attr("y", d => yScale(d.count))
                     .attr("width", xScale.bandwidth())
+                    .attr("height", 0) // hauteur initiale à 0 pour l'animation d'entrée
+                    .transition() // Ajouter une transition lors de l'entrée
+                    .duration(500)
+                    .attr("y", d => yScale(d.count))
                     .attr("height", d => height - margin.bottom - yScale(d.count))
                     .attr("fill", "steelblue");
 
+                bars.transition() // Ajouter une transition pour les barres mises à jour
+                    .duration(500)
+                    .attr("x", d => xScale(d.platform))
+                    .attr("y", d => yScale(d.count))
+                    .attr("height", d => height - margin.bottom - yScale(d.count));
+                
                 // Mise à jour de l'axe X
                 svg.select(".x-axis")
                     .call(d3.axisBottom(xScale));
