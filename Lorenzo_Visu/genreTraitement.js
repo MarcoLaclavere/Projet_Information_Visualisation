@@ -480,7 +480,8 @@ function groupGenresByCategory(data) {
     }
   });
   
-  fs.writeFileSync('./json/artist-with-new-genres.json', JSON.stringify(updatedData, null, 2));
+  fs.writeFileSync('./json/artist-with-new-genres.json', JSON.stringify(data, null, 2));
+
   console.log("Le fichier JSON a été mis à jour avec les nouveaux genres.");
 
   return data;
