@@ -107,7 +107,7 @@
             // Dimensions de la bar chart
             const width = 500;
             const height = 300;
-            const margin = {top: 20, right: 30, bottom: 40, left: 40};
+            const margin = {top: 20, right: 30, bottom: 40, left: 60};
 
             // Créer une échelle pour l'axe Y
             const yScale = d3.scaleLinear()
@@ -132,6 +132,7 @@
 
                 // Mise à jour des domaines des échelles
                 xScale.domain(filteredData.map(d => d.platform));
+                console.log(d3.max(filteredData, d => d.count));
                 yScale.domain([0, d3.max(filteredData, d => d.count)]);
 
                 // Lier les données filtrées
@@ -155,6 +156,13 @@
                 // Mise à jour de l'axe X
                 svg.select(".x-axis")
                     .call(d3.axisBottom(xScale));
+
+            
+                svg.select(".y-axis")
+                    .transition()  // Ajoute une transition pour rendre le changement plus fluide
+                    .duration(500)
+                    .call(d3.axisLeft(yScale).ticks(5));
+
 
                 // Ajout de labels de texte
                 const labels = svg.selectAll(".text")
