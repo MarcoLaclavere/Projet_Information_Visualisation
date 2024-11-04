@@ -10,7 +10,6 @@
     <h2>Availability of Albums by Platform</h2>
     <div id="chart"></div>
     <style>
-        /* Style pour les interrupteurs */
         .switch {
             position: relative;
             display: inline-block;
@@ -107,7 +106,7 @@
             // Dimensions de la bar chart
             const width = 500;
             const height = 300;
-            const margin = {top: 20, right: 30, bottom: 40, left: 40};
+            const margin = {top: 20, right: 30, bottom: 40, left: 60};
 
             // Créer une échelle pour l'axe Y
             const yScale = d3.scaleLinear()
@@ -132,6 +131,7 @@
 
                 // Mise à jour des domaines des échelles
                 xScale.domain(filteredData.map(d => d.platform));
+                console.log(d3.max(filteredData, d => d.count));
                 yScale.domain([0, d3.max(filteredData, d => d.count)]);
 
                 // Lier les données filtrées
@@ -149,12 +149,29 @@
                     .attr("x", d => xScale(d.platform))
                     .attr("y", d => yScale(d.count))
                     .attr("width", xScale.bandwidth())
+                    .attr("height", 0) // hauteur initiale à 0 pour l'animation d'entrée
+                    .transition() // Ajouter une transition lors de l'entrée
+                    .duration(500)
+                    .attr("y", d => yScale(d.count))
                     .attr("height", d => height - margin.bottom - yScale(d.count))
                     .attr("fill", "steelblue");
 
+                bars.transition() // Ajouter une transition pour les barres mises à jour
+                    .duration(500)
+                    .attr("x", d => xScale(d.platform))
+                    .attr("y", d => yScale(d.count))
+                    .attr("height", d => height - margin.bottom - yScale(d.count));
+                
                 // Mise à jour de l'axe X
                 svg.select(".x-axis")
                     .call(d3.axisBottom(xScale));
+
+            
+                svg.select(".y-axis")
+                    .transition()  // Ajoute une transition pour rendre le changement plus fluide
+                    .duration(500)
+                    .call(d3.axisLeft(yScale).ticks(5));
+
 
                 // Ajout de labels de texte
                 const labels = svg.selectAll(".text")
