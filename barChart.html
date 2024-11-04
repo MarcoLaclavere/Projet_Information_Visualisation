@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums Platform Availability Chart</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <h2>Availability of Albums by Platform</h2>
+    <div id="chart"></div>
+
+    <script>
+        // Charger les données JSON
+        d3.json('json/album.json').then(data => {
+            // Compter le nombre d'albums disponibles sur chaque plateforme
+            let platformCounts = {
+                Spotify: 0,
+                iTunes: 0,
+                Amazon: 0
+            };
+
+            data.forEach(album => {
+                if (album.urlsSpotify) platformCounts.Spotify += 1;
+                if (album.urlITunes) platformCounts.iTunes += 1;
+                if (album.urlIAmazon) platformCounts.Amazon += 1;
+            });
+
+            // Transformer les données pour D3
+            const chartData = Object.entries(platformCounts).map(([platform, count]) => ({
+                platform: platform,
+                count: count
+            }));
+
+            // Dimensions de la bar chart
+            const width = 500;
+            const height = 300;
+            const margin = {top: 20, right: 30, bottom: 40, left: 40};
+
+            // Créer une échelle pour l'axe Y
+            const yScale = d3.scaleLinear()
+                .domain([0, d3.max(chartData, d => d.count)])
+                .range([height - margin.bottom, margin.top]);
+
+            // Créer une échelle pour l'axe X
+            const xScale = d3.scaleBand()
+                .domain(chartData.map(d => d.platform))
+                .range([margin.left, width - margin.right])
+                .padding(0.1);
+
+            // Ajouter un conteneur SVG pour la bar chart
+            const svg = d3.select("#chart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            // Ajouter les barres
+            svg.selectAll(".bar")
+                .data(chartData)
+                .enter()
+                .append("rect")
+                .attr("class", "bar")
+                .attr("x", d => xScale(d.platform))
+                .attr("y", d => yScale(d.count))
+                .attr("width", xScale.bandwidth())
+                .attr("height", d => height - margin.bottom - yScale(d.count))
+                .attr("fill", "steelblue");
+
+            // Ajouter l'axe X
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(xScale))
+                .attr("font-size", '12px');
+
+            // Ajouter l'axe Y
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(yScale).ticks(5))
+                .attr("font-size", '12px');
+
+            // Ajouter les labels sur chaque barre
+            svg.selectAll(".text")
+                .data(chartData)
+                .enter()
+                .append("text")
+                .attr("x", d => xScale(d.platform) + xScale.bandwidth() / 2)
+                .attr("y", d => yScale(d.count) - 5)
+                .attr("text-anchor", "middle")
+                .text(d => d.count)
+                .attr("fill", "black")
+                .attr("font-size", '12px');
+        });
+    </script>
+</body>
+</html>
