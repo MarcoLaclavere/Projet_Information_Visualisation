@@ -427,10 +427,7 @@ function groupGenresByCategory(data) {
         "Soundtrack","Soundtrack/Movie","Soundtrack/Anime","Soundtrack/Television","Soundtrack/Musical"
     ]],
         ["Miscellaneous", [
-        "Novelty","Humor","Spoken Word","Musical","Vaudeville","Pirate Band"
-    ]],
-    
-      ["other", [
+        "Novelty","Humor","Spoken Word","Musical","Vaudeville","Pirate Band",
         "ballroom dance music", "vogue (dance)", "bedroom production",
         "children's music", "computer music", "hyperpop",
         "internet meme", "dance music", "slow dance",

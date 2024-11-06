@@ -1,0 +1,120 @@
+/* Styles pour la carte */
+svg {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  /* Styles pour la boîte modale */
+  .modal {
+    display: block; /* La boîte modale est visible par défaut */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Conteneur pour les filtres de genre */
+#genre-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  
+  
+  /* Styles des cases à cocher */
+  #genre-filters input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #ff0000; 
+  }
+  
+  /* Styles des labels */
+  #genre-filters label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Effet au survol des labels */
+  #genre-filters label:hover {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  
+  /* Style lorsque la case est cochée */
+  #genre-filters input[type="checkbox"]:checked + label {
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Styles pour les pie charts */
+  .country-chart {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .country-label {
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  /* Styles pour le tooltip */
+  .tooltip {
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10;
+    width: 400px; /* Increase width */
+    height: 400px; /* Increase height */
+    overflow-y: auto; /* Add scroll if necessary */
+}
+
+  
+  .tooltip-close {
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+  }
+  
