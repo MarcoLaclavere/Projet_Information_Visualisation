@@ -1,10 +1,15 @@
 const fs = require('fs');
 
 // Charger le fichier JSON
-const data = require('./json/artist-without-members.json');
+const data = require('../json/album.json');
+const outputPath = './json/album-with-new-genres.json';
 
 // Fonction pour regrouper les genres selon les catégories Wikipédia
 function groupGenresByCategory(data) {
+  if (fs.existsSync(outputPath)) {
+    console.log("Le fichier 'album-with-new-genres.json' existe déjà. Aucun traitement n'a été effectué.");
+    return; // Sortir de la fonction si le fichier existe déjà
+  }
   const genresMap = new Map([
     
     ["classical", [
@@ -422,10 +427,7 @@ function groupGenresByCategory(data) {
         "Soundtrack","Soundtrack/Movie","Soundtrack/Anime","Soundtrack/Television","Soundtrack/Musical"
     ]],
         ["Miscellaneous", [
-        "Novelty","Humor","Spoken Word","Musical","Vaudeville","Pirate Band"
-    ]],
-    
-      ["other", [
+        "Novelty","Humor","Spoken Word","Musical","Vaudeville","Pirate Band",
         "ballroom dance music", "vogue (dance)", "bedroom production",
         "children's music", "computer music", "hyperpop",
         "internet meme", "dance music", "slow dance",
@@ -443,40 +445,42 @@ function groupGenresByCategory(data) {
       
   ]);
 
-
   data.forEach(item => {
-    if (item.dbp_genre && item.dbp_genre.length > 0) {
-      let newGenres = [];
-      
-      item.dbp_genre.forEach(genre => {
-        genre = genre.toLowerCase(); // Standardise la casse
-        let found = false;
-        for (let [mainGenre, subGenres] of genresMap.entries()) {
-          if (subGenres.some(sub => genre.includes(sub.toLowerCase()))) {
-            newGenres.push(mainGenre); // Remplacer avec la catégorie principale
-            found = true;
-            break;
-          }
+    // Vérification du genre
+    if (item.genre && item.genre.length > 0) {
+      let genre = item.genre.toLowerCase(); // Standardiser la casse
+      let newGenre = "Miscellaneous"; // Valeur par défaut si aucun genre ne correspond
+  
+      // Parcourir le `genresMap` pour trouver la correspondance
+      for (let [mainGenre, subGenres] of genresMap.entries()) {
+        if (subGenres.includes(genre)) { // Vérifier la correspondance exacte
+          newGenre = mainGenre; // Remplacer avec la catégorie principale
+          break;
         }
-        if (!found) {
-          newGenres.push("Miscellaneous"); // Si aucun genre ne correspond
-        }
-      });
+      }
+  
+      // Mettre à jour le genre de l'album avec le nouveau genre regroupé
+      item.genre = newGenre;
+  
+    } else {
+      // Si `genre` est vide ou n'existe pas, ajouter "Miscellaneous"
+      item.genre = "Miscellaneous";
+    }
 
-      // Mettre à jour les genres de l'artiste avec les nouveaux genres regroupés
-      item.dbp_genre = [...new Set(newGenres)]; // Retirer les doublons si besoin
+    // Vérification de la date et ajout d'une valeur par défaut si elle est manquante
+    if (!item.dateRelease || item.dateRelease.trim() === "") {
+      item.dateRelease = "0000-00-00"; // Valeur par défaut si la date est manquante
     }
   });
+  
+  // Sauvegarder les données JSON modifiées dans un nouveau fichier
+  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+  console.log("Le fichier JSON a été mis à jour avec les nouveaux genres et les dates.");
 
   return data;
 }
 
 // Appliquer la fonction de regroupement des genres
-const updatedData = groupGenresByCategory(data);
-
-// Sauvegarder les données JSON modifiées dans un nouveau fichier
-//fs.writeFileSync('artist-with-new-genres.json', JSON.stringify(updatedData, null, 2));
-
-console.log("Le fichier JSON a été mis à jour avec les nouveaux genres.");
+// const updatedData = groupGenresByCategory(data);
 
 module.exports = groupGenresByCategory;
