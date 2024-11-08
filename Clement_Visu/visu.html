@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphique en Aire Empilée</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="stackedAreaChart"></canvas>
+    <script>
+        // Charger le fichier JSON et dessiner le graphique
+        fetch("../json/year-genre-counts.json")
+            .then(response => response.json())
+            .then(data => {
+                const years = Object.keys(data).sort();
+                const genres = Array.from(new Set(years.flatMap(year => Object.keys(data[year]))));
+
+                const datasets = genres.map(genre => ({
+                    label: genre,
+                    data: years.map(year => data[year][genre] || 0),
+                    fill: true
+                }));
+
+                new Chart(document.getElementById("stackedAreaChart"), {
+                    type: "line",
+                    data: {
+                        labels: years,
+                        datasets: datasets
+                    },
+                    options: {
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: "Nombre de musiques publiées par genre et par année"
+                            }
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: "Année"
+                                }
+                            },
+                            y: {
+                                stacked: true,
+                                title: {
+                                    display: true,
+                                    text: "Nombre de publications"
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
