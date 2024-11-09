@@ -106,8 +106,8 @@ svg {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     display: none;
     z-index: 10;
-    width: 400px; /* Increase width */
-    height: 400px; /* Increase height */
+    width: 300px; /* Increase width */
+    height: 300px; /* Increase height */
     overflow-y: auto; /* Add scroll if necessary */
 }
 

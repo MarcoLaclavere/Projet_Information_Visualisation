@@ -1,3 +1,5 @@
+let savedTransform = d3.zoomIdentity;
+
 // Fonction pour obtenir les genres sélectionnés
 function getSelectedGenres() {
     const selectedGenres = [];
@@ -7,7 +9,6 @@ function getSelectedGenres() {
     return selectedGenres;
 }
 
-// Code pour gérer la boîte modale
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("welcome-modal");
     const closeButton = document.querySelector(".modal-close");
@@ -23,22 +24,50 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.style.display = "none";
       }
     };
+
+    document.querySelectorAll('#genre-filters label').forEach(label => {
+        const genre = label.getAttribute('for');
+        if (genreColors[genre]) {
+            label.style.backgroundColor = genreColors[genre];
+            label.style.color = "white";
+        }
+    });
 });
 
 const width = 960;
 const height = 600;
 
+const genreColors = {
+    "rock": "#FF0000",
+    "pop": "#00FF00",
+    "electronic": "#0000FF",
+    "metal": "#FFFF00",
+    "blues": "#FF00FF",
+    "jazz": "#00FFFF",
+    "r&b & soul": "#FFA500",
+    "folk": "#8A2BE2",
+    "hip hop": "#C52A2A",
+    "easy listening": "#5F9EA0",
+    "avant-garde & experimental": "#D2691E",
+    "country": "#FF7F50",
+    "latin & south american": "#6495ED",
+    "punk": "#DC143C",
+    "religious": "#00CED1",
+    "regional": "#1E90FF",
+    "traditional_folk": "#8B0000",
+    "Miscellaneous": "#696969",
+    "other": "#808080"
+};
+
+const color = genre => genreColors[genre] || "#d3d3d3";
+
 Promise.all([
     d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
     d3.json("../json/aggregatedData.json")
 ]).then(([geoData, genreData]) => {
-    
-
-    // Ajouter un événement de changement pour les filtres de genre
     document.querySelectorAll('#genre-filters input[name="genre"]').forEach((checkbox) => {
         checkbox.addEventListener('change', () => updateMap(geoData, genreData));
     });
-
     updateMap(geoData, genreData);
 }).catch(error => console.error('Erreur lors du chargement des données :', error));
 
@@ -51,12 +80,9 @@ function updateMap(geoData, genreData) {
     const svg = d3.select("#map-container").append("svg").attr("width", width).attr("height", height);
     const g = svg.append("g");
 
-    const color = d3.scaleOrdinal(d3.schemeCategory10);
-    
-    // Augmentez ici le niveau de zoom initial et ajustez la translation
-    let currentZoom = 5; // Niveau de zoom initial légèrement plus élevé
-    let initialTranslateX = -1800; // Décalage initial vers la droite
-    let initialTranslateY = -500;   // Décalage initial vers le bas (ajustez si nécessaire)
+    let currentZoom = 5;
+    let initialTranslateX = -1800;
+    let initialTranslateY = -500;
 
     function updateElements() {
         g.selectAll(".country-chart").each(function(d, i, nodes) {
@@ -76,15 +102,13 @@ function updateMap(geoData, genreData) {
         .scaleExtent([1, 8])
         .on("zoom", (event) => {
             currentZoom = event.transform.k;
+            savedTransform = event.transform;
             g.attr("transform", event.transform);
             updateElements();
         });
 
     svg.call(zoomBehavior)
-        .call(zoomBehavior.transform, d3.zoomIdentity
-            .translate(initialTranslateX, initialTranslateY) // Appliquer la translation initiale
-            .scale(currentZoom) // Appliquer le zoom initial
-        );
+        .call(zoomBehavior.transform, savedTransform);
 
     g.append("g")
         .selectAll("path")
@@ -92,15 +116,16 @@ function updateMap(geoData, genreData) {
         .enter()
         .append("path")
         .attr("d", path)
-        .attr("fill", "#f5f5dc")  // Blanc cassé
-        .attr("stroke", "#000000")  // Noir
-        .attr("stroke-width", "0.1");  // Épaisseur du contour
+        .attr("fill", "#f5f5dc")
+        .attr("stroke", "#000000")
+        .attr("stroke-width", "0.1");
 
     const offsetMap = {
         "Norway": { x: -20, y: 70 },
         "France": { x: 8, y: -12 },
         "USA": { x: 40, y: 40 },
         "Canada": { x: -20, y: 40 },
+        "Country Unknown": { x: 1000, y: 180 } // Position dans l'océan Pacifique
     };
 
     const selectedGenres = getSelectedGenres();
@@ -118,13 +143,21 @@ function updateMap(geoData, genreData) {
             count
         }));
 
-        const countryGeo = geoData.features.find(d => d.properties.name === countryName);
-        if (!countryGeo) return;
-        const [x, y] = path.centroid(countryGeo);
+        // Gérer les pays avec des coordonnées géographiques spéciales
+        let x, y;
+        if (countryName === "Country Unknown") {
+            const offset = offsetMap[countryName];
+            x = offset.x;
+            y = offset.y;
+        } else {
+            const countryGeo = geoData.features.find(d => d.properties.name === countryName);
+            if (!countryGeo) return;
+            [x, y] = path.centroid(countryGeo);
 
-        const offset = offsetMap[countryName] || { x: 0, y: 0 };
-        const offsetX = offset.x;
-        const offsetY = offset.y;
+            const offset = offsetMap[countryName] || { x: 0, y: 0 };
+            x += offset.x;
+            y += offset.y;
+        }
 
         const initialRadius = 3 + pieData.length * 2;
         const arc = d3.arc().innerRadius(0).outerRadius(initialRadius);
@@ -132,7 +165,7 @@ function updateMap(geoData, genreData) {
 
         const pieGroup = g.append("g")
             .datum({ radius: initialRadius })
-            .attr("transform", `translate(${x + offsetX}, ${y + offsetY})`)
+            .attr("transform", `translate(${x}, ${y})`)
             .attr("class", "country-chart")
             .on("click", () => showTooltip(countryName, pieData, color));
 
@@ -153,7 +186,6 @@ function updateMap(geoData, genreData) {
             .style("font-size", `${15}px`);
     });
 
-    // Appel initial de updateElements pour que les pie charts soient bien calibrés
     updateElements();
 }
 
@@ -172,7 +204,7 @@ function showTooltip(countryName, pieData, color) {
     svg.attr("width", radius * 2).attr("height", radius * 2);
 
     const pieGroup = svg.append("g")
-        .attr("transform", `translate(${radius}, ${radius})`);
+        .attr("transform", `translate(${radius}, ${radius + 20})`);
 
     pieGroup.selectAll("path")
         .data(pie(pieData))
@@ -190,6 +222,15 @@ function showTooltip(countryName, pieData, color) {
         .text(countryName)
         .style("font-weight", "bold");
 
-    // Close tooltip event
+    // Ajoutez le comportement de zoom
+    const zoom = d3.zoom()
+        .scaleExtent([1, 8]) // Limite de zoom : entre 1x et 3x
+        .on("zoom", (event) => {
+            pieGroup.attr("transform", event.transform);
+        });
+
+    svg.call(zoom);
+
     d3.select(".tooltip-close").on("click", () => tooltip.style("display", "none"));
 }
+
