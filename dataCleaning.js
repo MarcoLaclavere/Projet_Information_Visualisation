@@ -10,7 +10,7 @@ function removeDuplicates(data, key) {
     return !duplicate;
   });
 }
-
+/*
 // 2. normalizeGenres: Normalise les genres avec une table de correspondance
 const groupGenresByCategory = require('./Lorenzo_Visu/genreTraitement.js'); // Importer la fonction depuis genreNormalize.js
 const data = require('./json/artist-without-members.json'); // Charger les données JSON
@@ -24,6 +24,26 @@ const updatedData = normalizeGenres(data);
 
 const data2=  require('./json/artist-with-new-genres.json');
 const extractEssentialInfo= require('./Lorenzo_Visu/gatherData.js');
+function gatherData(data2) {
+  // Appel à la fonction groupGenresByCategory qui fait tout le travail
+  return extractEssentialInfo(data2);
+}
+const updatedData2 = gatherData(data2);
+*/
+
+// 2. normalizeGenres: Normalise les genres avec une table de correspondance
+const groupGenresByCategory = require('./Clement_Visu/albumGenresTraitement.js'); // Importer la fonction depuis genreNormalize.js
+const data = require('./json/album.json'); // Charger les données JSON
+
+// Fonction normalizeGenres qui appelle la fonction groupGenresByCategory
+function normalizeGenres(data) {
+  // Appel à la fonction groupGenresByCategory qui fait tout le travail
+  return groupGenresByCategory(data);
+}
+const updatedData = normalizeGenres(data);
+
+const data2=  require('./json/album-with-new-genres.json');
+const extractEssentialInfo= require('./Clement_Visu/gatherAlbumData.js');
 function gatherData(data2) {
   // Appel à la fonction groupGenresByCategory qui fait tout le travail
   return extractEssentialInfo(data2);
