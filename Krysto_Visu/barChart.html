@@ -209,8 +209,30 @@
       // Créer les checkboxes initiaux
       createCheckboxes();
       
-      // Initialiser le graphique
-      drawChart("any");
+
+      // Récupérer l'URL actuelle
+      const urlParams = new URLSearchParams(window.location.search);
+
+      // Récupérer la valeur de 'genre'
+      const genre = urlParams.get('genre');
+
+      //en faire un stirng
+      console.log(String(genre));
+
+      console.log(genre); // Affiche la valeur de genre dans la console
+      if (String(genre) == "undefined") {
+        genreSelect.property("value", "any");
+        
+      }
+      else {
+        genreSelect.property("value", genre);
+        drawChart(genre);
+      }
+      
+
+
+
+
 
       // Mettre à jour le graphique lors du changement de genre
       genreSelect.on("change", function() {
