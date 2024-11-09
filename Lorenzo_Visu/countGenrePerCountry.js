@@ -1,11 +1,9 @@
 const fs = require('fs');
 
-function aggregateGenresByCountry(inputPath = './json/artist-simplified.json', outputPath = './json/aggregatedData.json') {
-  try {
-    // Charger les données depuis le fichier JSON
-    const rawData = fs.readFileSync(inputPath, 'utf-8');
-    const artists = JSON.parse(rawData);
+const data = require('../json/artist-simplified.json');
 
+function aggregateGenresByCountry(artists) {
+  try {
     // Transformation des données
     const countryGenreCounts = {};
     const usStates = [
@@ -38,7 +36,6 @@ function aggregateGenresByCountry(inputPath = './json/artist-simplified.json', o
     // Créer un tableau avec la structure souhaitée, en excluant les pays ayant uniquement "Miscellaneous"
     const transformedData = Object.keys(countryGenreCounts)
       .filter(country => {
-        // Exclure les pays ayant uniquement "Miscellaneous" comme genre
         const genres = Object.keys(countryGenreCounts[country]);
         return !(genres.length === 1 && genres[0] === "Miscellaneous");
       })
@@ -48,6 +45,7 @@ function aggregateGenresByCountry(inputPath = './json/artist-simplified.json', o
       }));
 
     // Sauvegarder le résultat dans un fichier JSON
+    const outputPath = './json/aggregatedData.json';
     fs.writeFileSync(outputPath, JSON.stringify(transformedData, null, 2), 'utf-8');
     console.log(`Les données agrégées ont été enregistrées dans '${outputPath}'`);
 
@@ -57,4 +55,6 @@ function aggregateGenresByCountry(inputPath = './json/artist-simplified.json', o
 }
 
 // Appeler la fonction pour exécuter le traitement
-aggregateGenresByCountry();
+aggregateGenresByCountry(data);
+
+module.exports = aggregateGenresByCountry;

@@ -10,26 +10,33 @@ function removeDuplicates(data, key) {
     return !duplicate;
   });
 }
-/*
+
 // 2. normalizeGenres: Normalise les genres avec une table de correspondance
-const groupGenresByCategory = require('./Lorenzo_Visu/genreTraitement.js'); // Importer la fonction depuis genreNormalize.js
-const data = require('./json/artist-without-members.json'); // Charger les données JSON
+const groupGenresByCategorie = require('./Lorenzo_Visu/genreTraitement.js'); // Importer la fonction depuis genreNormalize.js
+const data_ = require('./json/artist-without-members.json'); // Charger les données JSON
 
 // Fonction normalizeGenres qui appelle la fonction groupGenresByCategory
-function normalizeGenres(data) {
+function normalizeGenres_(data_) {
   // Appel à la fonction groupGenresByCategory qui fait tout le travail
-  return groupGenresByCategory(data);
+  return groupGenresByCategorie(data_);
 }
-const updatedData = normalizeGenres(data);
+normalizeGenres_(data_);
 
-const data2=  require('./json/artist-with-new-genres.json');
-const extractEssentialInfo= require('./Lorenzo_Visu/gatherData.js');
-function gatherData(data2) {
+const data2_=  require('./json/artist-with-new-genres.json');
+const extractEssentialInfo_= require('./Lorenzo_Visu/gatherData.js');
+function gatherData_(data2_) {
   // Appel à la fonction groupGenresByCategory qui fait tout le travail
-  return extractEssentialInfo(data2);
+  return extractEssentialInfo_(data2_);
 }
-const updatedData2 = gatherData(data2);
-*/
+gatherData_(data2_);
+
+const data3=  require('./json/artist-simplified.json');
+const countGenrePerCountry= require('./Lorenzo_Visu/countGenrePerCountry.js');
+function countGenres(data3) {
+  // Appel à la fonction groupGenresByCategory qui fait tout le travail
+  return countGenrePerCountry(data3);
+}
+countGenres(data3);
 
 // 2. normalizeGenres: Normalise les genres avec une table de correspondance
 const groupGenresByCategory = require('./Clement_Visu/albumGenresTraitement.js'); // Importer la fonction depuis genreNormalize.js
