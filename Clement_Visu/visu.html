@@ -21,7 +21,8 @@
                     fill: true
                 }));
 
-                new Chart(document.getElementById("stackedAreaChart"), {
+                // Créer le graphique
+                const chart = new Chart(document.getElementById("stackedAreaChart"), {
                     type: "line",
                     data: {
                         labels: years,
@@ -47,6 +48,15 @@
                                     display: true,
                                     text: "Nombre de publications"
                                 }
+                            }
+                        },
+                        onClick: function(evt, elements) {
+                            if (elements && elements.length > 0) {
+                                const datasetIndex = elements[0].datasetIndex;
+                                const clickedGenre = datasets[datasetIndex].label;
+                                console.log("Genre cliqué:", clickedGenre);
+                                // Décommenter la ligne suivante pour activer la redirection
+                                window.location.href = `../Krysto_Visu/barChart.html?genre=${encodeURIComponent(clickedGenre)}`;
                             }
                         }
                     }
