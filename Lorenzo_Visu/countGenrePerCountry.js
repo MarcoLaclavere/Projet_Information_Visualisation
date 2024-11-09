@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function aggregateGenresByCountry(inputPath = '../json/artist-simplified.json', outputPath = '../json/aggregatedData.json') {
+function aggregateGenresByCountry(inputPath = './json/artist-simplified.json', outputPath = './json/aggregatedData.json') {
   try {
     // Charger les données depuis le fichier JSON
     const rawData = fs.readFileSync(inputPath, 'utf-8');
