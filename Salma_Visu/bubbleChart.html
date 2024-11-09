@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artistes les Plus Prolifiques par Genre Musical</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bubbleChart.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+            <h1 class="title">Artistes les Plus Prolifiques par Genre Musical</h1>
+            <span id="timeRange">Mis à jour: <time datetime="2024-11-09">09 Nov 2024</time></span>
+        </div>
+
+        <!-- Filters Panel -->
+        <div class="filters-panel">
+            <div class="filters-header">
+                <h3><i class="fas fa-filter"></i> Filtres</h3>
+                <button class="dashboard-button" id="resetFilters">
+                    <i class="fas fa-redo"></i> Réinitialiser
+                </button>
+            </div>
+            <div class="filters-content">
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-music"></i> Genres Musicaux
+                    </label>
+                    <div class="dropdown-checklist">
+                        <div class="dropdown-trigger" id="genreDropdownTrigger">
+                            <span>Sélectionner les genres</span>
+                            <div>
+                                <span class="selected-count">0</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" id="genreFilter">
+                            <div class="dropdown-actions">
+                                <button class="dashboard-button" id="selectAll">
+                                    <i class="fas fa-check-double"></i> Tout sélectionner
+                                </button>
+                            </div>
+                            <div class="dropdown-items">
+                                <!-- Checkboxes will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-user"></i> Artiste
+                    </label>
+                    <input type="text" id="artistFilter" class="filter-input" placeholder="Rechercher un artiste...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics Bar -->
+        <div class="metrics-bar">
+            <div class="metric-card">
+                <div class="metric-title">Genres Affichés</div>
+                <div class="metric-value" id="genreCount">0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Total Artistes</div>
+                <div class="metric-value" id="artistCount">0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Total Chansons</div>
+                <div class="metric-value" id="songCount">0</div>
+            </div>
+        </div>
+
+        <!-- Visualization Panel -->
+        <div class="visualization-panel">
+            <div id="loading">
+                <div class="loading-spinner"></div>
+                Chargement des données...
+            </div>
+            <div id="chart"></div>
+        </div>
+    </div>
+    <script src="bubbleChart.js"></script>
+</body>
+
+</html>

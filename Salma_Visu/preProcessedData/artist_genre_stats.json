@@ -1,0 +1,6629 @@
+{
+  "Alternative rock": {
+    "artist": "They Might Be Giants",
+    "songCount": 528,
+    "albumCount": 32,
+    "details": {
+      "id": "56d98714cc2ddd0c0f6bd95e",
+      "genres": [
+        "Alternative Rock"
+      ],
+      "deezerFans": 27793
+    }
+  },
+  "Death metal": {
+    "artist": "Vader",
+    "songCount": 229,
+    "albumCount": 23,
+    "details": {
+      "id": "56d98f36cc2ddd0c0f6be52f",
+      "genres": [],
+      "deezerFans": 30725
+    }
+  },
+  "Rock": {
+    "artist": "The Beach Boys",
+    "songCount": 833,
+    "albumCount": 37,
+    "details": {
+      "id": "56d97c63cc2ddd0c0f6bcac9",
+      "genres": [
+        "Rock",
+        "Surf Rock",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 254985
+    }
+  },
+  "Emo": {
+    "artist": "Emo Side Project",
+    "songCount": 94,
+    "albumCount": 7,
+    "details": {
+      "id": "56d828e753a7ddfc01f94633",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Heavy metal": {
+    "artist": "Iron Maiden",
+    "songCount": 374,
+    "albumCount": 23,
+    "details": {
+      "id": "56d8432453a7ddfc01f96c1f",
+      "genres": [
+        "Heavy Metal"
+      ],
+      "deezerFans": 1641346
+    }
+  },
+  "Progressive metal": {
+    "artist": "Queensrÿche",
+    "songCount": 237,
+    "albumCount": 18,
+    "details": {
+      "id": "56d95cd7cc2ddd0c0f6b9b5d",
+      "genres": [
+        "Progressive Metal"
+      ],
+      "deezerFans": 38337
+    }
+  },
+  "Deathcore": {
+    "artist": "Born Of Osiris",
+    "songCount": 70,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8076853a7ddfc01f9168a",
+      "genres": [
+        "Deathcore",
+        "Djent"
+      ],
+      "deezerFans": 33451
+    }
+  },
+  "Synthpop": {
+    "artist": "Pet Shop Boys",
+    "songCount": 338,
+    "albumCount": 19,
+    "details": {
+      "id": "56d95754cc2ddd0c0f6b93b2",
+      "genres": [],
+      "deezerFans": 460802
+    }
+  },
+  "Post-hardcore": {
+    "artist": "Enter Shikari",
+    "songCount": 109,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8297a53a7ddfc01f9470b",
+      "genres": [
+        "Post-Hardcore",
+        "Electronicore",
+        "Alternative Rock"
+      ],
+      "deezerFans": 67537
+    }
+  },
+  "Classical": {
+    "artist": "Andrea Bocelli",
+    "songCount": 134,
+    "albumCount": 9,
+    "details": {
+      "id": "56d7f71653a7ddfc01f8feba",
+      "genres": [],
+      "deezerFans": 778196
+    }
+  },
+  "Neofolk": {
+    "artist": "Sturmpercht",
+    "songCount": 159,
+    "albumCount": 9,
+    "details": {
+      "id": "56d97559cc2ddd0c0f6bc043",
+      "genres": [
+        "Neofolk"
+      ],
+      "deezerFans": 57
+    }
+  },
+  "Pop punk": {
+    "artist": "Shonen Knife",
+    "songCount": 205,
+    "albumCount": 16,
+    "details": {
+      "id": "56d96c69cc2ddd0c0f6bb27c",
+      "genres": [],
+      "deezerFans": 1434
+    }
+  },
+  "Thrash metal": {
+    "artist": "Transmetal",
+    "songCount": 290,
+    "albumCount": 29,
+    "details": {
+      "id": "56d98b63cc2ddd0c0f6bdfab",
+      "genres": [
+        "Thrash Metal",
+        "Death Metal"
+      ],
+      "deezerFans": 6259
+    }
+  },
+  "Dark wave": {
+    "artist": "Sopor Aeternus",
+    "songCount": 239,
+    "albumCount": 17,
+    "details": {
+      "id": "56d970e5cc2ddd0c0f6bb973",
+      "genres": [
+        "Dark Wave",
+        "Neoclassical",
+        "Neofolk"
+      ],
+      "deezerFans": 4133
+    }
+  },
+  "Mpb": {
+    "artist": "Maria Bethânia",
+    "songCount": 647,
+    "albumCount": 41,
+    "details": {
+      "id": "56d9387cce06f50c0fed7fbe",
+      "genres": [
+        "MPB",
+        "Brazilian",
+        "Bossa Nova",
+        "Samba"
+      ],
+      "deezerFans": 114259
+    }
+  },
+  "Indie rock": {
+    "artist": "Guided By Voices",
+    "songCount": 544,
+    "albumCount": 34,
+    "details": {
+      "id": "56d839a153a7ddfc01f95e1b",
+      "genres": [
+        "Alternative Rock",
+        "Indie Rock",
+        "Lo-Fi"
+      ],
+      "deezerFans": 5197
+    }
+  },
+  "Gothic metal": {
+    "artist": "Lacrimosa",
+    "songCount": 205,
+    "albumCount": 24,
+    "details": {
+      "id": "56d856c853a7ddfc01f98860",
+      "genres": [
+        "Dark Wave",
+        "Gothic Metal",
+        "Gothic Rock",
+        "Neue Deutsche Todeskunst",
+        "Symphonic Metal",
+        "Symphonic Rock"
+      ],
+      "deezerFans": 25761
+    }
+  },
+  "Doom metal": {
+    "artist": "Paradise Lost",
+    "songCount": 246,
+    "albumCount": 18,
+    "details": {
+      "id": "56d954afcc2ddd0c0f6b9017",
+      "genres": [
+        "Doom Metal",
+        "Gothic Metal"
+      ],
+      "deezerFans": 36992
+    }
+  },
+  "Post-punk": {
+    "artist": "The Fall",
+    "songCount": 342,
+    "albumCount": 28,
+    "details": {
+      "id": "56d97e24cc2ddd0c0f6bccfa",
+      "genres": [],
+      "deezerFans": 9204
+    }
+  },
+  "Pop rock": {
+    "artist": "Elton John",
+    "songCount": 945,
+    "albumCount": 55,
+    "details": {
+      "id": "56d8281653a7ddfc01f9453f",
+      "genres": [
+        "Pop Rock",
+        "Adult Contemporary",
+        "Rock",
+        "Glam Rock",
+        "Soft Rock",
+        "R&B",
+        "Classic Rock"
+      ],
+      "deezerFans": 1059878
+    }
+  },
+  "Metalcore": {
+    "artist": "Caliban",
+    "songCount": 134,
+    "albumCount": 12,
+    "details": {
+      "id": "56d80b7a53a7ddfc01f91ca9",
+      "genres": [
+        "Heavy Metal",
+        "Metalcore"
+      ],
+      "deezerFans": 23979
+    }
+  },
+  "Black metal": {
+    "artist": "Impaled Nazarene",
+    "songCount": 186,
+    "albumCount": 13,
+    "details": {
+      "id": "56d8418953a7ddfc01f969b2",
+      "genres": [
+        "Black Metal"
+      ],
+      "deezerFans": 6451
+    }
+  },
+  "Sludge metal": {
+    "artist": "Melvins",
+    "songCount": 121,
+    "albumCount": 9,
+    "details": {
+      "id": "56d93cf1ce06f50c0fed868e",
+      "genres": [
+        "Sludge Metal",
+        "Hardcore Punk",
+        "Rock",
+        "Grunge",
+        "Heavy Metal"
+      ],
+      "deezerFans": 29083
+    }
+  },
+  "Experimental rock": {
+    "artist": "His Name Is Alive",
+    "songCount": 159,
+    "albumCount": 11,
+    "details": {
+      "id": "56d83e3553a7ddfc01f9647c",
+      "genres": [
+        "Experimental Rock"
+      ],
+      "deezerFans": 540
+    }
+  },
+  "Pop": {
+    "artist": "Mina",
+    "songCount": 1086,
+    "albumCount": 78,
+    "details": {
+      "id": "56d93fe4ce06f50c0fed8ad2",
+      "genres": [
+        "Pop"
+      ],
+      "deezerFans": 61978
+    }
+  },
+  "Melodic metalcore": {
+    "artist": "Bury Tomorrow",
+    "songCount": 56,
+    "albumCount": 5,
+    "details": {
+      "id": "56d80a7d53a7ddfc01f91b4a",
+      "genres": [
+        "Metalcore",
+        "Melodic Metalcore"
+      ],
+      "deezerFans": 17673
+    }
+  },
+  "Hardcore punk": {
+    "artist": "Circle Jerks",
+    "songCount": 148,
+    "albumCount": 9,
+    "details": {
+      "id": "56d812c353a7ddfc01f92628",
+      "genres": [
+        "Punk Rock",
+        "Hardcore Punk"
+      ],
+      "deezerFans": 4834
+    }
+  },
+  "New wave": {
+    "artist": "Diaframma",
+    "songCount": 295,
+    "albumCount": 22,
+    "details": {
+      "id": "56d81f1d53a7ddfc01f93869",
+      "genres": [],
+      "deezerFans": 3558
+    }
+  },
+  "Europop": {
+    "artist": "Giorgia",
+    "songCount": 89,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8363253a7ddfc01f95955",
+      "genres": [],
+      "deezerFans": 56211
+    }
+  },
+  "Brutal death metal": {
+    "artist": "Dementor",
+    "songCount": 57,
+    "albumCount": 6,
+    "details": {
+      "id": "56d81dd453a7ddfc01f93698",
+      "genres": [],
+      "deezerFans": 128
+    }
+  },
+  "Hip Hop": {
+    "artist": "DMX",
+    "songCount": 374,
+    "albumCount": 22,
+    "details": {
+      "id": "56d821a353a7ddfc01f93c4f",
+      "genres": [
+        "Hip Hop"
+      ],
+      "deezerFans": 701948
+    }
+  },
+  "Punk rock": {
+    "artist": "Wesley Willis",
+    "songCount": 701,
+    "albumCount": 30,
+    "details": {
+      "id": "56d99366cc2ddd0c0f6bebe1",
+      "genres": [],
+      "deezerFans": 431
+    }
+  },
+  "Electronic rock": {
+    "artist": "ClickClickDecker",
+    "songCount": 79,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8138853a7ddfc01f92764",
+      "genres": [],
+      "deezerFans": 1187
+    }
+  },
+  "Groove metal": {
+    "artist": "Lamb Of God",
+    "songCount": 79,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8572353a7ddfc01f988d6",
+      "genres": [
+        "Groove Metal",
+        "Thrash Metal",
+        "Post-Thrash"
+      ],
+      "deezerFans": 235731
+    }
+  },
+  "Math rock": {
+    "artist": "Heavy Vegetable",
+    "songCount": 49,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83ca453a7ddfc01f96221",
+      "genres": [
+        "Math Rock",
+        "Alternative Rock"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Grindcore": {
+    "artist": "Nasum",
+    "songCount": 288,
+    "albumCount": 6,
+    "details": {
+      "id": "56d94c04cc2ddd0c0f6b82d7",
+      "genres": [],
+      "deezerFans": 5318
+    }
+  },
+  "Melodic death metal": {
+    "artist": "Dark Tranquillity",
+    "songCount": 113,
+    "albumCount": 12,
+    "details": {
+      "id": "56d81a6053a7ddfc01f93198",
+      "genres": [
+        "Death Metal",
+        "Melodic Death Metal"
+      ],
+      "deezerFans": 47250
+    }
+  },
+  "Industrial rock": {
+    "artist": "Nine Inch Nails",
+    "songCount": 208,
+    "albumCount": 17,
+    "details": {
+      "id": "56d94ef7cc2ddd0c0f6b8716",
+      "genres": [
+        "Industrial Rock",
+        "Industrial",
+        "Industrial Metal",
+        "Rock"
+      ],
+      "deezerFans": 271217
+    }
+  },
+  "Psychedelic rock": {
+    "artist": "The Beach Boys",
+    "songCount": 207,
+    "albumCount": 5,
+    "details": {
+      "id": "56d97c63cc2ddd0c0f6bcac9",
+      "genres": [
+        "Rock",
+        "Surf Rock",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 254985
+    }
+  },
+  "K-pop": {
+    "artist": "PSY",
+    "songCount": 90,
+    "albumCount": 7,
+    "details": {
+      "id": "56d95bf9cc2ddd0c0f6b9a2a",
+      "genres": [],
+      "deezerFans": 720175
+    }
+  },
+  "Piano rock": {
+    "artist": "Tori Amos",
+    "songCount": 138,
+    "albumCount": 4,
+    "details": {
+      "id": "56d98ab3cc2ddd0c0f6bdeb8",
+      "genres": [
+        "Piano Rock",
+        "Alternative Rock",
+        "Baroque Pop",
+        "Classical"
+      ],
+      "deezerFans": 74909
+    }
+  },
+  "Ebm": {
+    "artist": "Leæther Strip",
+    "songCount": 231,
+    "albumCount": 18,
+    "details": {
+      "id": "56d85a0d53a7ddfc01f98d74",
+      "genres": [
+        "Industrial",
+        "EBM"
+      ],
+      "deezerFans": 840
+    }
+  },
+  "Disco": {
+    "artist": "Gloria Gaynor",
+    "songCount": 98,
+    "albumCount": 10,
+    "details": {
+      "id": "56d836f653a7ddfc01f95a61",
+      "genres": [],
+      "deezerFans": 390111
+    }
+  },
+  "Funk": {
+    "artist": "The Gap Band",
+    "songCount": 155,
+    "albumCount": 16,
+    "details": {
+      "id": "56d97ec4cc2ddd0c0f6bcdc7",
+      "genres": [
+        "R&B"
+      ],
+      "deezerFans": 25397
+    }
+  },
+  "Country": {
+    "artist": "Marty Robbins",
+    "songCount": 1316,
+    "albumCount": 75,
+    "details": {
+      "id": "56d93a21ce06f50c0fed8218",
+      "genres": [
+        "Singer-Songwriter",
+        "Gospel",
+        "Pop",
+        "Rock 'N' Roll",
+        "Rockabilly",
+        "Country"
+      ],
+      "deezerFans": 20304
+    }
+  },
+  "Alternative hip hop": {
+    "artist": "Little Brother",
+    "songCount": 112,
+    "albumCount": 7,
+    "details": {
+      "id": "56d85ba653a7ddfc01f9900b",
+      "genres": [],
+      "deezerFans": 3627
+    }
+  },
+  "Christian rock": {
+    "artist": "DeGarmo And Key",
+    "songCount": 210,
+    "albumCount": 18,
+    "details": {
+      "id": "56d81d8653a7ddfc01f93614",
+      "genres": [
+        "Christian Rock",
+        "Pop Rock",
+        "Rock",
+        "Southern Rock"
+      ],
+      "deezerFans": 142
+    }
+  },
+  "Screamo": {
+    "artist": "Funeral Diner",
+    "songCount": 58,
+    "albumCount": 8,
+    "details": {
+      "id": "56d8329353a7ddfc01f95497",
+      "genres": [],
+      "deezerFans": 527
+    }
+  },
+  "Children&apos;s music": {
+    "artist": "Cri-Cri",
+    "songCount": 434,
+    "albumCount": 15,
+    "details": {
+      "id": "56d816a053a7ddfc01f92c0c",
+      "genres": [
+        "Children's Music"
+      ],
+      "deezerFans": 16250
+    }
+  },
+  "Industrial metal": {
+    "artist": "Oomph!",
+    "songCount": 173,
+    "albumCount": 11,
+    "details": {
+      "id": "56d95278cc2ddd0c0f6b8c92",
+      "genres": [
+        "Neue Deutsche Härte",
+        "Industrial Metal",
+        "Industrial Rock"
+      ],
+      "deezerFans": 48222
+    }
+  },
+  "Hard rock": {
+    "artist": "Alice Cooper",
+    "songCount": 358,
+    "albumCount": 26,
+    "details": {
+      "id": "56d7f44653a7ddfc01f8fa1a",
+      "genres": [
+        "Hard Rock",
+        "Rock",
+        "Shock Rock"
+      ],
+      "deezerFans": 390618
+    }
+  },
+  "Folk": {
+    "artist": "Joan Baez",
+    "songCount": 615,
+    "albumCount": 40,
+    "details": {
+      "id": "56d849a953a7ddfc01f975a4",
+      "genres": [
+        "Singer-Songwriter",
+        "Protest Song",
+        "Ballad",
+        "Folk",
+        "Folk Rock"
+      ],
+      "deezerFans": 69688
+    }
+  },
+  "Indie pop": {
+    "artist": "Momus",
+    "songCount": 335,
+    "albumCount": 22,
+    "details": {
+      "id": "56d9412cce06f50c0fed8ce7",
+      "genres": [],
+      "deezerFans": 618
+    }
+  },
+  "Progressive rock": {
+    "artist": "Steve Hackett",
+    "songCount": 446,
+    "albumCount": 30,
+    "details": {
+      "id": "56d973fecc2ddd0c0f6bbe29",
+      "genres": [
+        "Progressive Rock",
+        "Classic Rock",
+        "Blues Rock",
+        "Classical"
+      ],
+      "deezerFans": 15514
+    }
+  },
+  "Street punk": {
+    "artist": "The Exploited",
+    "songCount": 117,
+    "albumCount": 9,
+    "details": {
+      "id": "56d97e0bcc2ddd0c0f6bccda",
+      "genres": [],
+      "deezerFans": 25078
+    }
+  },
+  "Jazz fusion": {
+    "artist": "Voo Voo",
+    "songCount": 238,
+    "albumCount": 19,
+    "details": {
+      "id": "56d991cbcc2ddd0c0f6be947",
+      "genres": [],
+      "deezerFans": 3575
+    }
+  },
+  "Industrial": {
+    "artist": "Front Line Assembly",
+    "songCount": 359,
+    "albumCount": 41,
+    "details": {
+      "id": "56d8323853a7ddfc01f95415",
+      "genres": [
+        "Industrial",
+        "Industrial Rock",
+        "Industrial Metal",
+        "Electronic",
+        "Alternative Dance"
+      ],
+      "deezerFans": 4709
+    }
+  },
+  "Avant-garde metal": {
+    "artist": "The Meads Of Asphodel",
+    "songCount": 64,
+    "albumCount": 6,
+    "details": {
+      "id": "56d98172cc2ddd0c0f6bd17d",
+      "genres": [
+        "Avant-garde Metal",
+        "Black Metal"
+      ],
+      "deezerFans": 193
+    }
+  },
+  "R&amp;b": {
+    "artist": "Marvin Gaye",
+    "songCount": 538,
+    "albumCount": 27,
+    "details": {
+      "id": "56d93a29ce06f50c0fed822c",
+      "genres": [
+        "R&B",
+        "Soul",
+        "Funk",
+        "Quiet Storm",
+        "Pop"
+      ],
+      "deezerFans": 1047674
+    }
+  },
+  "Teen pop": {
+    "artist": "Backstreet Boys",
+    "songCount": 48,
+    "albumCount": 3,
+    "details": {
+      "id": "56d7fe7e53a7ddfc01f909eb",
+      "genres": [
+        "Pop",
+        "Teen Pop"
+      ],
+      "deezerFans": 489522
+    }
+  },
+  "Jazz": {
+    "artist": "Sarah Vaughan",
+    "songCount": 777,
+    "albumCount": 53,
+    "details": {
+      "id": "56d96828cc2ddd0c0f6babfe",
+      "genres": [
+        "Bebop",
+        "Blues",
+        "Bossa Nova",
+        "Classic Pop",
+        "Cool Jazz",
+        "Vocal Jazz"
+      ],
+      "deezerFans": 251809
+    }
+  },
+  "Contemporary christian": {
+    "artist": "Hillsong",
+    "songCount": 711,
+    "albumCount": 51,
+    "details": {
+      "id": "56d83e1553a7ddfc01f96452",
+      "genres": [
+        "Contemporary Christian"
+      ],
+      "deezerFans": 171967
+    }
+  },
+  "Soul": {
+    "artist": "Diana Ross",
+    "songCount": 399,
+    "albumCount": 28,
+    "details": {
+      "id": "56d81f3c53a7ddfc01f93890",
+      "genres": [
+        "R&B",
+        "Soul",
+        "Pop",
+        "Disco",
+        "Jazz"
+      ],
+      "deezerFans": 483984
+    }
+  },
+  "Gospel": {
+    "artist": "Kirk Franklin",
+    "songCount": 166,
+    "albumCount": 12,
+    "details": {
+      "id": "56d853cd53a7ddfc01f98437",
+      "genres": [
+        "Gospel"
+      ],
+      "deezerFans": 77271
+    }
+  },
+  "Christmas": {
+    "artist": "Trans-Siberian Orchestra",
+    "songCount": 57,
+    "albumCount": 3,
+    "details": {
+      "id": "56d98b56cc2ddd0c0f6bdf94",
+      "genres": [
+        "Progressive Metal",
+        "Progressive Rock",
+        "Symphonic Rock",
+        "Neo-Classical Metal",
+        "Classical",
+        "Christmas"
+      ],
+      "deezerFans": 9241
+    }
+  },
+  "Folk rock": {
+    "artist": "Francesco De Gregori",
+    "songCount": 348,
+    "albumCount": 25,
+    "details": {
+      "id": "56d830af53a7ddfc01f951ec",
+      "genres": [
+        "Pop",
+        "Pop Rock",
+        "Folk Rock"
+      ],
+      "deezerFans": 34745
+    }
+  },
+  "Acoustic": {
+    "artist": "Grzegorz Turnau",
+    "songCount": 190,
+    "albumCount": 12,
+    "details": {
+      "id": "56d8396d53a7ddfc01f95dd9",
+      "genres": [],
+      "deezerFans": 11563
+    }
+  },
+  "Symphonic black metal": {
+    "artist": "Bal-Sagoth",
+    "songCount": 64,
+    "albumCount": 7,
+    "details": {
+      "id": "56d7fec153a7ddfc01f90a65",
+      "genres": [],
+      "deezerFans": 1557
+    }
+  },
+  "Speed metal": {
+    "artist": "Yngwie Malmsteen",
+    "songCount": 182,
+    "albumCount": 14,
+    "details": {
+      "id": "56d996a1cc2ddd0c0f6bf0dc",
+      "genres": [
+        "Heavy Metal",
+        "Instrumental Rock"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Power metal": {
+    "artist": "Stratovarius",
+    "songCount": 246,
+    "albumCount": 31,
+    "details": {
+      "id": "56d974fccc2ddd0c0f6bbf95",
+      "genres": [
+        "Power Metal"
+      ],
+      "deezerFans": 128548
+    }
+  },
+  "Dance-pop": {
+    "artist": "Dannii Minogue",
+    "songCount": 77,
+    "albumCount": 6,
+    "details": {
+      "id": "56d819e453a7ddfc01f930db",
+      "genres": [],
+      "deezerFans": 3181
+    }
+  },
+  "Reggae": {
+    "artist": "Madness",
+    "songCount": 312,
+    "albumCount": 17,
+    "details": {
+      "id": "56d93648ce06f50c0fed7c41",
+      "genres": [],
+      "deezerFans": 155506
+    }
+  },
+  "Funk melody": {
+    "artist": "Copacabana Beat",
+    "songCount": 39,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8158353a7ddfc01f92a40",
+      "genres": [
+        "Funk Melody"
+      ],
+      "deezerFans": 285
+    }
+  },
+  "Thrashcore": {
+    "artist": "S.O.B.",
+    "songCount": 30,
+    "albumCount": 3,
+    "details": {
+      "id": "56d9664dcc2ddd0c0f6ba928",
+      "genres": [],
+      "deezerFans": 6
+    }
+  },
+  "Underground hip hop": {
+    "artist": "Jedi Mind Tricks",
+    "songCount": 130,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8473f53a7ddfc01f97228",
+      "genres": [
+        "Hip Hop",
+        "Underground Hip Hop"
+      ],
+      "deezerFans": 73977
+    }
+  },
+  "Gothic rock": {
+    "artist": "Nox Arcana",
+    "songCount": 336,
+    "albumCount": 16,
+    "details": {
+      "id": "56d9505ccc2ddd0c0f6b8952",
+      "genres": [
+        "Gothic Rock",
+        "Dark Wave",
+        "Ambient"
+      ],
+      "deezerFans": 9057
+    }
+  },
+  "Steampunk": {
+    "artist": "Abney Park",
+    "songCount": 62,
+    "albumCount": 5,
+    "details": {
+      "id": "56d7eb3626a8a3040c686a89",
+      "genres": [
+        "Steampunk",
+        "Gothic Rock",
+        "Industrial"
+      ],
+      "deezerFans": 3721
+    }
+  },
+  "Electronic": {
+    "artist": "Aviators",
+    "songCount": 191,
+    "albumCount": 15,
+    "details": {
+      "id": "56d7fd6753a7ddfc01f90868",
+      "genres": [
+        "Electronica",
+        "Electronic Rock",
+        "Alternative Rock",
+        "Pop",
+        "Synthpop",
+        "Orchestral",
+        "EDM",
+        "New Wave"
+      ],
+      "deezerFans": 727
+    }
+  },
+  "Symphonic metal": {
+    "artist": "Within Temptation",
+    "songCount": 174,
+    "albumCount": 18,
+    "details": {
+      "id": "56d994f8cc2ddd0c0f6bee4b",
+      "genres": [
+        "Symphonic Metal",
+        "Gothic Metal",
+        "Gothic Rock",
+        "Symphonic Rock"
+      ],
+      "deezerFans": 323253
+    }
+  },
+  "Christian": {
+    "artist": "ApologetiX",
+    "songCount": 345,
+    "albumCount": 18,
+    "details": {
+      "id": "56d7fa1053a7ddfc01f90354",
+      "genres": [],
+      "deezerFans": 296
+    }
+  },
+  "Trance": {
+    "artist": "BT",
+    "songCount": 127,
+    "albumCount": 7,
+    "details": {
+      "id": "56d809a453a7ddfc01f91a20",
+      "genres": [
+        "Electronica",
+        "Trance"
+      ],
+      "deezerFans": 40785
+    }
+  },
+  "Vocal trance": {
+    "artist": "Ian Van Dahl",
+    "songCount": 30,
+    "albumCount": 2,
+    "details": {
+      "id": "56d840b953a7ddfc01f9686d",
+      "genres": [],
+      "deezerFans": 3402
+    }
+  },
+  "Gangsta rap": {
+    "artist": "Mr. Lil One",
+    "songCount": 177,
+    "albumCount": 12,
+    "details": {
+      "id": "56d949c7cc2ddd0c0f6b7f9e",
+      "genres": [],
+      "deezerFans": 3270
+    }
+  },
+  "West coast hip hop": {
+    "artist": "Spice 1",
+    "songCount": 161,
+    "albumCount": 11,
+    "details": {
+      "id": "56d971d3cc2ddd0c0f6bbaef",
+      "genres": [
+        "Hip Hop"
+      ],
+      "deezerFans": 12994
+    }
+  },
+  "Latin pop": {
+    "artist": "Luis Eduardo Aute",
+    "songCount": 430,
+    "albumCount": 26,
+    "details": {
+      "id": "56d85f4153a7ddfc01f99566",
+      "genres": [],
+      "deezerFans": 14884
+    }
+  },
+  "Neo-progressive rock": {
+    "artist": "IQ",
+    "songCount": 79,
+    "albumCount": 8,
+    "details": {
+      "id": "56d842fa53a7ddfc01f96be9",
+      "genres": [],
+      "deezerFans": 3303
+    }
+  },
+  "Goregrind": {
+    "artist": "Funeral Rape",
+    "songCount": 72,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8329853a7ddfc01f9549e",
+      "genres": [],
+      "deezerFans": 20
+    }
+  },
+  "A cappella": {
+    "artist": "Wise Guys",
+    "songCount": 189,
+    "albumCount": 11,
+    "details": {
+      "id": "56d994bdcc2ddd0c0f6bee12",
+      "genres": [
+        "A Cappella",
+        "Pop"
+      ],
+      "deezerFans": 16354
+    }
+  },
+  "Religious": {
+    "artist": "Steve Green",
+    "songCount": 104,
+    "albumCount": 10,
+    "details": {
+      "id": "56d973f3cc2ddd0c0f6bbe26",
+      "genres": [],
+      "deezerFans": 6136
+    }
+  },
+  "Futurepop": {
+    "artist": "Apoptygma Berzerk",
+    "songCount": 85,
+    "albumCount": 6,
+    "details": {
+      "id": "56d7fa1453a7ddfc01f90359",
+      "genres": [],
+      "deezerFans": 9440
+    }
+  },
+  "Dark electro": {
+    "artist": "Accessory",
+    "songCount": 113,
+    "albumCount": 9,
+    "details": {
+      "id": "56d7ee3f56847be81b3e8a1e",
+      "genres": [
+        "EBM",
+        "Electronic",
+        "Industrial",
+        "Electro"
+      ],
+      "deezerFans": 1070
+    }
+  },
+  "Power pop": {
+    "artist": "Big Star",
+    "songCount": 171,
+    "albumCount": 6,
+    "details": {
+      "id": "56d802e553a7ddfc01f9106c",
+      "genres": [
+        "Power Pop",
+        "Rock"
+      ],
+      "deezerFans": 5157
+    }
+  },
+  "Deutschrock": {
+    "artist": "Marius Müller-Westernhagen",
+    "songCount": 234,
+    "albumCount": 20,
+    "details": {
+      "id": "56d9390fce06f50c0fed8095",
+      "genres": [
+        "Singer-Songwriter",
+        "Pop",
+        "Rock",
+        "Deutschrock",
+        "Ballad"
+      ],
+      "deezerFans": 5423
+    }
+  },
+  "Volkslied": {
+    "artist": "Hannes Wader",
+    "songCount": 69,
+    "albumCount": 5,
+    "details": {
+      "id": "56d83b2953a7ddfc01f96016",
+      "genres": [
+        "Singer-Songwriter",
+        "Protest Song",
+        "Chanson",
+        "Ballad",
+        "Folk",
+        "Volkslied"
+      ],
+      "deezerFans": 2776
+    }
+  },
+  "J-rock": {
+    "artist": "B'z",
+    "songCount": 268,
+    "albumCount": 26,
+    "details": {
+      "id": "56d7fdf253a7ddfc01f90936",
+      "genres": [
+        "Hard Rock",
+        "J-Rock",
+        "J-Pop"
+      ],
+      "deezerFans": 8100943
+    }
+  },
+  "Southern hip hop": {
+    "artist": "Pastor Troy",
+    "songCount": 169,
+    "albumCount": 12,
+    "details": {
+      "id": "56d95500cc2ddd0c0f6b90ad",
+      "genres": [],
+      "deezerFans": 6549
+    }
+  },
+  "Stoner rock": {
+    "artist": "Fu Manchu",
+    "songCount": 110,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8326f53a7ddfc01f9544a",
+      "genres": [],
+      "deezerFans": 11467
+    }
+  },
+  "J-pop": {
+    "artist": "I've",
+    "songCount": 295,
+    "albumCount": 21,
+    "details": {
+      "id": "56d8407653a7ddfc01f96814",
+      "genres": [
+        "J-Pop",
+        "Techno",
+        "Trance"
+      ],
+      "deezerFans": 291
+    }
+  },
+  "Contemporary folk": {
+    "artist": "Shawn Colvin",
+    "songCount": 85,
+    "albumCount": 7,
+    "details": {
+      "id": "56d96ba9cc2ddd0c0f6bb184",
+      "genres": [],
+      "deezerFans": 2702
+    }
+  },
+  "Christian metal": {
+    "artist": "Demon Hunter",
+    "songCount": 105,
+    "albumCount": 7,
+    "details": {
+      "id": "56d81de553a7ddfc01f936ae",
+      "genres": [
+        "Alternative Metal",
+        "Christian Metal",
+        "Hard Rock",
+        "Metalcore"
+      ],
+      "deezerFans": 26886
+    }
+  },
+  "East coast hip hop": {
+    "artist": "Mobb Deep",
+    "songCount": 139,
+    "albumCount": 7,
+    "details": {
+      "id": "56d940afce06f50c0fed8c35",
+      "genres": [],
+      "deezerFans": 380945
+    }
+  },
+  "Experimental": {
+    "artist": "Current 93",
+    "songCount": 103,
+    "albumCount": 12,
+    "details": {
+      "id": "56d817ab53a7ddfc01f92d7c",
+      "genres": [],
+      "deezerFans": 5010
+    }
+  },
+  "Nerdcore hip hop": {
+    "artist": "Mc Chris",
+    "songCount": 107,
+    "albumCount": 10,
+    "details": {
+      "id": "56d93bf0ce06f50c0fed84db",
+      "genres": [],
+      "deezerFans": 1432
+    }
+  },
+  "Eurodance": {
+    "artist": "E-Rotic",
+    "songCount": 196,
+    "albumCount": 11,
+    "details": {
+      "id": "56d824f653a7ddfc01f9411e",
+      "genres": [],
+      "deezerFans": 2946
+    }
+  },
+  "Folk punk": {
+    "artist": "Across The Border",
+    "songCount": 108,
+    "albumCount": 9,
+    "details": {
+      "id": "56d7ee7956847be81b3e8abe",
+      "genres": [
+        "Folk Rock",
+        "Folk Punk"
+      ],
+      "deezerFans": 201
+    }
+  },
+  "Dream pop": {
+    "artist": "Cocteau Twins",
+    "songCount": 161,
+    "albumCount": 23,
+    "details": {
+      "id": "56d8144453a7ddfc01f92851",
+      "genres": [
+        "Dream Pop",
+        "Post-Punk",
+        "Gothic Rock"
+      ],
+      "deezerFans": 36940
+    }
+  },
+  "Gothic": {
+    "artist": "RoBERT",
+    "songCount": 102,
+    "albumCount": 7,
+    "details": {
+      "id": "56d9629acc2ddd0c0f6ba3f7",
+      "genres": [],
+      "deezerFans": 5945
+    }
+  },
+  "Schlager": {
+    "artist": "Udo Jürgens",
+    "songCount": 395,
+    "albumCount": 30,
+    "details": {
+      "id": "56d98dcacc2ddd0c0f6be2f4",
+      "genres": [
+        "Schlager",
+        "Singer-Songwriter",
+        "Chanson",
+        "Ballad",
+        "Classical",
+        "Pop",
+        "Jazz"
+      ],
+      "deezerFans": 27251
+    }
+  },
+  "Comedy": {
+    "artist": "Mike Krüger",
+    "songCount": 218,
+    "albumCount": 11,
+    "details": {
+      "id": "56d93f21ce06f50c0fed89b8",
+      "genres": [
+        "Singer-Songwriter",
+        "Schlager",
+        "Comedy",
+        "Parody",
+        "Spoken Word"
+      ],
+      "deezerFans": 1055
+    }
+  },
+  "Anti-folk": {
+    "artist": "Jeffrey Lewis",
+    "songCount": 58,
+    "albumCount": 5,
+    "details": {
+      "id": "56d8476b53a7ddfc01f97278",
+      "genres": [
+        "Anti-Folk",
+        "Acoustic",
+        "Indie Folk",
+        "Indie Pop"
+      ],
+      "deezerFans": 2229
+    }
+  },
+  "Pop rock&#x200e;": {
+    "artist": "Adam Green",
+    "songCount": 15,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7eebe56847be81b3e8b10",
+      "genres": [],
+      "deezerFans": 7148
+    }
+  },
+  "Garage rock": {
+    "artist": "Mando Diao",
+    "songCount": 171,
+    "albumCount": 7,
+    "details": {
+      "id": "56d93765ce06f50c0fed7e22",
+      "genres": [
+        "Garage Rock",
+        "Alternative Rock"
+      ],
+      "deezerFans": 46346
+    }
+  },
+  "Medieval": {
+    "artist": "Corvus Corax",
+    "songCount": 242,
+    "albumCount": 19,
+    "details": {
+      "id": "56d815f153a7ddfc01f92ad2",
+      "genres": [
+        "Folk",
+        "Medieval"
+      ],
+      "deezerFans": 11317
+    }
+  },
+  "Nu metal": {
+    "artist": "KoRn",
+    "songCount": 95,
+    "albumCount": 7,
+    "details": {
+      "id": "56d854c553a7ddfc01f98591",
+      "genres": [
+        "Alternative Metal",
+        "Nu Metal",
+        "Rapcore"
+      ],
+      "deezerFans": 1478384
+    }
+  },
+  "Indie folk": {
+    "artist": "John Wesley Harding",
+    "songCount": 181,
+    "albumCount": 12,
+    "details": {
+      "id": "56d84b7453a7ddfc01f97819",
+      "genres": [
+        "Folk Rock",
+        "Indie Folk"
+      ],
+      "deezerFans": 84
+    }
+  },
+  "Singer-songwriter": {
+    "artist": "Nellie McKay",
+    "songCount": 84,
+    "albumCount": 4,
+    "details": {
+      "id": "56d94d37cc2ddd0c0f6b8447",
+      "genres": [
+        "Singer-Songwriter",
+        "Jazz",
+        "Pop",
+        "Indie Pop"
+      ],
+      "deezerFans": 1206
+    }
+  },
+  "New age": {
+    "artist": "Enya",
+    "songCount": 255,
+    "albumCount": 14,
+    "details": {
+      "id": "56d8299753a7ddfc01f94732",
+      "genres": [
+        "New Age",
+        "Celtic"
+      ],
+      "deezerFans": 212158
+    }
+  },
+  "Deutschpunk": {
+    "artist": "Heiter Bis Wolkig",
+    "songCount": 40,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83cd753a7ddfc01f9626f",
+      "genres": [
+        "Cabaret",
+        "Comedy",
+        "Deutschpunk",
+        "Punk Rock",
+        "Spoken Word"
+      ],
+      "deezerFans": 464
+    }
+  },
+  "Avant-pop": {
+    "artist": "Slapp Happy",
+    "songCount": 51,
+    "albumCount": 4,
+    "details": {
+      "id": "56d96eb8cc2ddd0c0f6bb623",
+      "genres": [
+        "Avant-Pop"
+      ],
+      "deezerFans": 297
+    }
+  },
+  "Brazilian": {
+    "artist": "Sérgio Mendes",
+    "songCount": 31,
+    "albumCount": 3,
+    "details": {
+      "id": "56d9777acc2ddd0c0f6bc3d3",
+      "genres": [
+        "Brazilian",
+        "Bossa Nova",
+        "Samba",
+        "MPB",
+        "Latin Pop",
+        "Smooth Jazz",
+        "Hip Hop",
+        "World Music"
+      ],
+      "deezerFans": 14398
+    }
+  },
+  "Tango": {
+    "artist": "Adriana Varela",
+    "songCount": 129,
+    "albumCount": 10,
+    "details": {
+      "id": "56d7ef2b56847be81b3e8bdb",
+      "genres": [],
+      "deezerFans": 5806
+    }
+  },
+  "Americana": {
+    "artist": "Robert Earl Keen",
+    "songCount": 138,
+    "albumCount": 12,
+    "details": {
+      "id": "56d962accc2ddd0c0f6ba414",
+      "genres": [
+        "Americana",
+        "Alternative Country",
+        "Folk",
+        "Singer-Songwriter"
+      ],
+      "deezerFans": 1086
+    }
+  },
+  "Electro": {
+    "artist": "Aïboforcen",
+    "songCount": 99,
+    "albumCount": 7,
+    "details": {
+      "id": "56d7fdca53a7ddfc01f9091c",
+      "genres": [
+        "EBM",
+        "Industrial",
+        "Synthpop"
+      ],
+      "deezerFans": 241
+    }
+  },
+  "Mixed": {
+    "artist": "Jonathan Young",
+    "songCount": 34,
+    "albumCount": 2,
+    "details": {
+      "id": "56d84c8453a7ddfc01f97984",
+      "genres": [],
+      "deezerFans": 1288
+    }
+  },
+  "Aggrotech": {
+    "artist": "Mordacious",
+    "songCount": 97,
+    "albumCount": 6,
+    "details": {
+      "id": "56d948f8cc2ddd0c0f6b7e44",
+      "genres": [
+        "EBM",
+        "Electronic",
+        "Industrial"
+      ],
+      "deezerFans": 344
+    }
+  },
+  "House": {
+    "artist": "Bob Sinclar",
+    "songCount": 101,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8066953a7ddfc01f91525",
+      "genres": [],
+      "deezerFans": 1535504
+    }
+  },
+  "Electro house": {
+    "artist": "Savant",
+    "songCount": 182,
+    "albumCount": 12,
+    "details": {
+      "id": "56d9687dcc2ddd0c0f6bac6e",
+      "genres": [],
+      "deezerFans": 35743
+    }
+  },
+  "Progressive death metal": {
+    "artist": "Novembre",
+    "songCount": 73,
+    "albumCount": 7,
+    "details": {
+      "id": "56d95051cc2ddd0c0f6b8940",
+      "genres": [
+        "Doom Metal",
+        "Gothic Metal",
+        "Progressive Metal"
+      ],
+      "deezerFans": 2107
+    }
+  },
+  "Ska punk": {
+    "artist": "Less Than Jake",
+    "songCount": 273,
+    "albumCount": 20,
+    "details": {
+      "id": "56d859c153a7ddfc01f98cfc",
+      "genres": [
+        "Ska",
+        "Punk Rock",
+        "Ska Punk"
+      ],
+      "deezerFans": 27093
+    }
+  },
+  "Noise": {
+    "artist": "Indian Jewelry",
+    "songCount": 70,
+    "albumCount": 6,
+    "details": {
+      "id": "56d841fa53a7ddfc01f96a64",
+      "genres": [],
+      "deezerFans": 756
+    }
+  },
+  "Post-metal": {
+    "artist": "Pelican",
+    "songCount": 40,
+    "albumCount": 7,
+    "details": {
+      "id": "56d956a3cc2ddd0c0f6b92bb",
+      "genres": [],
+      "deezerFans": 8847
+    }
+  },
+  "Ambient": {
+    "artist": "Lisa Gerrard",
+    "songCount": 104,
+    "albumCount": 8,
+    "details": {
+      "id": "56d85b5f53a7ddfc01f98fa6",
+      "genres": [
+        "Ambient",
+        "Soundtrack"
+      ],
+      "deezerFans": 84871
+    }
+  },
+  "Chanson": {
+    "artist": "Reinhard Mey",
+    "songCount": 686,
+    "albumCount": 46,
+    "details": {
+      "id": "56d9600bcc2ddd0c0f6ba035",
+      "genres": [
+        "Singer-Songwriter",
+        "Chanson",
+        "Ballad",
+        "Volkslied",
+        "Protest Song",
+        "Comedy"
+      ],
+      "deezerFans": 9567
+    }
+  },
+  "Techno": {
+    "artist": "Scooter",
+    "songCount": 106,
+    "albumCount": 3,
+    "details": {
+      "id": "56d96926cc2ddd0c0f6bad7b",
+      "genres": [
+        "Techno",
+        "Rave",
+        "EDM",
+        "Eurodance"
+      ],
+      "deezerFans": 108215
+    }
+  },
+  "Chill-out": {
+    "artist": "TyDi",
+    "songCount": 25,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98d47cc2ddd0c0f6be270",
+      "genres": [
+        "EDM"
+      ],
+      "deezerFans": 15554
+    }
+  },
+  "Krautrock": {
+    "artist": "Amon Düül II",
+    "songCount": 142,
+    "albumCount": 11,
+    "details": {
+      "id": "56d7f62a53a7ddfc01f8fd4d",
+      "genres": [
+        "Krautrock",
+        "Psychedelic Rock",
+        "Progressive Rock"
+      ],
+      "deezerFans": 3309
+    }
+  },
+  "Shoegazing": {
+    "artist": "Starflyer 59",
+    "songCount": 74,
+    "albumCount": 9,
+    "details": {
+      "id": "56d972dacc2ddd0c0f6bbc87",
+      "genres": [
+        "Indie Rock",
+        "Shoegazing"
+      ],
+      "deezerFans": 570
+    }
+  },
+  "Downtempo": {
+    "artist": "Zero 7",
+    "songCount": 37,
+    "albumCount": 3,
+    "details": {
+      "id": "56d997eacc2ddd0c0f6bf31a",
+      "genres": [],
+      "deezerFans": 138537
+    }
+  },
+  "Soft rock": {
+    "artist": "Dan Fogelberg",
+    "songCount": 236,
+    "albumCount": 16,
+    "details": {
+      "id": "56d8191053a7ddfc01f92fa7",
+      "genres": [
+        "Soft Rock",
+        "Folk Rock",
+        "Singer-Songwriter",
+        "Bluegrass"
+      ],
+      "deezerFans": 4721
+    }
+  },
+  "Shoegazing&#x200f;&#x200e;": {
+    "artist": "Airiel",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7f03056847be81b3e8db4",
+      "genres": [],
+      "deezerFans": 610
+    }
+  },
+  "Trip hop": {
+    "artist": "The Gathering",
+    "songCount": 190,
+    "albumCount": 13,
+    "details": {
+      "id": "56d97ec4cc2ddd0c0f6bcdc5",
+      "genres": [
+        "Death Metal",
+        "Doom Metal",
+        "Gothic Metal",
+        "Progressive Metal",
+        "Progressive Rock",
+        "Trip Hop"
+      ],
+      "deezerFans": 11392
+    }
+  },
+  "Freak folk": {
+    "artist": "Castanets",
+    "songCount": 60,
+    "albumCount": 5,
+    "details": {
+      "id": "56d80d9153a7ddfc01f91fd5",
+      "genres": [
+        "Freak Folk",
+        "Alternative Country"
+      ],
+      "deezerFans": 675
+    }
+  },
+  "Sung poetry": {
+    "artist": "Jacek Kaczmarski",
+    "songCount": 223,
+    "albumCount": 12,
+    "details": {
+      "id": "56d8444553a7ddfc01f96dab",
+      "genres": [],
+      "deezerFans": 5376
+    }
+  },
+  "Vocal": {
+    "artist": "Shirley Bassey",
+    "songCount": 851,
+    "albumCount": 47,
+    "details": {
+      "id": "56d96c3bcc2ddd0c0f6bb25c",
+      "genres": [
+        "Pop",
+        "Jazz"
+      ],
+      "deezerFans": 16172
+    }
+  },
+  "Roots": {
+    "artist": "Phil Ochs",
+    "songCount": 295,
+    "albumCount": 17,
+    "details": {
+      "id": "56d95871cc2ddd0c0f6b94f1",
+      "genres": [
+        "Singer-Songwriter",
+        "Protest Song",
+        "Ballad",
+        "Roots",
+        "Folk"
+      ],
+      "deezerFans": 1159
+    }
+  },
+  "Southern rock": {
+    "artist": "Lynyrd Skynyrd",
+    "songCount": 283,
+    "albumCount": 22,
+    "details": {
+      "id": "56d85ffb53a7ddfc01f99673",
+      "genres": [
+        "Southern Rock",
+        "Blues Rock",
+        "Classic Rock"
+      ],
+      "deezerFans": 411340
+    }
+  },
+  "Blues rock": {
+    "artist": "Eric Clapton",
+    "songCount": 328,
+    "albumCount": 17,
+    "details": {
+      "id": "56d82a1353a7ddfc01f947c6",
+      "genres": [
+        "Rock",
+        "Blues Rock",
+        "Blues",
+        "Psychedelic Rock",
+        "Hard Rock"
+      ],
+      "deezerFans": 1515631
+    }
+  },
+  "Acid house": {
+    "artist": "Alabama 3",
+    "songCount": 66,
+    "albumCount": 5,
+    "details": {
+      "id": "56d7f0cc56847be81b3e8e83",
+      "genres": [
+        "Acid House",
+        "Alternative Rock",
+        "Blues"
+      ],
+      "deezerFans": 4469
+    }
+  },
+  "French pop": {
+    "artist": "Hugues Aufray",
+    "songCount": 385,
+    "albumCount": 23,
+    "details": {
+      "id": "56d83fa753a7ddfc01f966ce",
+      "genres": [
+        "Folk",
+        "Rock",
+        "Chanson"
+      ],
+      "deezerFans": 37953
+    }
+  },
+  "Sertanejo": {
+    "artist": "Bruno & Marrone",
+    "songCount": 306,
+    "albumCount": 20,
+    "details": {
+      "id": "56d8097c53a7ddfc01f919dc",
+      "genres": [
+        "Brazilian",
+        "Sertanejo"
+      ],
+      "deezerFans": 243551
+    }
+  },
+  "C-pop": {
+    "artist": "Alan Dawa Dolma",
+    "songCount": 22,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7f0e856847be81b3e8eaf",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Pagan metal": {
+    "artist": "Butterfly Temple",
+    "songCount": 64,
+    "albumCount": 6,
+    "details": {
+      "id": "56d80aa453a7ddfc01f91b85",
+      "genres": [],
+      "deezerFans": 178
+    }
+  },
+  "Worship": {
+    "artist": "Matt Redman",
+    "songCount": 149,
+    "albumCount": 11,
+    "details": {
+      "id": "56d93b1dce06f50c0fed837e",
+      "genres": [
+        "Worship",
+        "Contemporary Christian",
+        "Pop"
+      ],
+      "deezerFans": 64864
+    }
+  },
+  "Celtic": {
+    "artist": "Capercaillie",
+    "songCount": 253,
+    "albumCount": 18,
+    "details": {
+      "id": "56d80c3053a7ddfc01f91db4",
+      "genres": [
+        "Celtic",
+        "Folk",
+        "Soundtrack"
+      ],
+      "deezerFans": 2514
+    }
+  },
+  "Blues": {
+    "artist": "John Lee Hooker",
+    "songCount": 1781,
+    "albumCount": 89,
+    "details": {
+      "id": "56d84c5753a7ddfc01f97965",
+      "genres": [
+        "Blues",
+        "Country Blues",
+        "Detroit Blues",
+        "Electric Blues",
+        "Memphis Blues",
+        "Talking Blues"
+      ],
+      "deezerFans": 747683
+    }
+  },
+  "Classic rock": {
+    "artist": "Genesis",
+    "songCount": 73,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8347753a7ddfc01f9572d",
+      "genres": [
+        "Progressive Rock",
+        "Classic Rock",
+        "Pop Rock",
+        "Pop"
+      ],
+      "deezerFans": 318416
+    }
+  },
+  "Latin": {
+    "artist": "Alberto Cortez",
+    "songCount": 438,
+    "albumCount": 32,
+    "details": {
+      "id": "56d7f13956847be81b3e8f11",
+      "genres": [],
+      "deezerFans": 11656
+    }
+  },
+  "Soundtrack": {
+    "artist": "Barbra Streisand",
+    "songCount": 57,
+    "albumCount": 4,
+    "details": {
+      "id": "56d7ff7b53a7ddfc01f90b72",
+      "genres": [
+        "Pop",
+        "Jazz"
+      ],
+      "deezerFans": 247122
+    }
+  },
+  "Fado": {
+    "artist": "Amália Rodrigues",
+    "songCount": 228,
+    "albumCount": 17,
+    "details": {
+      "id": "56d7f67653a7ddfc01f8fdb0",
+      "genres": [],
+      "deezerFans": 16852
+    }
+  },
+  "Alternative country": {
+    "artist": "Cowboy Junkies",
+    "songCount": 218,
+    "albumCount": 14,
+    "details": {
+      "id": "56d8164753a7ddfc01f92b5e",
+      "genres": [
+        "Americana",
+        "Alternative Country",
+        "Blues Rock",
+        "Country",
+        "Country Rock",
+        "Folk Rock",
+        "Indie Rock",
+        "Psychedelic Rock",
+        "Rock"
+      ],
+      "deezerFans": 8863
+    }
+  },
+  "Ranchera": {
+    "artist": "Los Temerarios",
+    "songCount": 283,
+    "albumCount": 22,
+    "details": {
+      "id": "56d85dc353a7ddfc01f99317",
+      "genres": [],
+      "deezerFans": 153500
+    }
+  },
+  "Progressive house": {
+    "artist": "Deadmau5",
+    "songCount": 101,
+    "albumCount": 8,
+    "details": {
+      "id": "56d81ca053a7ddfc01f934cf",
+      "genres": [
+        "Progressive House",
+        "Electro House",
+        "House"
+      ],
+      "deezerFans": 807998
+    }
+  },
+  "Pirate metal": {
+    "artist": "Alestorm",
+    "songCount": 45,
+    "albumCount": 5,
+    "details": {
+      "id": "56d7f3be53a7ddfc01f8f908",
+      "genres": [
+        "Folk Metal",
+        "Heavy Metal",
+        "Power Metal",
+        "Pirate Metal"
+      ],
+      "deezerFans": 41731
+    }
+  },
+  "Reggaeton": {
+    "artist": "Wisin & Yandel",
+    "songCount": 150,
+    "albumCount": 8,
+    "details": {
+      "id": "56d994cbcc2ddd0c0f6bee24",
+      "genres": [],
+      "deezerFans": 1792223
+    }
+  },
+  "Punk blues": {
+    "artist": "The Gun Club",
+    "songCount": 74,
+    "albumCount": 7,
+    "details": {
+      "id": "56d97f32cc2ddd0c0f6bce58",
+      "genres": [],
+      "deezerFans": 7345
+    }
+  },
+  "Art rock": {
+    "artist": "Ali Project",
+    "songCount": 238,
+    "albumCount": 26,
+    "details": {
+      "id": "56d7f43253a7ddfc01f8f9fa",
+      "genres": [
+        "Progressive Rock",
+        "Art Rock",
+        "Gothic Rock",
+        "Symphonic Rock",
+        "Electronic Rock"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Orchestral": {
+    "artist": "Two Steps From Hell",
+    "songCount": 104,
+    "albumCount": 4,
+    "details": {
+      "id": "56d98d3ecc2ddd0c0f6be260",
+      "genres": [
+        "Soundtrack",
+        "Orchestral"
+      ],
+      "deezerFans": 48402
+    }
+  },
+  "Alternative metal": {
+    "artist": "Therapy?",
+    "songCount": 163,
+    "albumCount": 14,
+    "details": {
+      "id": "56d986f5cc2ddd0c0f6bd933",
+      "genres": [
+        "Alternative Metal",
+        "Alternative Rock",
+        "Heavy Metal",
+        "Rock"
+      ],
+      "deezerFans": 7681
+    }
+  },
+  "Grunge": {
+    "artist": "Nirvana",
+    "songCount": 182,
+    "albumCount": 10,
+    "details": {
+      "id": "56d94f26cc2ddd0c0f6b8747",
+      "genres": [
+        "Grunge",
+        "Alternative Rock"
+      ],
+      "deezerFans": 6087018
+    }
+  },
+  "Deathrock": {
+    "artist": "Christian Death",
+    "songCount": 101,
+    "albumCount": 9,
+    "details": {
+      "id": "56d8117753a7ddfc01f9250d",
+      "genres": [],
+      "deezerFans": 3591
+    }
+  },
+  "Bluegrass": {
+    "artist": "Alison Krauss & Union Station",
+    "songCount": 110,
+    "albumCount": 7,
+    "details": {
+      "id": "56d7f49453a7ddfc01f8fa6e",
+      "genres": [
+        "Bluegrass",
+        "Country",
+        "Folk",
+        "Gospel"
+      ],
+      "deezerFans": 4230
+    }
+  },
+  "Folk metal": {
+    "artist": "Subway To Sally",
+    "songCount": 206,
+    "albumCount": 15,
+    "details": {
+      "id": "56d97591cc2ddd0c0f6bc096",
+      "genres": [],
+      "deezerFans": 21364
+    }
+  },
+  "Neo-psychedelia&#x200f;&#x200e;": {
+    "artist": "Allah-Las",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7f4d053a7ddfc01f8fae9",
+      "genres": [],
+      "deezerFans": 24485
+    }
+  },
+  "Glitch": {
+    "artist": "Allan Kingdom",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7f4d653a7ddfc01f8faf8",
+      "genres": [],
+      "deezerFans": 365
+    }
+  },
+  "Viking metal": {
+    "artist": "Månegarm",
+    "songCount": 75,
+    "albumCount": 7,
+    "details": {
+      "id": "56d94b13cc2ddd0c0f6b8193",
+      "genres": [],
+      "deezerFans": 5581
+    }
+  },
+  "Progressive rock&#x200e;": {
+    "artist": "Ally The Fiddle",
+    "songCount": 5,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7f51053a7ddfc01f8fb42",
+      "genres": [
+        "Folk",
+        "Heavy Metal",
+        "Rock"
+      ],
+      "deezerFans": 19
+    }
+  },
+  "Christian punk": {
+    "artist": "Squad Five-O",
+    "songCount": 77,
+    "albumCount": 5,
+    "details": {
+      "id": "56d9725bcc2ddd0c0f6bbbba",
+      "genres": [],
+      "deezerFans": 33
+    }
+  },
+  "Irish folk": {
+    "artist": "The Irish Rovers",
+    "songCount": 510,
+    "albumCount": 31,
+    "details": {
+      "id": "56d97fedcc2ddd0c0f6bcf51",
+      "genres": [
+        "Irish Folk",
+        "Folk",
+        "Folk Rock"
+      ],
+      "deezerFans": 9462
+    }
+  },
+  "Britpop": {
+    "artist": "The Bluetones",
+    "songCount": 165,
+    "albumCount": 10,
+    "details": {
+      "id": "56d97ba5cc2ddd0c0f6bc9c1",
+      "genres": [
+        "Folk Rock",
+        "Indie Rock",
+        "Britpop",
+        "Alternative Rock"
+      ],
+      "deezerFans": 4048
+    }
+  },
+  "Art punk": {
+    "artist": "Talking Heads",
+    "songCount": 55,
+    "albumCount": 1,
+    "details": {
+      "id": "56d97837cc2ddd0c0f6bc4be",
+      "genres": [
+        "New Wave",
+        "Pop",
+        "Art Punk",
+        "Post-Punk",
+        "World Music"
+      ],
+      "deezerFans": 196824
+    }
+  },
+  "Italian folk": {
+    "artist": "Gigi Proietti",
+    "songCount": 24,
+    "albumCount": 1,
+    "details": {
+      "id": "56d835d553a7ddfc01f958eb",
+      "genres": [
+        "Italian Folk",
+        "Cabaret"
+      ],
+      "deezerFans": 1060
+    }
+  },
+  "Celtic punk": {
+    "artist": "Dropkick Murphys",
+    "songCount": 117,
+    "albumCount": 8,
+    "details": {
+      "id": "56d823f753a7ddfc01f93fa0",
+      "genres": [
+        "Celtic Punk"
+      ],
+      "deezerFans": 159344
+    }
+  },
+  "Lo-fi": {
+    "artist": "Smog",
+    "songCount": 117,
+    "albumCount": 13,
+    "details": {
+      "id": "56d96f77cc2ddd0c0f6bb73c",
+      "genres": [
+        "Lo-Fi",
+        "Indie Folk",
+        "Alternative Country"
+      ],
+      "deezerFans": 471
+    }
+  },
+  "World music": {
+    "artist": "Petula Clark",
+    "songCount": 118,
+    "albumCount": 2,
+    "details": {
+      "id": "56d95814cc2ddd0c0f6b948c",
+      "genres": [
+        "Singer-Songwriter",
+        "Pop",
+        "World Music",
+        "Soundtrack/Musical‎",
+        "Soundtrack/Movie",
+        "Classical",
+        "Folk",
+        "Schlager"
+      ],
+      "deezerFans": 10900
+    }
+  },
+  "Baroque pop": {
+    "artist": "Rufus Wainwright",
+    "songCount": 293,
+    "albumCount": 9,
+    "details": {
+      "id": "56d9655fcc2ddd0c0f6ba7e9",
+      "genres": [
+        "Baroque Pop",
+        "Singer-Songwriter",
+        "Pop",
+        "Vocal"
+      ],
+      "deezerFans": 32458
+    }
+  },
+  "Punk cabaret": {
+    "artist": "The Dresden Dolls",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d97dafcc2ddd0c0f6bcc52",
+      "genres": [
+        "Alternative Rock",
+        "Dark Cabaret",
+        "Punk Cabaret"
+      ],
+      "deezerFans": 20892
+    }
+  },
+  "Cumbia": {
+    "artist": "Bronco",
+    "songCount": 164,
+    "albumCount": 13,
+    "details": {
+      "id": "56d8090e53a7ddfc01f91961",
+      "genres": [],
+      "deezerFans": 55558
+    }
+  },
+  "Latin rock": {
+    "artist": "Santana",
+    "songCount": 226,
+    "albumCount": 18,
+    "details": {
+      "id": "56d967dccc2ddd0c0f6bab83",
+      "genres": [
+        "Latin Rock",
+        "Blues Rock",
+        "Rock",
+        "Hard Rock",
+        "Jazz Fusion",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 297423
+    }
+  },
+  "Progressive folk": {
+    "artist": "Ola Magnell",
+    "songCount": 74,
+    "albumCount": 7,
+    "details": {
+      "id": "56d951a3cc2ddd0c0f6b8b36",
+      "genres": [],
+      "deezerFans": 130
+    }
+  },
+  "Crust punk": {
+    "artist": "Skitsystem",
+    "songCount": 55,
+    "albumCount": 5,
+    "details": {
+      "id": "56d96e78cc2ddd0c0f6bb5ac",
+      "genres": [],
+      "deezerFans": 1142
+    }
+  },
+  "Glam metal": {
+    "artist": "Mötley Crüe",
+    "songCount": 117,
+    "albumCount": 10,
+    "details": {
+      "id": "56d94b24cc2ddd0c0f6b81a8",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "deezerFans": 319958
+    }
+  },
+  "Smooth jazz": {
+    "artist": "Fourplay",
+    "songCount": 109,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8305753a7ddfc01f9517c",
+      "genres": [],
+      "deezerFans": 12883
+    }
+  },
+  "Bolero": {
+    "artist": "Los Panchos",
+    "songCount": 315,
+    "albumCount": 16,
+    "details": {
+      "id": "56d85d8e53a7ddfc01f992da",
+      "genres": [],
+      "deezerFans": 5989
+    }
+  },
+  "Post-grunge": {
+    "artist": "Tripping Daisy",
+    "songCount": 61,
+    "albumCount": 5,
+    "details": {
+      "id": "56d98c25cc2ddd0c0f6be0bb",
+      "genres": [],
+      "deezerFans": 323
+    }
+  },
+  "Extreme metal": {
+    "artist": "Cradle Of Filth",
+    "songCount": 95,
+    "albumCount": 8,
+    "details": {
+      "id": "56d8165c53a7ddfc01f92b83",
+      "genres": [
+        "Symphonic Black Metal"
+      ],
+      "deezerFans": 170905
+    }
+  },
+  "Indie": {
+    "artist": "The Mountain Goats",
+    "songCount": 380,
+    "albumCount": 28,
+    "details": {
+      "id": "56d98206cc2ddd0c0f6bd259",
+      "genres": [],
+      "deezerFans": 5483
+    }
+  },
+  "Experimental hip hop": {
+    "artist": "Death Grips",
+    "songCount": 82,
+    "albumCount": 6,
+    "details": {
+      "id": "56d81cc653a7ddfc01f93510",
+      "genres": [
+        "Experimental Hip Hop"
+      ],
+      "deezerFans": 16328
+    }
+  },
+  "Technical death metal": {
+    "artist": "Decapitated",
+    "songCount": 66,
+    "albumCount": 8,
+    "details": {
+      "id": "56d81d2053a7ddfc01f93577",
+      "genres": [],
+      "deezerFans": 35128
+    }
+  },
+  "Melodic hardcore": {
+    "artist": "Evergreen Terrace",
+    "songCount": 74,
+    "albumCount": 7,
+    "details": {
+      "id": "56d82b6253a7ddfc01f949b9",
+      "genres": [
+        "Melodic Hardcore",
+        "Metalcore"
+      ],
+      "deezerFans": 6463
+    }
+  },
+  "Tech house": {
+    "artist": "Paul Kalkbrenner",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d955d1cc2ddd0c0f6b91b4",
+      "genres": [
+        "Techno",
+        "Minimal",
+        "Downbeat",
+        "Electronica"
+      ],
+      "deezerFans": 425107
+    }
+  },
+  "Volkst&#xfc;mlich": {
+    "artist": "Andreas Gabalier",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7f72253a7ddfc01f8fee2",
+      "genres": [
+        "Schlager",
+        "Volkstümlich"
+      ],
+      "deezerFans": 311607
+    }
+  },
+  "Novelty": {
+    "artist": "Bobby Pickett",
+    "songCount": 16,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8069553a7ddfc01f9156d",
+      "genres": [],
+      "deezerFans": 4
+    }
+  },
+  "Trap": {
+    "artist": "Pawn Gang",
+    "songCount": 17,
+    "albumCount": 1,
+    "details": {
+      "id": "56d95631cc2ddd0c0f6b9239",
+      "genres": [
+        "Trap"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Musical": {
+    "artist": "Andrew Lloyd Webber",
+    "songCount": 102,
+    "albumCount": 4,
+    "details": {
+      "id": "56d7f76053a7ddfc01f8ff1c",
+      "genres": [],
+      "deezerFans": 26935
+    }
+  },
+  "Flamenco": {
+    "artist": "Gipsy Kings",
+    "songCount": 202,
+    "albumCount": 15,
+    "details": {
+      "id": "56d8364653a7ddfc01f9596c",
+      "genres": [
+        "Latin"
+      ],
+      "deezerFans": 148959
+    }
+  },
+  "Glam rock": {
+    "artist": "Mud",
+    "songCount": 128,
+    "albumCount": 8,
+    "details": {
+      "id": "56d94a1bcc2ddd0c0f6b7ff8",
+      "genres": [
+        "Glam Rock"
+      ],
+      "deezerFans": 2486
+    }
+  },
+  "Breakbeat": {
+    "artist": "Buraka Som Sistema",
+    "songCount": 20,
+    "albumCount": 2,
+    "details": {
+      "id": "56d80a5053a7ddfc01f91af5",
+      "genres": [],
+      "deezerFans": 51323
+    }
+  },
+  "Salsa": {
+    "artist": "Gilberto Santa Rosa",
+    "songCount": 204,
+    "albumCount": 18,
+    "details": {
+      "id": "56d835f453a7ddfc01f95902",
+      "genres": [
+        "Salsa",
+        "Bolero"
+      ],
+      "deezerFans": 122566
+    }
+  },
+  "Christian hip hop": {
+    "artist": "KJ-52",
+    "songCount": 132,
+    "albumCount": 7,
+    "details": {
+      "id": "56d8542353a7ddfc01f9848c",
+      "genres": [],
+      "deezerFans": 77762
+    }
+  },
+  "Easy listening": {
+    "artist": "Barry Manilow",
+    "songCount": 579,
+    "albumCount": 39,
+    "details": {
+      "id": "56d7ffda53a7ddfc01f90c05",
+      "genres": [],
+      "deezerFans": 50118
+    }
+  },
+  "Freestyle": {
+    "artist": "Stevie B",
+    "songCount": 125,
+    "albumCount": 10,
+    "details": {
+      "id": "56d9744fcc2ddd0c0f6bbea4",
+      "genres": [
+        "Pop",
+        "Dance",
+        "Freestyle",
+        "Adult Contemporary"
+      ],
+      "deezerFans": 3208
+    }
+  },
+  "Space rock": {
+    "artist": "Hawkwind",
+    "songCount": 309,
+    "albumCount": 24,
+    "details": {
+      "id": "56d83c1153a7ddfc01f96157",
+      "genres": [
+        "Space Rock",
+        "Psychedelic Rock",
+        "Hard Rock"
+      ],
+      "deezerFans": 12201
+    }
+  },
+  "Symphonic rock": {
+    "artist": "Renaissance",
+    "songCount": 40,
+    "albumCount": 6,
+    "details": {
+      "id": "56d96046cc2ddd0c0f6ba072",
+      "genres": [
+        "Progressive Rock",
+        "Classic Rock",
+        "Symphonic Rock"
+      ],
+      "deezerFans": 5564
+    }
+  },
+  "Neo soul": {
+    "artist": "Musiq Soulchild",
+    "songCount": 77,
+    "albumCount": 5,
+    "details": {
+      "id": "56d94a61cc2ddd0c0f6b808d",
+      "genres": [
+        "R&B",
+        "Soul",
+        "Jazz",
+        "Hip Hop"
+      ],
+      "deezerFans": 38535
+    }
+  },
+  "Psych folk": {
+    "artist": "The Incredible String Band",
+    "songCount": 113,
+    "albumCount": 10,
+    "details": {
+      "id": "56d97fc7cc2ddd0c0f6bcf2e",
+      "genres": [],
+      "deezerFans": 1535
+    }
+  },
+  "Psychedelic pop": {
+    "artist": "Of Montreal",
+    "songCount": 117,
+    "albumCount": 9,
+    "details": {
+      "id": "56d95163cc2ddd0c0f6b8ab3",
+      "genres": [],
+      "deezerFans": 23386
+    }
+  },
+  "Neo-psychedelia": {
+    "artist": "Animal Collective",
+    "songCount": 26,
+    "albumCount": 3,
+    "details": {
+      "id": "56d7f87853a7ddfc01f900b8",
+      "genres": [
+        "Indie Rock",
+        "Neo-Psychedelia"
+      ],
+      "deezerFans": 49750
+    }
+  },
+  "Vocal jazz": {
+    "artist": "Billie Holiday",
+    "songCount": 983,
+    "albumCount": 50,
+    "details": {
+      "id": "56d8038353a7ddfc01f9111b",
+      "genres": [
+        "Jazz",
+        "Vocal Jazz"
+      ],
+      "deezerFans": 414238
+    }
+  },
+  "Francophone": {
+    "artist": "Anne Sylvestre",
+    "songCount": 445,
+    "albumCount": 30,
+    "details": {
+      "id": "56d7f8fb53a7ddfc01f9017e",
+      "genres": [],
+      "deezerFans": 31402
+    }
+  },
+  "Unblack metal": {
+    "artist": "Antestor",
+    "songCount": 19,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7f95b53a7ddfc01f9022d",
+      "genres": [
+        "Unblack Metal",
+        "Christian Metal"
+      ],
+      "deezerFans": 2530
+    }
+  },
+  "Oi-punk": {
+    "artist": "Oxymoron",
+    "songCount": 64,
+    "albumCount": 5,
+    "details": {
+      "id": "56d95390cc2ddd0c0f6b8e6d",
+      "genres": [
+        "Oi-Punk",
+        "Punk Rock"
+      ],
+      "deezerFans": 2114
+    }
+  },
+  "Anarcho-punk": {
+    "artist": "Chumbawamba",
+    "songCount": 146,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8127953a7ddfc01f925c2",
+      "genres": [
+        "Anarcho-Punk",
+        "Folk",
+        "Hardcore Punk",
+        "Post-Punk",
+        "Dance",
+        "Alternative Rock"
+      ],
+      "deezerFans": 6175
+    }
+  },
+  "French hip hop": {
+    "artist": "Booba",
+    "songCount": 104,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8072c53a7ddfc01f91639",
+      "genres": [],
+      "deezerFans": 2182193
+    }
+  },
+  "Bossa nova": {
+    "artist": "Astrud Gilberto",
+    "songCount": 160,
+    "albumCount": 13,
+    "details": {
+      "id": "56d7fc2153a7ddfc01f9068b",
+      "genres": [
+        "Latin",
+        "Brazilian",
+        "MPB",
+        "Samba",
+        "Bossa Nova",
+        "Jazz"
+      ],
+      "deezerFans": 90073
+    }
+  },
+  "Idm": {
+    "artist": "The Flashbulb",
+    "songCount": 139,
+    "albumCount": 7,
+    "details": {
+      "id": "56d97e70cc2ddd0c0f6bcd49",
+      "genres": [
+        "Electronic",
+        "IDM",
+        "Glitch",
+        "Breakcore",
+        "Ambient",
+        "Classical",
+        "Acid Techno"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Acid techno": {
+    "artist": "Aphex Twin",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7f9f853a7ddfc01f90331",
+      "genres": [
+        "Acid Techno",
+        "Ambient",
+        "Electronic",
+        "IDM"
+      ],
+      "deezerFans": 197559
+    }
+  },
+  "Psychedelic": {
+    "artist": "Aphrodite's Child",
+    "songCount": 18,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7f9fa53a7ddfc01f90335",
+      "genres": [
+        "Psychedelic Pop",
+        "Progressive Rock"
+      ],
+      "deezerFans": 5189
+    }
+  },
+  "Drum and bass": {
+    "artist": "Goldie",
+    "songCount": 60,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8377f53a7ddfc01f95b10",
+      "genres": [],
+      "deezerFans": 8636
+    }
+  },
+  "Dark ambient": {
+    "artist": "Vinterriket",
+    "songCount": 37,
+    "albumCount": 7,
+    "details": {
+      "id": "56d99122cc2ddd0c0f6be831",
+      "genres": [
+        "Black Metal",
+        "Ambient",
+        "Dark Ambient"
+      ],
+      "deezerFans": 464
+    }
+  },
+  "Electropop": {
+    "artist": "Goldfrapp",
+    "songCount": 95,
+    "albumCount": 11,
+    "details": {
+      "id": "56d8377753a7ddfc01f95aff",
+      "genres": [
+        "Electropop"
+      ],
+      "deezerFans": 153980
+    }
+  },
+  "Ax&#xe9;": {
+    "artist": "Chiclete Com Banana",
+    "songCount": 200,
+    "albumCount": 19,
+    "details": {
+      "id": "56d8100853a7ddfc01f92374",
+      "genres": [
+        "MPB",
+        "Axé",
+        "Samba-Reggae"
+      ],
+      "deezerFans": 86665
+    }
+  },
+  "Noise rock": {
+    "artist": "Sonic Youth",
+    "songCount": 202,
+    "albumCount": 15,
+    "details": {
+      "id": "56d97091cc2ddd0c0f6bb905",
+      "genres": [
+        "Alternative Rock"
+      ],
+      "deezerFans": 199864
+    }
+  },
+  "Slowcore": {
+    "artist": "Arco",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7fa7753a7ddfc01f903f4",
+      "genres": [],
+      "deezerFans": 831
+    }
+  },
+  "Post-punk revival": {
+    "artist": "Franz Ferdinand",
+    "songCount": 41,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8316353a7ddfc01f952ba",
+      "genres": [
+        "Indie Rock",
+        "Post-Punk Revival",
+        "Dance Punk"
+      ],
+      "deezerFans": 684993
+    }
+  },
+  "Protest song": {
+    "artist": "Dieter Süverkrüp",
+    "songCount": 79,
+    "albumCount": 6,
+    "details": {
+      "id": "56d81fe353a7ddfc01f93977",
+      "genres": [
+        "Singer-Songwriter",
+        "Chanson",
+        "Children's Music",
+        "Parody",
+        "Folk",
+        "Volkslied",
+        "Ballad",
+        "Protest Song"
+      ],
+      "deezerFans": 443
+    }
+  },
+  "Austropop": {
+    "artist": "Erste Allgemeine Verunsicherung",
+    "songCount": 464,
+    "albumCount": 24,
+    "details": {
+      "id": "56d82a7d53a7ddfc01f94855",
+      "genres": [],
+      "deezerFans": 2803
+    }
+  },
+  "Post-rock": {
+    "artist": "Stereolab",
+    "songCount": 275,
+    "albumCount": 19,
+    "details": {
+      "id": "56d973b0cc2ddd0c0f6bbddc",
+      "genres": [
+        "Indie Rock",
+        "Post-Rock"
+      ],
+      "deezerFans": 12131
+    }
+  },
+  "Progressive trance": {
+    "artist": "Markus Schulz",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d9397cce06f50c0fed8131",
+      "genres": [
+        "Progressive Trance"
+      ],
+      "deezerFans": 108962
+    }
+  },
+  "Brazilian rock": {
+    "artist": "Lulu Santos",
+    "songCount": 263,
+    "albumCount": 20,
+    "details": {
+      "id": "56d85f6f53a7ddfc01f995b9",
+      "genres": [
+        "MPB",
+        "Pop",
+        "Rock",
+        "Brazilian Rock",
+        "New Wave",
+        "Soul",
+        "Funk",
+        "Electronic",
+        "Reggae"
+      ],
+      "deezerFans": 331241
+    }
+  },
+  "Rio": {
+    "artist": "Art Bears",
+    "songCount": 41,
+    "albumCount": 3,
+    "details": {
+      "id": "56d7fb1f53a7ddfc01f904f7",
+      "genres": [
+        "RIO",
+        "Avant-garde"
+      ],
+      "deezerFans": 252
+    }
+  },
+  "Adult contemporary": {
+    "artist": "Marc Cohn",
+    "songCount": 91,
+    "albumCount": 7,
+    "details": {
+      "id": "56d937fece06f50c0fed7eee",
+      "genres": [
+        "Adult Contemporary",
+        "Folk Rock"
+      ],
+      "deezerFans": 1934
+    }
+  },
+  "Dub": {
+    "artist": "Easy Star All-Stars",
+    "songCount": 54,
+    "albumCount": 5,
+    "details": {
+      "id": "56d8253b53a7ddfc01f9419e",
+      "genres": [
+        "Reggae",
+        "Ska",
+        "Dub"
+      ],
+      "deezerFans": 72462
+    }
+  },
+  "Neue deutsche h&#xe4;rte": {
+    "artist": "Unheilig",
+    "songCount": 161,
+    "albumCount": 11,
+    "details": {
+      "id": "56d98e5ecc2ddd0c0f6be3da",
+      "genres": [
+        "Neue Deutsche Härte",
+        "Gothic",
+        "Dark Wave"
+      ],
+      "deezerFans": 210785
+    }
+  },
+  "Crack rock steady": {
+    "artist": "The Stupid Stupid Henchmen",
+    "songCount": 42,
+    "albumCount": 2,
+    "details": {
+      "id": "56d984cccc2ddd0c0f6bd639",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Psychedelic trance": {
+    "artist": "Infected Mushroom",
+    "songCount": 96,
+    "albumCount": 8,
+    "details": {
+      "id": "56d8421e53a7ddfc01f96aa6",
+      "genres": [
+        "Psychedelic Trance",
+        "Electronica",
+        "Electronic Rock",
+        "Dubstep",
+        "Glitch"
+      ],
+      "deezerFans": 156755
+    }
+  },
+  "Digital hardcore": {
+    "artist": "Atari Teenage Riot",
+    "songCount": 63,
+    "albumCount": 5,
+    "details": {
+      "id": "56d7fc4153a7ddfc01f906c0",
+      "genres": [
+        "Digital Hardcore",
+        "Hardcore Punk",
+        "Breakcore",
+        "Industrial",
+        "Industrial Metal",
+        "Noise",
+        "Experimental"
+      ],
+      "deezerFans": 21998
+    }
+  },
+  "Electropunk": {
+    "artist": "Atom And His Package",
+    "songCount": 79,
+    "albumCount": 5,
+    "details": {
+      "id": "56d7fc7553a7ddfc01f90700",
+      "genres": [],
+      "deezerFans": 229
+    }
+  },
+  "Edm": {
+    "artist": "Renard",
+    "songCount": 128,
+    "albumCount": 7,
+    "details": {
+      "id": "56d9608acc2ddd0c0f6ba0db",
+      "genres": [
+        "Ambient",
+        "Breakcore",
+        "Drum And Bass",
+        "EDM",
+        "Electronic",
+        "Happy Hardcore",
+        "IDM",
+        "Noise"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Samba": {
+    "artist": "Jorge Ben",
+    "songCount": 236,
+    "albumCount": 21,
+    "details": {
+      "id": "56d84cc453a7ddfc01f979f3",
+      "genres": [
+        "Singer-Songwriter",
+        "MPB",
+        "Samba",
+        "Samba-Rock",
+        "Sambalanço",
+        "Jovem Guarda",
+        "Tropicalismo",
+        "Bossa Nova",
+        "Rock"
+      ],
+      "deezerFans": 49454
+    }
+  },
+  "Modern rock": {
+    "artist": "Hinder",
+    "songCount": 20,
+    "albumCount": 2,
+    "details": {
+      "id": "56d83e2753a7ddfc01f9645a",
+      "genres": [
+        "Hard Rock",
+        "Post-Grunge",
+        "Glam Metal",
+        "Heavy Metal",
+        "Alternative Metal"
+      ],
+      "deezerFans": 59077
+    }
+  },
+  "Bachata": {
+    "artist": "Aventura",
+    "songCount": 142,
+    "albumCount": 9,
+    "details": {
+      "id": "56d7fd3e53a7ddfc01f90840",
+      "genres": [],
+      "deezerFans": 1055533
+    }
+  },
+  "Forr&#xf3;": {
+    "artist": "Aviões Do Forró",
+    "songCount": 93,
+    "albumCount": 6,
+    "details": {
+      "id": "56d7fd7553a7ddfc01f90879",
+      "genres": [],
+      "deezerFans": 348148
+    }
+  },
+  "Dubstep": {
+    "artist": "Skrillex",
+    "songCount": 39,
+    "albumCount": 5,
+    "details": {
+      "id": "56d96e95cc2ddd0c0f6bb5de",
+      "genres": [
+        "Electro House",
+        "Dubstep"
+      ],
+      "deezerFans": 3163756
+    }
+  },
+  "Jazz-funk": {
+    "artist": "Shakatak",
+    "songCount": 59,
+    "albumCount": 6,
+    "details": {
+      "id": "56d96b33cc2ddd0c0f6bb0c4",
+      "genres": [],
+      "deezerFans": 7612
+    }
+  },
+  "Pop-rap": {
+    "artist": "MC Hammer",
+    "songCount": 35,
+    "albumCount": 3,
+    "details": {
+      "id": "56d93bfbce06f50c0fed84f1",
+      "genres": [],
+      "deezerFans": 22786
+    }
+  },
+  "Surf rock": {
+    "artist": "The Beach Boys",
+    "songCount": 202,
+    "albumCount": 13,
+    "details": {
+      "id": "56d97c63cc2ddd0c0f6bcac9",
+      "genres": [
+        "Rock",
+        "Surf Rock",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 254985
+    }
+  },
+  "New jack swing": {
+    "artist": "Color Me Badd",
+    "songCount": 29,
+    "albumCount": 2,
+    "details": {
+      "id": "56d814ae53a7ddfc01f928f3",
+      "genres": [],
+      "deezerFans": 2496
+    }
+  },
+  "Rock &apos;n&apos; roll": {
+    "artist": "Chuck Berry",
+    "songCount": 585,
+    "albumCount": 27,
+    "details": {
+      "id": "56d8127a53a7ddfc01f925c6",
+      "genres": [
+        "Rock",
+        "R&B",
+        "Rock 'N' Roll"
+      ],
+      "deezerFans": 370335
+    }
+  },
+  "Skate punk": {
+    "artist": "Millencolin",
+    "songCount": 141,
+    "albumCount": 12,
+    "details": {
+      "id": "56d93f89ce06f50c0fed8a66",
+      "genres": [
+        "Skate Punk",
+        "Punk Rock"
+      ],
+      "deezerFans": 36211
+    }
+  },
+  "Pop-folk": {
+    "artist": "Ceca",
+    "songCount": 140,
+    "albumCount": 15,
+    "details": {
+      "id": "56d80e1853a7ddfc01f92093",
+      "genres": [],
+      "deezerFans": 89057
+    }
+  },
+  "Rap rock": {
+    "artist": "Hollywood Undead",
+    "songCount": 51,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83e7853a7ddfc01f96515",
+      "genres": [
+        "Rap Rock",
+        "Rap Metal",
+        "Alternative Rock",
+        "Hip Hop"
+      ],
+      "deezerFans": 234340
+    }
+  },
+  "Junkanoo": {
+    "artist": "Baha Men",
+    "songCount": 73,
+    "albumCount": 6,
+    "details": {
+      "id": "56d7feb153a7ddfc01f90a43",
+      "genres": [
+        "World Music",
+        "Junkanoo",
+        "Dance",
+        "Pop",
+        "Reggae Fusion",
+        "Reggae",
+        "Soca",
+        "Hip Hop",
+        "Pop-Rap"
+      ],
+      "deezerFans": 1912
+    }
+  },
+  "Soca": {
+    "artist": "Baha Men",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7feb153a7ddfc01f90a43",
+      "genres": [
+        "World Music",
+        "Junkanoo",
+        "Dance",
+        "Pop",
+        "Reggae Fusion",
+        "Reggae",
+        "Soca",
+        "Hip Hop",
+        "Pop-Rap"
+      ],
+      "deezerFans": 1912
+    }
+  },
+  "Italo disco": {
+    "artist": "Gazebo",
+    "songCount": 71,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8343d53a7ddfc01f956c4",
+      "genres": [
+        "Italo Disco"
+      ],
+      "deezerFans": 9265
+    }
+  },
+  "Horror punk": {
+    "artist": "Misfits",
+    "songCount": 115,
+    "albumCount": 9,
+    "details": {
+      "id": "56d94044ce06f50c0fed8b6a",
+      "genres": [
+        "Horror Punk",
+        "Hardcore Punk",
+        "Heavy Metal"
+      ],
+      "deezerFans": 164345
+    }
+  },
+  "Horror punk&#x200f;&#x200e;": {
+    "artist": "Balzac",
+    "songCount": 56,
+    "albumCount": 4,
+    "details": {
+      "id": "56d7fed453a7ddfc01f90a8c",
+      "genres": [],
+      "deezerFans": 1828
+    }
+  },
+  "Bubblegum dance": {
+    "artist": "Bambee",
+    "songCount": 24,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7fed653a7ddfc01f90a95",
+      "genres": [],
+      "deezerFans": 76
+    }
+  },
+  "Psychobilly": {
+    "artist": "The Meteors",
+    "songCount": 242,
+    "albumCount": 17,
+    "details": {
+      "id": "56d9818acc2ddd0c0f6bd1b4",
+      "genres": [],
+      "deezerFans": 9326
+    }
+  },
+  "Banda": {
+    "artist": "Gerardo Ortíz",
+    "songCount": 70,
+    "albumCount": 5,
+    "details": {
+      "id": "56d8352d53a7ddfc01f957fe",
+      "genres": [],
+      "deezerFans": 250688
+    }
+  },
+  "Cuarteto": {
+    "artist": "Banda XXI",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d7ff2553a7ddfc01f90af4",
+      "genres": [],
+      "deezerFans": 89602
+    }
+  },
+  "Funk metal": {
+    "artist": "Infectious Grooves",
+    "songCount": 64,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8421f53a7ddfc01f96aa7",
+      "genres": [
+        "Funk Metal",
+        "Hardcore Punk",
+        "Heavy Metal"
+      ],
+      "deezerFans": 10537
+    }
+  },
+  "Swing": {
+    "artist": "Götz Alsmann",
+    "songCount": 102,
+    "albumCount": 6,
+    "details": {
+      "id": "56d83a2a53a7ddfc01f95eda",
+      "genres": [
+        "Jazz",
+        "Swing",
+        "World Music"
+      ],
+      "deezerFans": 768
+    }
+  },
+  "Classic pop": {
+    "artist": "Frank Sinatra",
+    "songCount": 1343,
+    "albumCount": 87,
+    "details": {
+      "id": "56d8313753a7ddfc01f9528f",
+      "genres": [
+        "Bossa Nova",
+        "Classic Pop",
+        "Jazz",
+        "Vocal Jazz",
+        "Swing"
+      ],
+      "deezerFans": 1305543
+    }
+  },
+  "Acid jazz": {
+    "artist": "The Brand New Heavies",
+    "songCount": 82,
+    "albumCount": 5,
+    "details": {
+      "id": "56d97bcacc2ddd0c0f6bc9f3",
+      "genres": [
+        "Acid Jazz",
+        "Funk"
+      ],
+      "deezerFans": 7680
+    }
+  },
+  "Rock opera": {
+    "artist": "Barry Manilow",
+    "songCount": 16,
+    "albumCount": 1,
+    "details": {
+      "id": "56d7ffda53a7ddfc01f90c05",
+      "genres": [],
+      "deezerFans": 50118
+    }
+  },
+  "Deep house": {
+    "artist": "Robin Schulz",
+    "songCount": 15,
+    "albumCount": 1,
+    "details": {
+      "id": "56d96315cc2ddd0c0f6ba49f",
+      "genres": [],
+      "deezerFans": 1065829
+    }
+  },
+  "Beatbox": {
+    "artist": "Beardyman",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8003f53a7ddfc01f90ca8",
+      "genres": [
+        "Beatbox",
+        "Dubstep"
+      ],
+      "deezerFans": 3224
+    }
+  },
+  "Country rock": {
+    "artist": "Nitty Gritty Dirt Band",
+    "songCount": 440,
+    "albumCount": 30,
+    "details": {
+      "id": "56d94f37cc2ddd0c0f6b8759",
+      "genres": [
+        "Country",
+        "Folk",
+        "Folk Rock",
+        "Bluegrass",
+        "Country Rock",
+        "Country Pop"
+      ],
+      "deezerFans": 6758
+    }
+  },
+  "Contemporary r&amp;b": {
+    "artist": "Tyrese",
+    "songCount": 27,
+    "albumCount": 2,
+    "details": {
+      "id": "56d98d69cc2ddd0c0f6be2b0",
+      "genres": [
+        "Hip Hop"
+      ],
+      "deezerFans": 54685
+    }
+  },
+  "Indie folk&#x200e;": {
+    "artist": "Ben Howard",
+    "songCount": 16,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8014853a7ddfc01f90df3",
+      "genres": [],
+      "deezerFans": 383241
+    }
+  },
+  "Opera": {
+    "artist": "Emma Shapplin",
+    "songCount": 58,
+    "albumCount": 5,
+    "details": {
+      "id": "56d828cf53a7ddfc01f9460f",
+      "genres": [],
+      "deezerFans": 11404
+    }
+  },
+  "Folktronica": {
+    "artist": "Beth Orton",
+    "songCount": 58,
+    "albumCount": 4,
+    "details": {
+      "id": "56d801fd53a7ddfc01f90f2a",
+      "genres": [
+        "Folk",
+        "Electronica"
+      ],
+      "deezerFans": 7573
+    }
+  },
+  "Adult alternative": {
+    "artist": "Carbon Leaf",
+    "songCount": 141,
+    "albumCount": 11,
+    "details": {
+      "id": "56d80c6753a7ddfc01f91e11",
+      "genres": [],
+      "deezerFans": 343
+    }
+  },
+  "Ballad": {
+    "artist": "Edith Márquez",
+    "songCount": 100,
+    "albumCount": 9,
+    "details": {
+      "id": "56d825f453a7ddfc01f94295",
+      "genres": [],
+      "deezerFans": 12738
+    }
+  },
+  "Alternative dance": {
+    "artist": "Carter The Unstoppable Sex Machine",
+    "songCount": 96,
+    "albumCount": 5,
+    "details": {
+      "id": "56d80d4553a7ddfc01f91f4e",
+      "genres": [],
+      "deezerFans": 720
+    }
+  },
+  "Hardcore hip hop": {
+    "artist": "Esham",
+    "songCount": 296,
+    "albumCount": 18,
+    "details": {
+      "id": "56d82abd53a7ddfc01f948ca",
+      "genres": [],
+      "deezerFans": 823
+    }
+  },
+  "Riot grrrl": {
+    "artist": "Bratmobile",
+    "songCount": 50,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8081953a7ddfc01f917b1",
+      "genres": [],
+      "deezerFans": 1051
+    }
+  },
+  "Blue-eyed soul": {
+    "artist": "The Spencer Davis Group",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9848ccc2ddd0c0f6bd5d5",
+      "genres": [
+        "Blues",
+        "Beat",
+        "British Invasion",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 14439
+    }
+  },
+  "Filk": {
+    "artist": "Ookla The Mok",
+    "songCount": 87,
+    "albumCount": 5,
+    "details": {
+      "id": "56d95275cc2ddd0c0f6b8c89",
+      "genres": [],
+      "deezerFans": 23
+    }
+  },
+  "Avant-garde": {
+    "artist": "The Residents",
+    "songCount": 336,
+    "albumCount": 21,
+    "details": {
+      "id": "56d98393cc2ddd0c0f6bd490",
+      "genres": [
+        "Avant-garde",
+        "Experimental"
+      ],
+      "deezerFans": 10538
+    }
+  },
+  "Chiptune": {
+    "artist": "Binärpilot",
+    "songCount": 41,
+    "albumCount": 5,
+    "details": {
+      "id": "56d803e553a7ddfc01f91191",
+      "genres": [
+        "Chiptune",
+        "Electro"
+      ],
+      "deezerFans": 275
+    }
+  },
+  "Rapcore": {
+    "artist": "Planet Hemp",
+    "songCount": 73,
+    "albumCount": 5,
+    "details": {
+      "id": "56d959a9cc2ddd0c0f6b96b9",
+      "genres": [],
+      "deezerFans": 45577
+    }
+  },
+  "Rap metal": {
+    "artist": "Stuck Mojo",
+    "songCount": 61,
+    "albumCount": 5,
+    "details": {
+      "id": "56d9754dcc2ddd0c0f6bc022",
+      "genres": [],
+      "deezerFans": 2488
+    }
+  },
+  "Midwest rap": {
+    "artist": "Twista",
+    "songCount": 152,
+    "albumCount": 9,
+    "details": {
+      "id": "56d98d1ecc2ddd0c0f6be227",
+      "genres": [
+        "Midwest Rap"
+      ],
+      "deezerFans": 61216
+    }
+  },
+  "Celtic rock": {
+    "artist": "Runrig",
+    "songCount": 194,
+    "albumCount": 17,
+    "details": {
+      "id": "56d96595cc2ddd0c0f6ba829",
+      "genres": [
+        "Celtic Rock"
+      ],
+      "deezerFans": 5262
+    }
+  },
+  "Funk rock": {
+    "artist": "Red Hot Chili Peppers",
+    "songCount": 72,
+    "albumCount": 6,
+    "details": {
+      "id": "56d95f80cc2ddd0c0f6b9f5b",
+      "genres": [
+        "Alternative Rock",
+        "Funk Rock"
+      ],
+      "deezerFans": 4510873
+    }
+  },
+  "Rockabilly": {
+    "artist": "Wanda Jackson",
+    "songCount": 248,
+    "albumCount": 17,
+    "details": {
+      "id": "56d99262cc2ddd0c0f6bea39",
+      "genres": [
+        "Rockabilly",
+        "Gospel",
+        "Country"
+      ],
+      "deezerFans": 11180
+    }
+  },
+  "Horrorcore": {
+    "artist": "Insane Clown Posse",
+    "songCount": 274,
+    "albumCount": 19,
+    "details": {
+      "id": "56d8428b53a7ddfc01f96b57",
+      "genres": [],
+      "deezerFans": 24662
+    }
+  },
+  "Garage punk": {
+    "artist": "The Murder City Devils",
+    "songCount": 19,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98213cc2ddd0c0f6bd271",
+      "genres": [
+        "Garage Punk"
+      ],
+      "deezerFans": 639
+    }
+  },
+  "Australian hip hop": {
+    "artist": "Hilltop Hoods",
+    "songCount": 91,
+    "albumCount": 6,
+    "details": {
+      "id": "56d83e1353a7ddfc01f9644e",
+      "genres": [],
+      "deezerFans": 26151
+    }
+  },
+  "Mathcore": {
+    "artist": "Crowpath",
+    "songCount": 36,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8171a53a7ddfc01f92cb1",
+      "genres": [],
+      "deezerFans": 69
+    }
+  },
+  "G-funk": {
+    "artist": "Bloods & Crips",
+    "songCount": 50,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8059b53a7ddfc01f91404",
+      "genres": [],
+      "deezerFans": 251
+    }
+  },
+  "Happy hardcore": {
+    "artist": "Lia",
+    "songCount": 97,
+    "albumCount": 6,
+    "details": {
+      "id": "56d85a1653a7ddfc01f98d82",
+      "genres": [
+        "J-Pop",
+        "Electronica",
+        "Trance",
+        "New Age",
+        "Happy Hardcore"
+      ],
+      "deezerFans": 1339
+    }
+  },
+  "Zydeco": {
+    "artist": "Boh Foi Toch",
+    "songCount": 28,
+    "albumCount": 2,
+    "details": {
+      "id": "56d806d053a7ddfc01f915b2",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Funk carioca": {
+    "artist": "Bonde Do Rolê",
+    "songCount": 37,
+    "albumCount": 4,
+    "details": {
+      "id": "56d806f953a7ddfc01f915f8",
+      "genres": [
+        "Singer-Songwriter",
+        "Funk Carioca",
+        "Brazilian Rock",
+        "Rock",
+        "Brazilian",
+        "Electronic",
+        "Axé",
+        "Forró",
+        "Folk"
+      ],
+      "deezerFans": 11636
+    }
+  },
+  "Spoken word": {
+    "artist": "John Cooper Clarke",
+    "songCount": 111,
+    "albumCount": 12,
+    "details": {
+      "id": "56d84a9353a7ddfc01f9772c",
+      "genres": [],
+      "deezerFans": 1646
+    }
+  },
+  "Hatecore": {
+    "artist": "Brainwash",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d807f653a7ddfc01f91770",
+      "genres": [
+        "Hardcore Punk",
+        "Hatecore",
+        "Protest Song"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Crunkcore": {
+    "artist": "Brokencyde",
+    "songCount": 36,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8090f53a7ddfc01f91962",
+      "genres": [],
+      "deezerFans": 31978
+    }
+  },
+  "Crunk": {
+    "artist": "Ying Yang Twins",
+    "songCount": 120,
+    "albumCount": 8,
+    "details": {
+      "id": "56d99699cc2ddd0c0f6bf0d0",
+      "genres": [],
+      "deezerFans": 88141
+    }
+  },
+  "Roots rock": {
+    "artist": "Los Lobos",
+    "songCount": 86,
+    "albumCount": 7,
+    "details": {
+      "id": "56d85d6653a7ddfc01f992b7",
+      "genres": [
+        "Adult Contemporary",
+        "Americana",
+        "Blues",
+        "Country",
+        "Latin",
+        "Pop Rock",
+        "Rock",
+        "Roots Rock",
+        "Tejano"
+      ],
+      "deezerFans": 9416
+    }
+  },
+  "Chillwave": {
+    "artist": "Washed Out",
+    "songCount": 24,
+    "albumCount": 3,
+    "details": {
+      "id": "56d992a4cc2ddd0c0f6bea92",
+      "genres": [
+        "Chillwave"
+      ],
+      "deezerFans": 29762
+    }
+  },
+  "Rock &apos;n&apos; roll&#x200e;": {
+    "artist": "Buddy Holly",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d809ea53a7ddfc01f91a69",
+      "genres": [
+        "Rock 'N' Roll",
+        "Rockabilly",
+        "Singer-Songwriter"
+      ],
+      "deezerFans": 43874
+    }
+  },
+  "Son cubano": {
+    "artist": "Buena Vista Social Club",
+    "songCount": 28,
+    "albumCount": 2,
+    "details": {
+      "id": "56d809f753a7ddfc01f91a83",
+      "genres": [
+        "Son Cubano‎",
+        "Salsa",
+        "Rumba"
+      ],
+      "deezerFans": 434590
+    }
+  },
+  "Dancehall": {
+    "artist": "Buju Banton",
+    "songCount": 98,
+    "albumCount": 6,
+    "details": {
+      "id": "56d80a1253a7ddfc01f91aae",
+      "genres": [],
+      "deezerFans": 170695
+    }
+  },
+  "Worldbeat": {
+    "artist": "Johnny Clegg & Savuka",
+    "songCount": 31,
+    "albumCount": 3,
+    "details": {
+      "id": "56d84baa53a7ddfc01f97854",
+      "genres": [
+        "World Music",
+        "Pop",
+        "Rock"
+      ],
+      "deezerFans": 15361
+    }
+  },
+  "Calypso": {
+    "artist": "Harry Belafonte",
+    "songCount": 34,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83bac53a7ddfc01f960d0",
+      "genres": [
+        "Blues",
+        "Folk",
+        "Gospel"
+      ],
+      "deezerFans": 13489
+    }
+  },
+  "Chanson&#x200e;": {
+    "artist": "Bénabar",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d80ac153a7ddfc01f91bb1",
+      "genres": [],
+      "deezerFans": 156007
+    }
+  },
+  "Electro-industrial": {
+    "artist": "Sirus",
+    "songCount": 49,
+    "albumCount": 6,
+    "details": {
+      "id": "56d96deecc2ddd0c0f6bb4c8",
+      "genres": [],
+      "deezerFans": 79
+    }
+  },
+  "Tropicalismo": {
+    "artist": "Os Mutantes",
+    "songCount": 74,
+    "albumCount": 7,
+    "details": {
+      "id": "56d952efcc2ddd0c0f6b8d72",
+      "genres": [
+        "MPB",
+        "Brazilian",
+        "Tropicalismo",
+        "Brazilian Rock",
+        "Psychedelic Rock",
+        "Progressive Rock"
+      ],
+      "deezerFans": 29530
+    }
+  },
+  "Jangle pop": {
+    "artist": "The Wedding Present",
+    "songCount": 35,
+    "albumCount": 2,
+    "details": {
+      "id": "56d9863bcc2ddd0c0f6bd835",
+      "genres": [],
+      "deezerFans": 5178
+    }
+  },
+  "Canterbury": {
+    "artist": "Robert Wyatt",
+    "songCount": 90,
+    "albumCount": 7,
+    "details": {
+      "id": "56d962e8cc2ddd0c0f6ba459",
+      "genres": [
+        "Canterbury",
+        "Jazz Fusion",
+        "Progressive Rock",
+        "Experimental",
+        "Avant-Pop"
+      ],
+      "deezerFans": 11068
+    }
+  },
+  "Electro swing": {
+    "artist": "Caravan Palace",
+    "songCount": 29,
+    "albumCount": 2,
+    "details": {
+      "id": "56d80c5e53a7ddfc01f91e05",
+      "genres": [],
+      "deezerFans": 160401
+    }
+  },
+  "Norte&#xf1;o&#x200e;": {
+    "artist": "Cardenales De Nuevo León",
+    "songCount": 207,
+    "albumCount": 18,
+    "details": {
+      "id": "56d80c8953a7ddfc01f91e19",
+      "genres": [],
+      "deezerFans": 60499
+    }
+  },
+  "Country pop": {
+    "artist": "Deborah Allen",
+    "songCount": 71,
+    "albumCount": 7,
+    "details": {
+      "id": "56d81d1653a7ddfc01f93562",
+      "genres": [
+        "Country",
+        "Country Pop",
+        "Pop Rock"
+      ],
+      "deezerFans": 204
+    }
+  },
+  "Trova": {
+    "artist": "Silvio Rodríguez",
+    "songCount": 247,
+    "albumCount": 18,
+    "details": {
+      "id": "56d96d63cc2ddd0c0f6bb3fa",
+      "genres": [
+        "Trova"
+      ],
+      "deezerFans": 121265
+    }
+  },
+  "Mystic folk": {
+    "artist": "Carved In Stone",
+    "songCount": 27,
+    "albumCount": 3,
+    "details": {
+      "id": "56d80d4a53a7ddfc01f91f5d",
+      "genres": [],
+      "deezerFans": 221
+    }
+  },
+  "Morna": {
+    "artist": "Cesária Évora",
+    "songCount": 190,
+    "albumCount": 14,
+    "details": {
+      "id": "56d80e8853a7ddfc01f92134",
+      "genres": [
+        "Morna",
+        "Folk"
+      ],
+      "deezerFans": 211465
+    }
+  },
+  "Modern classical": {
+    "artist": "Goethes Erben",
+    "songCount": 102,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8375653a7ddfc01f95acc",
+      "genres": [
+        "Neue Deutsche Todeskunst",
+        "Avant-garde",
+        "Dark Wave",
+        "Gothic"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Delta blues": {
+    "artist": "Charley Patton",
+    "songCount": 84,
+    "albumCount": 4,
+    "details": {
+      "id": "56d80f2153a7ddfc01f92222",
+      "genres": [
+        "Delta Blues",
+        "Country Blues",
+        "Gospel Blues"
+      ],
+      "deezerFans": 21544
+    }
+  },
+  "Adult alternative&#x200e;": {
+    "artist": "Charlotte Martin",
+    "songCount": 8,
+    "albumCount": 1,
+    "details": {
+      "id": "56d80f5253a7ddfc01f92279",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "deezerFans": 599
+    }
+  },
+  "Electroclash": {
+    "artist": "Fischerspooner",
+    "songCount": 27,
+    "albumCount": 2,
+    "details": {
+      "id": "56d82eae53a7ddfc01f94efb",
+      "genres": [
+        "Electroclash",
+        "Electronica",
+        "Electropop"
+      ],
+      "deezerFans": 15629
+    }
+  },
+  "Dance punk": {
+    "artist": "Spillsbury",
+    "songCount": 36,
+    "albumCount": 3,
+    "details": {
+      "id": "56d971e4cc2ddd0c0f6bbb08",
+      "genres": [],
+      "deezerFans": 83
+    }
+  },
+  "Merengue": {
+    "artist": "Elvis Crespo",
+    "songCount": 130,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8282953a7ddfc01f9454b",
+      "genres": [],
+      "deezerFans": 68129
+    }
+  },
+  "Grime": {
+    "artist": "JME",
+    "songCount": 79,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8497c53a7ddfc01f9757e",
+      "genres": [
+        "Grime",
+        "Hip Hop"
+      ],
+      "deezerFans": 36036
+    }
+  },
+  "Minimal": {
+    "artist": "Paul Kalkbrenner",
+    "songCount": 61,
+    "albumCount": 4,
+    "details": {
+      "id": "56d955d1cc2ddd0c0f6b91b4",
+      "genres": [
+        "Techno",
+        "Minimal",
+        "Downbeat",
+        "Electronica"
+      ],
+      "deezerFans": 425107
+    }
+  },
+  "Electronicore": {
+    "artist": "We Butter The Bread With Butter",
+    "songCount": 57,
+    "albumCount": 5,
+    "details": {
+      "id": "56d9930bcc2ddd0c0f6beb36",
+      "genres": [
+        "Deathcore",
+        "Electronicore",
+        "Trance",
+        "Metalcore",
+        "Industrial Metal"
+      ],
+      "deezerFans": 23206
+    }
+  },
+  "Beat": {
+    "artist": "I Giganti",
+    "songCount": 30,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8404e53a7ddfc01f967c9",
+      "genres": [],
+      "deezerFans": 532
+    }
+  },
+  "Vaudeville": {
+    "artist": "Circus Contraption",
+    "songCount": 41,
+    "albumCount": 3,
+    "details": {
+      "id": "56d812c953a7ddfc01f92636",
+      "genres": [],
+      "deezerFans": 531
+    }
+  },
+  "Crossover": {
+    "artist": "Clawfinger",
+    "songCount": 85,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8136a53a7ddfc01f92728",
+      "genres": [
+        "Crossover",
+        "Rap Metal"
+      ],
+      "deezerFans": 7974
+    }
+  },
+  "Christian hardcore": {
+    "artist": "XDISCIPLEx A.D.",
+    "songCount": 36,
+    "albumCount": 5,
+    "details": {
+      "id": "56d995f4cc2ddd0c0f6befbf",
+      "genres": [],
+      "deezerFans": 21
+    }
+  },
+  "Pub rock": {
+    "artist": "Cold Chisel",
+    "songCount": 36,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8146053a7ddfc01f92889",
+      "genres": [],
+      "deezerFans": 4487
+    }
+  },
+  "Reggae fusion": {
+    "artist": "Diana King",
+    "songCount": 36,
+    "albumCount": 3,
+    "details": {
+      "id": "56d81f3053a7ddfc01f9388a",
+      "genres": [],
+      "deezerFans": 42338
+    }
+  },
+  "Country rap": {
+    "artist": "Colt Ford",
+    "songCount": 70,
+    "albumCount": 5,
+    "details": {
+      "id": "56d814bc53a7ddfc01f9290e",
+      "genres": [
+        "Country Rap"
+      ],
+      "deezerFans": 19744
+    }
+  },
+  "Political hip hop": {
+    "artist": "Common",
+    "songCount": 17,
+    "albumCount": 1,
+    "details": {
+      "id": "56d814db53a7ddfc01f92948",
+      "genres": [],
+      "deezerFans": 183477
+    }
+  },
+  "Choral": {
+    "artist": "Communauté De Taizé",
+    "songCount": 38,
+    "albumCount": 2,
+    "details": {
+      "id": "56d814e153a7ddfc01f92955",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Norte&#xf1;o": {
+    "artist": "Los Tigres Del Norte",
+    "songCount": 520,
+    "albumCount": 40,
+    "details": {
+      "id": "56d85dc353a7ddfc01f99318",
+      "genres": [
+        "Norteño"
+      ],
+      "deezerFans": 284448
+    }
+  },
+  "Children&apos;s music&#x200e;": {
+    "artist": "Cri-Cri",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d816a053a7ddfc01f92c0c",
+      "genres": [
+        "Children's Music"
+      ],
+      "deezerFans": 16250
+    }
+  },
+  "Progressive bluegrass": {
+    "artist": "Crooked Still",
+    "songCount": 47,
+    "albumCount": 4,
+    "details": {
+      "id": "56d816fc53a7ddfc01f92c80",
+      "genres": [
+        "Country",
+        "Bluegrass",
+        "Progressive Bluegrass",
+        "String Band"
+      ],
+      "deezerFans": 690
+    }
+  },
+  "Noise pop": {
+    "artist": "Medicine",
+    "songCount": 50,
+    "albumCount": 5,
+    "details": {
+      "id": "56d93c5bce06f50c0fed8589",
+      "genres": [],
+      "deezerFans": 391
+    }
+  },
+  "Electric blues": {
+    "artist": "Cuby + Blizzards",
+    "songCount": 42,
+    "albumCount": 5,
+    "details": {
+      "id": "56d8178053a7ddfc01f92d2f",
+      "genres": [
+        "Blues",
+        "Rock",
+        "Blues Rock"
+      ],
+      "deezerFans": 1418
+    }
+  },
+  "Rock en espa&#xf1;ol": {
+    "artist": "Santa Sabina",
+    "songCount": 61,
+    "albumCount": 5,
+    "details": {
+      "id": "56d967d1cc2ddd0c0f6bab7b",
+      "genres": [
+        "Rock",
+        "Rock en Español",
+        "Alternative Rock"
+      ],
+      "deezerFans": 3503
+    }
+  },
+  "Rap  metal": {
+    "artist": "Cypress Hill",
+    "songCount": 18,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8180653a7ddfc01f92df8",
+      "genres": [],
+      "deezerFans": 640878
+    }
+  },
+  "French house": {
+    "artist": "Daft Punk",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8189753a7ddfc01f92eec",
+      "genres": [
+        "Dance",
+        "Electronic",
+        "French House",
+        "House",
+        "New Age",
+        "Synthpop",
+        "Techno"
+      ],
+      "deezerFans": 3458758
+    }
+  },
+  "Parody": {
+    "artist": "Instalok",
+    "songCount": 69,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8429153a7ddfc01f96b63",
+      "genres": [
+        "Parody"
+      ],
+      "deezerFans": 1047
+    }
+  },
+  "Neue deutsche todeskunst": {
+    "artist": "Das Ich",
+    "songCount": 9,
+    "albumCount": 1,
+    "details": {
+      "id": "56d81a9653a7ddfc01f93206",
+      "genres": [
+        "Dark Electro",
+        "Dark Wave",
+        "EBM",
+        "Electronic",
+        "Industrial"
+      ],
+      "deezerFans": 5710
+    }
+  },
+  "Heartland rock": {
+    "artist": "Dave Hause",
+    "songCount": 22,
+    "albumCount": 2,
+    "details": {
+      "id": "56d81ade53a7ddfc01f93266",
+      "genres": [],
+      "deezerFans": 1807
+    }
+  },
+  "Protopunk": {
+    "artist": "David Bowie",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d81b2f53a7ddfc01f932c4",
+      "genres": [
+        "Avant-garde",
+        "Dance",
+        "Glam Rock",
+        "New Wave",
+        "Pop Rock",
+        "Rock",
+        "Soundtrack"
+      ],
+      "deezerFans": 895515
+    }
+  },
+  "Dance-rock": {
+    "artist": "Hilary Duff",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d83dfb53a7ddfc01f96439",
+      "genres": [],
+      "deezerFans": 506575
+    }
+  },
+  "Country blues": {
+    "artist": "Sleepy John Estes",
+    "songCount": 109,
+    "albumCount": 6,
+    "details": {
+      "id": "56d96ef1cc2ddd0c0f6bb66e",
+      "genres": [
+        "Blues",
+        "Country Blues",
+        "Memphis Blues"
+      ],
+      "deezerFans": 3273
+    }
+  },
+  "Nederpop": {
+    "artist": "Frank Boeijen",
+    "songCount": 442,
+    "albumCount": 29,
+    "details": {
+      "id": "56d830de53a7ddfc01f95232",
+      "genres": [],
+      "deezerFans": 1130
+    }
+  },
+  "Hi-nrg": {
+    "artist": "Dead Or Alive",
+    "songCount": 42,
+    "albumCount": 4,
+    "details": {
+      "id": "56d81c7053a7ddfc01f93489",
+      "genres": [],
+      "deezerFans": 8279
+    }
+  },
+  "Eurobeat": {
+    "artist": "Odyssey Eurobeat",
+    "songCount": 22,
+    "albumCount": 2,
+    "details": {
+      "id": "56d9513fcc2ddd0c0f6b8aa4",
+      "genres": [
+        "Eurobeat",
+        "Electronic"
+      ],
+      "deezerFans": 1393935
+    }
+  },
+  "Crossover thrash": {
+    "artist": "Municipal Waste",
+    "songCount": 70,
+    "albumCount": 5,
+    "details": {
+      "id": "56d94a3fcc2ddd0c0f6b8042",
+      "genres": [
+        "Crossover Thrash",
+        "Thrash Metal"
+      ],
+      "deezerFans": 27297
+    }
+  },
+  "Nwobhm": {
+    "artist": "Wolf (UK)",
+    "songCount": 10,
+    "albumCount": 1,
+    "details": {
+      "id": "56d99515cc2ddd0c0f6bee80",
+      "genres": [
+        "NWOBHM"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Jovem guarda": {
+    "artist": "Ronnie Von",
+    "songCount": 101,
+    "albumCount": 6,
+    "details": {
+      "id": "56d96438cc2ddd0c0f6ba641",
+      "genres": [
+        "MPB",
+        "Jovem Guarda",
+        "Brazilian",
+        "Pop",
+        "Pop Rock",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 1773
+    }
+  },
+  "Symphonic metal&#x200e;": {
+    "artist": "Evenoire",
+    "songCount": 10,
+    "albumCount": 1,
+    "details": {
+      "id": "56d82b5453a7ddfc01f949a4",
+      "genres": [],
+      "deezerFans": 564
+    }
+  },
+  "Southern metal": {
+    "artist": "Dezperadoz",
+    "songCount": 55,
+    "albumCount": 4,
+    "details": {
+      "id": "56d81ee253a7ddfc01f93837",
+      "genres": [
+        "Heavy Metal"
+      ],
+      "deezerFans": 592
+    }
+  },
+  "Oldies": {
+    "artist": "Dick Haymes",
+    "songCount": 102,
+    "albumCount": 5,
+    "details": {
+      "id": "56d81f5853a7ddfc01f938bd",
+      "genres": [],
+      "deezerFans": 161
+    }
+  },
+  "Rave": {
+    "artist": "Scooter",
+    "songCount": 57,
+    "albumCount": 4,
+    "details": {
+      "id": "56d96926cc2ddd0c0f6bad7b",
+      "genres": [
+        "Techno",
+        "Rave",
+        "EDM",
+        "Eurodance"
+      ],
+      "deezerFans": 108215
+    }
+  },
+  "Neue deutsche welle": {
+    "artist": "Ideal",
+    "songCount": 31,
+    "albumCount": 3,
+    "details": {
+      "id": "56d840e853a7ddfc01f968b9",
+      "genres": [
+        "Neue Deutsche Welle",
+        "Pop"
+      ],
+      "deezerFans": 1146
+    }
+  },
+  "Bubblegum pop": {
+    "artist": "Die Lollipops",
+    "songCount": 24,
+    "albumCount": 2,
+    "details": {
+      "id": "56d81f9d53a7ddfc01f9391b",
+      "genres": [
+        "Bubblegum Pop",
+        "Disco",
+        "Schlager",
+        "Volkslied",
+        "Vocal"
+      ],
+      "deezerFans": 617
+    }
+  },
+  "Cabaret": {
+    "artist": "Otto Reutter",
+    "songCount": 200,
+    "albumCount": 2,
+    "details": {
+      "id": "56d95338cc2ddd0c0f6b8ddc",
+      "genres": [
+        "Singer-Songwriter",
+        "Schlager",
+        "Chanson",
+        "Comedy",
+        "Spoken Word"
+      ],
+      "deezerFans": 15
+    }
+  },
+  "Doo-wop": {
+    "artist": "The Fleetwoods",
+    "songCount": 94,
+    "albumCount": 6,
+    "details": {
+      "id": "56d97e71cc2ddd0c0f6bcd4c",
+      "genres": [],
+      "deezerFans": 440
+    }
+  },
+  "Powerviolence": {
+    "artist": "Infest",
+    "songCount": 47,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8423553a7ddfc01f96ab7",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Death &apos;n&apos; roll": {
+    "artist": "The Cumshots",
+    "songCount": 19,
+    "albumCount": 2,
+    "details": {
+      "id": "56d97d17cc2ddd0c0f6bcb8b",
+      "genres": [
+        "Death 'n' Roll",
+        "Stoner Rock"
+      ],
+      "deezerFans": 260
+    }
+  },
+  "Dark metal": {
+    "artist": "Stravaganzza",
+    "songCount": 40,
+    "albumCount": 4,
+    "details": {
+      "id": "56d97500cc2ddd0c0f6bbf98",
+      "genres": [],
+      "deezerFans": 11985
+    }
+  },
+  "Mashup": {
+    "artist": "M.I.A.",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d935b9ce06f50c0fed7b77",
+      "genres": [],
+      "deezerFans": 282493
+    }
+  },
+  "Dark rock": {
+    "artist": "End Of Green",
+    "songCount": 19,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8290453a7ddfc01f94678",
+      "genres": [],
+      "deezerFans": 1838
+    }
+  },
+  "Psychedelic folk": {
+    "artist": "Jesse Sykes & The Sweet Hereafter",
+    "songCount": 46,
+    "albumCount": 5,
+    "details": {
+      "id": "56d8485753a7ddfc01f973d6",
+      "genres": [],
+      "deezerFans": 821
+    }
+  },
+  "New orleans rhythm and blues": {
+    "artist": "Dr. John",
+    "songCount": 115,
+    "albumCount": 10,
+    "details": {
+      "id": "56d8236d53a7ddfc01f93ebd",
+      "genres": [
+        "Blues",
+        "New Orleans Rhythm and Blues",
+        "Dixieland",
+        "Funk",
+        "Rock",
+        "Rock 'N' Roll",
+        "Trad Jazz",
+        "Piano Blues"
+      ],
+      "deezerFans": 23865
+    }
+  },
+  "Comedy rock": {
+    "artist": "Moxy Früvous",
+    "songCount": 98,
+    "albumCount": 7,
+    "details": {
+      "id": "56d9499ecc2ddd0c0f6b7f52",
+      "genres": [],
+      "deezerFans": 159
+    }
+  },
+  "Disco house": {
+    "artist": "Duck Sauce",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8243f53a7ddfc01f94012",
+      "genres": [
+        "Disco House"
+      ],
+      "deezerFans": 221835
+    }
+  },
+  "Turkish rock": {
+    "artist": "Duman",
+    "songCount": 21,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8245e53a7ddfc01f94042",
+      "genres": [],
+      "deezerFans": 326438
+    }
+  },
+  "French pop&#x200e;": {
+    "artist": "Eddy Mitchell",
+    "songCount": 405,
+    "albumCount": 28,
+    "details": {
+      "id": "56d825d253a7ddfc01f9425c",
+      "genres": [],
+      "deezerFans": 73745
+    }
+  },
+  "Big band": {
+    "artist": "Michael Bublé",
+    "songCount": 25,
+    "albumCount": 3,
+    "details": {
+      "id": "56d93de9ce06f50c0fed87c7",
+      "genres": [
+        "Jazz",
+        "Vocal Jazz",
+        "Swing"
+      ],
+      "deezerFans": 948140
+    }
+  },
+  "Art pop": {
+    "artist": "Jenny Hval",
+    "songCount": 30,
+    "albumCount": 3,
+    "details": {
+      "id": "56d847ca53a7ddfc01f972fa",
+      "genres": [],
+      "deezerFans": 1749
+    }
+  },
+  "J-punk": {
+    "artist": "Ellegarden",
+    "songCount": 57,
+    "albumCount": 6,
+    "details": {
+      "id": "56d827b653a7ddfc01f944e2",
+      "genres": [
+        "Pop Punk",
+        "Punk Rock",
+        "Alternative Rock"
+      ],
+      "deezerFans": 1873
+    }
+  },
+  "Humppa&#x200e;": {
+    "artist": "Eläkeläiset",
+    "songCount": 213,
+    "albumCount": 14,
+    "details": {
+      "id": "56d8285653a7ddfc01f94570",
+      "genres": [
+        "Humppa"
+      ],
+      "deezerFans": 883
+    }
+  },
+  "Humppa": {
+    "artist": "Eläkeläiset",
+    "songCount": 40,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8285653a7ddfc01f94570",
+      "genres": [
+        "Humppa"
+      ],
+      "deezerFans": 883
+    }
+  },
+  "Dark wave&#x200f;&#x200e;": {
+    "artist": "Engelsstaub",
+    "songCount": 30,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8293253a7ddfc01f946b1",
+      "genres": [
+        "Dark Wave‏‎",
+        "Electronic"
+      ],
+      "deezerFans": 130
+    }
+  },
+  "Latin jazz": {
+    "artist": "Esperanza Spalding",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d82aa453a7ddfc01f94898",
+      "genres": [],
+      "deezerFans": 44747
+    }
+  },
+  "Regional mexican": {
+    "artist": "Espinoza Paz",
+    "songCount": 114,
+    "albumCount": 9,
+    "details": {
+      "id": "56d82aa553a7ddfc01f9489e",
+      "genres": [],
+      "deezerFans": 395317
+    }
+  },
+  "Rumba": {
+    "artist": "Estopa",
+    "songCount": 129,
+    "albumCount": 9,
+    "details": {
+      "id": "56d82ab553a7ddfc01f948b9",
+      "genres": [],
+      "deezerFans": 119537
+    }
+  },
+  "Rock against communism": {
+    "artist": "Skrewdriver",
+    "songCount": 156,
+    "albumCount": 11,
+    "details": {
+      "id": "56d96e82cc2ddd0c0f6bb5b7",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Quiet storm": {
+    "artist": "Evelyn \"Champagne\" King",
+    "songCount": 8,
+    "albumCount": 1,
+    "details": {
+      "id": "56d82b3453a7ddfc01f94991",
+      "genres": [],
+      "deezerFans": 28142
+    }
+  },
+  "Skiffle": {
+    "artist": "Fairground Attraction",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d82c6653a7ddfc01f94b62",
+      "genres": [
+        "Pop"
+      ],
+      "deezerFans": 6473
+    }
+  },
+  "Brega": {
+    "artist": "Sidney Magal",
+    "songCount": 48,
+    "albumCount": 4,
+    "details": {
+      "id": "56d96ce5cc2ddd0c0f6bb334",
+      "genres": [
+        "Brega",
+        "Lambada"
+      ],
+      "deezerFans": 1208
+    }
+  },
+  "Hip house": {
+    "artist": "Pitbull",
+    "songCount": 30,
+    "albumCount": 2,
+    "details": {
+      "id": "56d95979cc2ddd0c0f6b966f",
+      "genres": [
+        "Hip Hop",
+        "House",
+        "Pop"
+      ],
+      "deezerFans": 5588447
+    }
+  },
+  "Big beat": {
+    "artist": "Fatboy Slim",
+    "songCount": 42,
+    "albumCount": 3,
+    "details": {
+      "id": "56d82d3353a7ddfc01f94ca6",
+      "genres": [
+        "Electronic",
+        "Big Beat",
+        "Dance",
+        "Electronica",
+        "Trip Hop"
+      ],
+      "deezerFans": 1021357
+    }
+  },
+  "Medieval folk rock": {
+    "artist": "Faun",
+    "songCount": 15,
+    "albumCount": 1,
+    "details": {
+      "id": "56d82d5053a7ddfc01f94cc8",
+      "genres": [
+        "Medieval"
+      ],
+      "deezerFans": 32187
+    }
+  },
+  "Cabaret&#x200e;": {
+    "artist": "Federico Salvatore",
+    "songCount": 154,
+    "albumCount": 13,
+    "details": {
+      "id": "56d82d7553a7ddfc01f94d1e",
+      "genres": [
+        "Cabaret",
+        "Comedy",
+        "Italian Folk",
+        "Parody",
+        "Pop"
+      ],
+      "deezerFans": 4269
+    }
+  },
+  "Afrobeat": {
+    "artist": "Fela Kuti",
+    "songCount": 14,
+    "albumCount": 7,
+    "details": {
+      "id": "56d82da853a7ddfc01f94d47",
+      "genres": [
+        "Afrobeat",
+        "Highlife"
+      ],
+      "deezerFans": 118305
+    }
+  },
+  "Visual kei": {
+    "artist": "Fest Vainqueur",
+    "songCount": 25,
+    "albumCount": 5,
+    "details": {
+      "id": "56d82ddb53a7ddfc01f94db5",
+      "genres": [
+        "J-Rock",
+        "Visual Kei"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Indietronica": {
+    "artist": "The Incredible Moses Leroy",
+    "songCount": 33,
+    "albumCount": 3,
+    "details": {
+      "id": "56d97fc7cc2ddd0c0f6bcf2b",
+      "genres": [
+        "Indietronica"
+      ],
+      "deezerFans": 2
+    }
+  },
+  "Christian ska": {
+    "artist": "The O.C. Supertones",
+    "songCount": 126,
+    "albumCount": 9,
+    "details": {
+      "id": "56d9826fcc2ddd0c0f6bd2f1",
+      "genres": [],
+      "deezerFans": 470
+    }
+  },
+  "Glitch hop": {
+    "artist": "Koan Sound",
+    "songCount": 7,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8546e53a7ddfc01f98518",
+      "genres": [
+        "Dubstep",
+        "Glitch Hop"
+      ],
+      "deezerFans": 22450
+    }
+  },
+  "Y&#xe9;-y&#xe9;": {
+    "artist": "France Gall",
+    "songCount": 36,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8307753a7ddfc01f951c6",
+      "genres": [
+        "Chanson",
+        "French Pop",
+        "Schlager",
+        "Yé-yé"
+      ],
+      "deezerFans": 74749
+    }
+  },
+  "Samba-can&#xe7;&#xe3;o": {
+    "artist": "Maysa Matarazzo",
+    "songCount": 77,
+    "albumCount": 7,
+    "details": {
+      "id": "56d93bdfce06f50c0fed84b5",
+      "genres": [
+        "Singer-Songwriter",
+        "Brazilian",
+        "MPB",
+        "Bossa Nova",
+        "Samba",
+        "Samba-Canção",
+        "Vocal Jazz"
+      ],
+      "deezerFans": 14574
+    }
+  },
+  "Instrumental rock": {
+    "artist": "The Ventures",
+    "songCount": 662,
+    "albumCount": 51,
+    "details": {
+      "id": "56d985d8cc2ddd0c0f6bd7bf",
+      "genres": [
+        "Surf Rock",
+        "Instrumental Rock"
+      ],
+      "deezerFans": 5590
+    }
+  },
+  "Ska punk&#x200e;": {
+    "artist": "Fuzigish",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d832e353a7ddfc01f95509",
+      "genres": [],
+      "deezerFans": 731
+    }
+  },
+  "43:40": {
+    "artist": "G.B.H.",
+    "songCount": 22,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8331c53a7ddfc01f95539",
+      "genres": [],
+      "deezerFans": 2597
+    }
+  },
+  "Progressive  rock": {
+    "artist": "Galahad",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8335a53a7ddfc01f955a1",
+      "genres": [
+        "Progressive Rock",
+        "Symphonic Rock"
+      ],
+      "deezerFans": 514
+    }
+  },
+  "Klezmer": {
+    "artist": "Geoff Berner",
+    "songCount": 41,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8348953a7ddfc01f95751",
+      "genres": [],
+      "deezerFans": 209
+    }
+  },
+  "Latin hip hop": {
+    "artist": "Gerardo",
+    "songCount": 75,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8352a53a7ddfc01f957fa",
+      "genres": [],
+      "deezerFans": 141
+    }
+  },
+  "Comic opera": {
+    "artist": "Gilbert And Sullivan",
+    "songCount": 13,
+    "albumCount": 2,
+    "details": {
+      "id": "56d835de53a7ddfc01f958f7",
+      "genres": [],
+      "deezerFans": 1
+    }
+  },
+  "Neoclassical": {
+    "artist": "Love Solfege",
+    "songCount": 241,
+    "albumCount": 29,
+    "details": {
+      "id": "56d85e6253a7ddfc01f99420",
+      "genres": [
+        "Neoclassical",
+        "J-Pop",
+        "Experimental"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Gypsy punk": {
+    "artist": "Gogol Bordello",
+    "songCount": 39,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8375953a7ddfc01f95ad2",
+      "genres": [],
+      "deezerFans": 79795
+    }
+  },
+  "Slam": {
+    "artist": "Grand Corps Malade",
+    "songCount": 46,
+    "albumCount": 3,
+    "details": {
+      "id": "56d8385c53a7ddfc01f95c25",
+      "genres": [],
+      "deezerFans": 74039
+    }
+  },
+  "Gregorian chant": {
+    "artist": "Gregorian",
+    "songCount": 186,
+    "albumCount": 13,
+    "details": {
+      "id": "56d838f553a7ddfc01f95d05",
+      "genres": [],
+      "deezerFans": 12140
+    }
+  },
+  "Volksmusik": {
+    "artist": "Gus Backus",
+    "songCount": 29,
+    "albumCount": 1,
+    "details": {
+      "id": "56d839c053a7ddfc01f95e58",
+      "genres": [
+        "Singer-Songwriter",
+        "Rock 'N' Roll",
+        "Schlager",
+        "Folk",
+        "Pop",
+        "Comedy"
+      ],
+      "deezerFans": 677
+    }
+  },
+  "New rave": {
+    "artist": "Hadouken!",
+    "songCount": 23,
+    "albumCount": 2,
+    "details": {
+      "id": "56d83a5e53a7ddfc01f95f1b",
+      "genres": [
+        "Electronic",
+        "Grindie"
+      ],
+      "deezerFans": 29927
+    }
+  },
+  "Dark cabaret": {
+    "artist": "Hannah Fury",
+    "songCount": 50,
+    "albumCount": 6,
+    "details": {
+      "id": "56d83b1f53a7ddfc01f96006",
+      "genres": [
+        "Dark Cabaret",
+        "Ethereal Wave"
+      ],
+      "deezerFans": 403
+    }
+  },
+  "Gabber": {
+    "artist": "Renard",
+    "songCount": 15,
+    "albumCount": 2,
+    "details": {
+      "id": "56d9608acc2ddd0c0f6ba0db",
+      "genres": [
+        "Ambient",
+        "Breakcore",
+        "Drum And Bass",
+        "EDM",
+        "Electronic",
+        "Happy Hardcore",
+        "IDM",
+        "Noise"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Minnesang": {
+    "artist": "Helium Vola",
+    "songCount": 54,
+    "albumCount": 4,
+    "details": {
+      "id": "56d83cfc53a7ddfc01f962ac",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Post-rock&#x200e;": {
+    "artist": "Her Name Is Calla",
+    "songCount": 30,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83d6e53a7ddfc01f96349",
+      "genres": [],
+      "deezerFans": 1870
+    }
+  },
+  "Progg": {
+    "artist": "Philemon Arthur And The Dung",
+    "songCount": 111,
+    "albumCount": 4,
+    "details": {
+      "id": "56d9587bcc2ddd0c0f6b9508",
+      "genres": [
+        "Progg",
+        "Lo-Fi",
+        "Anti-Folk"
+      ],
+      "deezerFans": 55
+    }
+  },
+  "Nintendocore": {
+    "artist": "The Megas",
+    "songCount": 42,
+    "albumCount": 5,
+    "details": {
+      "id": "56d98175cc2ddd0c0f6bd184",
+      "genres": [
+        "Nintendocore"
+      ],
+      "deezerFans": 270
+    }
+  },
+  "Ethereal wave": {
+    "artist": "How To Dress Well",
+    "songCount": 19,
+    "albumCount": 3,
+    "details": {
+      "id": "56d83f4a53a7ddfc01f96654",
+      "genres": [
+        "Ethereal Wave",
+        "R&B"
+      ],
+      "deezerFans": 10134
+    }
+  },
+  "Chicago blues": {
+    "artist": "Howlin' Wolf",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d83f6353a7ddfc01f96679",
+      "genres": [
+        "Blues",
+        "Chicago Blues",
+        "Memphis Blues"
+      ],
+      "deezerFans": 359542
+    }
+  },
+  "Alpine rock": {
+    "artist": "Hubert Von Goisern",
+    "songCount": 52,
+    "albumCount": 4,
+    "details": {
+      "id": "56d83f6a53a7ddfc01f9668e",
+      "genres": [
+        "Singer-Songwriter",
+        "Folk",
+        "Rock",
+        "Folk Rock",
+        "Austropop"
+      ],
+      "deezerFans": 11557
+    }
+  },
+  "Bai&#xe3;o": {
+    "artist": "Luiz Gonzaga",
+    "songCount": 64,
+    "albumCount": 6,
+    "details": {
+      "id": "56d85f5353a7ddfc01f9957e",
+      "genres": [
+        "Singer-Songwriter",
+        "MPB",
+        "Brazilian",
+        "Folk",
+        "Sertanejo",
+        "Forró",
+        "Baião"
+      ],
+      "deezerFans": 73271
+    }
+  },
+  "Nu-disco": {
+    "artist": "I, Tay Stayness",
+    "songCount": 1,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8407953a7ddfc01f96817",
+      "genres": [
+        "Disco",
+        "Funk",
+        "House",
+        "Dance",
+        "Electronic",
+        "Pop"
+      ],
+      "deezerFans": 174
+    }
+  },
+  "Tejano": {
+    "artist": "Intocable",
+    "songCount": 87,
+    "albumCount": 7,
+    "details": {
+      "id": "56d842d553a7ddfc01f96b9c",
+      "genres": [
+        "Latin",
+        "Tejano",
+        "Norteño",
+        "Grupero"
+      ],
+      "deezerFans": 129276
+    }
+  },
+  "Grupero": {
+    "artist": "Intocable",
+    "songCount": 83,
+    "albumCount": 6,
+    "details": {
+      "id": "56d842d553a7ddfc01f96b9c",
+      "genres": [
+        "Latin",
+        "Tejano",
+        "Norteño",
+        "Grupero"
+      ],
+      "deezerFans": 129276
+    }
+  },
+  "Surf": {
+    "artist": "Irene",
+    "songCount": 23,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8430153a7ddfc01f96bf0",
+      "genres": [
+        "Indie Pop"
+      ],
+      "deezerFans": 503
+    }
+  },
+  "Acid rock": {
+    "artist": "The Amboy Dukes",
+    "songCount": 25,
+    "albumCount": 2,
+    "details": {
+      "id": "56d97a85cc2ddd0c0f6bc881",
+      "genres": [
+        "Garage Rock",
+        "Psychedelic Rock",
+        "Blues Rock"
+      ],
+      "deezerFans": 21
+    }
+  },
+  "Hawaiian": {
+    "artist": "Israel Kamakawiwo'ole",
+    "songCount": 83,
+    "albumCount": 6,
+    "details": {
+      "id": "56d8438153a7ddfc01f96c9a",
+      "genres": [
+        "Hawaiian"
+      ],
+      "deezerFans": 17023
+    }
+  },
+  "Mandopop": {
+    "artist": "S.H.E",
+    "songCount": 31,
+    "albumCount": 3,
+    "details": {
+      "id": "56d9664acc2ddd0c0f6ba921",
+      "genres": [
+        "Mandopop"
+      ],
+      "deezerFans": 11460
+    }
+  },
+  "Candombe": {
+    "artist": "Jaime Roos",
+    "songCount": 80,
+    "albumCount": 7,
+    "details": {
+      "id": "56d844f653a7ddfc01f96ecf",
+      "genres": [
+        "Candombe",
+        "Rock 'N' Roll",
+        "Tango"
+      ],
+      "deezerFans": 2427
+    }
+  },
+  "Nu jazz": {
+    "artist": "Jazzanova",
+    "songCount": 29,
+    "albumCount": 2,
+    "details": {
+      "id": "56d846c953a7ddfc01f97194",
+      "genres": [
+        "Nu Jazz",
+        "Downbeat"
+      ],
+      "deezerFans": 20443
+    }
+  },
+  "Outlaw country": {
+    "artist": "Jerry Jeff Walker",
+    "songCount": 9,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8481d53a7ddfc01f97374",
+      "genres": [],
+      "deezerFans": 594
+    }
+  },
+  "Mariachi": {
+    "artist": "Joan Sebastian",
+    "songCount": 297,
+    "albumCount": 24,
+    "details": {
+      "id": "56d849c153a7ddfc01f975b2",
+      "genres": [
+        "Latin Pop",
+        "Mariachi"
+      ],
+      "deezerFans": 186449
+    }
+  },
+  "Hard bop": {
+    "artist": "John Coltrane",
+    "songCount": 7,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84a8b53a7ddfc01f97721",
+      "genres": [],
+      "deezerFans": 338748
+    }
+  },
+  "Bakersfield sound": {
+    "artist": "Johnny Bond",
+    "songCount": 10,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84b8c53a7ddfc01f9783f",
+      "genres": [],
+      "deezerFans": 147
+    }
+  },
+  "Boogie woogie": {
+    "artist": "Jools Holland",
+    "songCount": 26,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84ca853a7ddfc01f979bd",
+      "genres": [
+        "Rock",
+        "R&B",
+        "Boogie",
+        "Blues",
+        "Jazz"
+      ],
+      "deezerFans": 6831
+    }
+  },
+  "Operatic pop": {
+    "artist": "Sarah Brightman",
+    "songCount": 77,
+    "albumCount": 4,
+    "details": {
+      "id": "56d96803cc2ddd0c0f6babc9",
+      "genres": [],
+      "deezerFans": 182169
+    }
+  },
+  "Neo soul&#x200e;": {
+    "artist": "José James",
+    "songCount": 48,
+    "albumCount": 4,
+    "details": {
+      "id": "56d84d5f53a7ddfc01f97ac1",
+      "genres": [],
+      "deezerFans": 32478
+    }
+  },
+  "Goa trance": {
+    "artist": "Juno Reactor",
+    "songCount": 8,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84f0953a7ddfc01f97cc8",
+      "genres": [],
+      "deezerFans": 12632
+    }
+  },
+  "Canadian hip hop": {
+    "artist": "K'naan",
+    "songCount": 37,
+    "albumCount": 2,
+    "details": {
+      "id": "56d84fa753a7ddfc01f97d7c",
+      "genres": [
+        "Hip Hop",
+        "World Music",
+        "Reggae",
+        "Pop",
+        "Alternative Rock"
+      ],
+      "deezerFans": 59043
+    }
+  },
+  "Country pop&#x200e;": {
+    "artist": "K.d. Lang",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84fc153a7ddfc01f97da3",
+      "genres": [
+        "Country",
+        "Pop"
+      ],
+      "deezerFans": 7495
+    }
+  },
+  "Shibuya-kei": {
+    "artist": "Kahimi Karie",
+    "songCount": 38,
+    "albumCount": 3,
+    "details": {
+      "id": "56d84fdf53a7ddfc01f97ddf",
+      "genres": [],
+      "deezerFans": 250
+    }
+  },
+  "Psychedelic rock&#x200e;": {
+    "artist": "Kaleidoscope",
+    "songCount": 8,
+    "albumCount": 1,
+    "details": {
+      "id": "56d84ffd53a7ddfc01f97e1c",
+      "genres": [
+        "Folk",
+        "Psychedelic"
+      ],
+      "deezerFans": 1214
+    }
+  },
+  "Lounge music": {
+    "artist": "Katerine",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d850f153a7ddfc01f97fa6",
+      "genres": [],
+      "deezerFans": 15199
+    }
+  },
+  "Ragga": {
+    "artist": "Keen'V",
+    "songCount": 68,
+    "albumCount": 4,
+    "details": {
+      "id": "56d8517853a7ddfc01f98083",
+      "genres": [],
+      "deezerFans": 706386
+    }
+  },
+  "Drone doom": {
+    "artist": "Sunn O)))",
+    "songCount": 39,
+    "albumCount": 9,
+    "details": {
+      "id": "56d97612cc2ddd0c0f6bc17b",
+      "genres": [
+        "Drone Doom",
+        "Doom Metal",
+        "Black Metal"
+      ],
+      "deezerFans": 8316
+    }
+  },
+  "Minimal techno": {
+    "artist": "Kollektiv Turmstrasse",
+    "songCount": 29,
+    "albumCount": 2,
+    "details": {
+      "id": "56d8549753a7ddfc01f98549",
+      "genres": [],
+      "deezerFans": 30598
+    }
+  },
+  "Anime": {
+    "artist": "Kotoko",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d854d653a7ddfc01f985a6",
+      "genres": [
+        "J-Pop",
+        "Techno",
+        "Trance"
+      ],
+      "deezerFans": 2178
+    }
+  },
+  "Drumstep": {
+    "artist": "Laboratory 5",
+    "songCount": 24,
+    "albumCount": 2,
+    "details": {
+      "id": "56d856b953a7ddfc01f9884b",
+      "genres": [
+        "Drum And Bass",
+        "Drumstep",
+        "Dubstep",
+        "EDM",
+        "Electronic",
+        "Electro‎"
+      ],
+      "deezerFans": 7
+    }
+  },
+  "Ragtime": {
+    "artist": "Leon Redbone",
+    "songCount": 140,
+    "albumCount": 11,
+    "details": {
+      "id": "56d8594153a7ddfc01f98c40",
+      "genres": [
+        "Blues",
+        "R&B",
+        "Soul",
+        "Jazz",
+        "Singer-Songwriter",
+        "Ragtime",
+        "Swing",
+        "Trad Jazz",
+        "Rock"
+      ],
+      "deezerFans": 807
+    }
+  },
+  "Outsider music": {
+    "artist": "Leonard Nimoy",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d8595153a7ddfc01f98c50",
+      "genres": [
+        "Spoken Word",
+        "Outsider Music",
+        "Folk"
+      ],
+      "deezerFans": 651
+    }
+  },
+  "Dirty blues": {
+    "artist": "Lil Johnson",
+    "songCount": 24,
+    "albumCount": 1,
+    "details": {
+      "id": "56d85a8553a7ddfc01f98e54",
+      "genres": [
+        "Blues",
+        "Dirty Blues",
+        "Ragtime"
+      ],
+      "deezerFans": 84
+    }
+  },
+  "Reggae rock": {
+    "artist": "Lionize",
+    "songCount": 31,
+    "albumCount": 3,
+    "details": {
+      "id": "56d85b4553a7ddfc01f98f6c",
+      "genres": [],
+      "deezerFans": 408
+    }
+  },
+  "Roots reggae": {
+    "artist": "Steel Pulse",
+    "songCount": 103,
+    "albumCount": 9,
+    "details": {
+      "id": "56d9731fcc2ddd0c0f6bbd15",
+      "genres": [],
+      "deezerFans": 113277
+    }
+  },
+  "Alternative  rock": {
+    "artist": "The Cure",
+    "songCount": 63,
+    "albumCount": 5,
+    "details": {
+      "id": "56d97d18cc2ddd0c0f6bcb8d",
+      "genres": [
+        "Alternative Rock",
+        "Gothic Rock",
+        "New Wave",
+        "Post-Punk"
+      ],
+      "deezerFans": 1193867
+    }
+  },
+  "Zeuhl": {
+    "artist": "Magma",
+    "songCount": 65,
+    "albumCount": 6,
+    "details": {
+      "id": "56d93680ce06f50c0fed7cac",
+      "genres": [
+        "Zeuhl",
+        "Jazz Fusion",
+        "Progressive Rock"
+      ],
+      "deezerFans": 13645
+    }
+  },
+  "Reggae&#x200f;&#x200e;": {
+    "artist": "Martin Jondo",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d939dbce06f50c0fed81ba",
+      "genres": [],
+      "deezerFans": 10806
+    }
+  },
+  "Andalusian rock": {
+    "artist": "Medina Azahara",
+    "songCount": 287,
+    "albumCount": 22,
+    "details": {
+      "id": "56d93c64ce06f50c0fed8593",
+      "genres": [
+        "Andalusian Rock",
+        "Progressive Rock"
+      ],
+      "deezerFans": 3847
+    }
+  },
+  "Experimental pop": {
+    "artist": "Toro Y Moi",
+    "songCount": 33,
+    "albumCount": 4,
+    "details": {
+      "id": "56d98ab9cc2ddd0c0f6bdec9",
+      "genres": [
+        "Chillwave",
+        "Electronic"
+      ],
+      "deezerFans": 38309
+    }
+  },
+  "Harmonica blues": {
+    "artist": "Mississippi Heat",
+    "songCount": 15,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9406fce06f50c0fed8ba9",
+      "genres": [
+        "Blues",
+        "Harmonica Blues"
+      ],
+      "deezerFans": 782
+    }
+  },
+  "Jam band": {
+    "artist": "Phish",
+    "songCount": 118,
+    "albumCount": 5,
+    "details": {
+      "id": "56d9589fcc2ddd0c0f6b954c",
+      "genres": [
+        "Alternative Rock",
+        "Experimental Rock",
+        "Rock"
+      ],
+      "deezerFans": 5827
+    }
+  },
+  "Cowpunk": {
+    "artist": "Scruffy The Cat",
+    "songCount": 16,
+    "albumCount": 1,
+    "details": {
+      "id": "56d96981cc2ddd0c0f6bae05",
+      "genres": [],
+      "deezerFans": 78
+    }
+  },
+  "Bandanejo": {
+    "artist": "Os Atuais",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d952e6cc2ddd0c0f6b8d67",
+      "genres": [
+        "Bandanejo"
+      ],
+      "deezerFans": 332
+    }
+  },
+  "Drone music": {
+    "artist": "Nadja",
+    "songCount": 10,
+    "albumCount": 3,
+    "details": {
+      "id": "56d94b7ecc2ddd0c0f6b8213",
+      "genres": [
+        "Ambient",
+        "Doom Metal",
+        "Drone Music",
+        "Shoegazing"
+      ],
+      "deezerFans": 3948
+    }
+  },
+  "Pagode": {
+    "artist": "Sorriso Maroto",
+    "songCount": 64,
+    "albumCount": 3,
+    "details": {
+      "id": "56d970efcc2ddd0c0f6bb98a",
+      "genres": [
+        "Singer-Songwriter",
+        "Brazilian",
+        "Pagode"
+      ],
+      "deezerFans": 1041284
+    }
+  },
+  "Power noise": {
+    "artist": "W.A.S.T.E.",
+    "songCount": 55,
+    "albumCount": 5,
+    "details": {
+      "id": "56d99214cc2ddd0c0f6be99b",
+      "genres": [],
+      "deezerFans": 551
+    }
+  },
+  "Contemporary jazz": {
+    "artist": "Norah Jones",
+    "songCount": 33,
+    "albumCount": 1,
+    "details": {
+      "id": "56d94ff1cc2ddd0c0f6b8880",
+      "genres": [
+        "Country",
+        "Jazz",
+        "Pop",
+        "Pop Rock",
+        "Vocal Jazz"
+      ],
+      "deezerFans": 1459706
+    }
+  },
+  "Soul jazz": {
+    "artist": "Nostalgia 77",
+    "songCount": 9,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9502acc2ddd0c0f6b88db",
+      "genres": [],
+      "deezerFans": 4566
+    }
+  },
+  "Deep house&#x200e;": {
+    "artist": "Omi",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d95209cc2ddd0c0f6b8bc6",
+      "genres": [
+        "Reggae"
+      ],
+      "deezerFans": 243293
+    }
+  },
+  "Early music": {
+    "artist": "Wolgemut",
+    "songCount": 75,
+    "albumCount": 5,
+    "details": {
+      "id": "56d99539cc2ddd0c0f6beeaf",
+      "genres": [],
+      "deezerFans": 62
+    }
+  },
+  "Bhangra": {
+    "artist": "Panjabi MC",
+    "songCount": 34,
+    "albumCount": 3,
+    "details": {
+      "id": "56d9544ecc2ddd0c0f6b8f90",
+      "genres": [],
+      "deezerFans": 5599
+    }
+  },
+  "Queercore": {
+    "artist": "Pansy Division",
+    "songCount": 97,
+    "albumCount": 6,
+    "details": {
+      "id": "56d95455cc2ddd0c0f6b8f9b",
+      "genres": [],
+      "deezerFans": 251
+    }
+  },
+  "Martial industrial": {
+    "artist": "Triarii",
+    "songCount": 48,
+    "albumCount": 7,
+    "details": {
+      "id": "56d98bcdcc2ddd0c0f6be049",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Jump blues": {
+    "artist": "Pat Benatar",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d95508cc2ddd0c0f6b90b2",
+      "genres": [
+        "Rock",
+        "Hard Rock",
+        "Pop Rock"
+      ],
+      "deezerFans": 30874
+    }
+  },
+  "Swiss rock": {
+    "artist": "Patent Ochsner",
+    "songCount": 85,
+    "albumCount": 6,
+    "details": {
+      "id": "56d95517cc2ddd0c0f6b90cd",
+      "genres": [
+        "Singer-Songwriter",
+        "Rock",
+        "Swiss Rock"
+      ],
+      "deezerFans": 1281
+    }
+  },
+  "Sunshine pop": {
+    "artist": "The Free Design",
+    "songCount": 102,
+    "albumCount": 8,
+    "details": {
+      "id": "56d97ea2cc2ddd0c0f6bcd98",
+      "genres": [
+        "Sunshine Pop",
+        "Baroque Pop"
+      ],
+      "deezerFans": 475
+    }
+  },
+  "Djent": {
+    "artist": "Veil Of Maya",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98ffecc2ddd0c0f6be652",
+      "genres": [
+        "Deathcore",
+        "Djent",
+        "Metalcore"
+      ],
+      "deezerFans": 22719
+    }
+  },
+  "British invasion": {
+    "artist": "The Spencer Davis Group",
+    "songCount": 51,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9848ccc2ddd0c0f6bd5d5",
+      "genres": [
+        "Blues",
+        "Beat",
+        "British Invasion",
+        "Psychedelic Rock"
+      ],
+      "deezerFans": 14439
+    }
+  },
+  "Contemporary christian&#x200e;": {
+    "artist": "Phillips, Craig & Dean",
+    "songCount": 21,
+    "albumCount": 2,
+    "details": {
+      "id": "56d95890cc2ddd0c0f6b9534",
+      "genres": [
+        "Contemporary Christian",
+        "Gospel",
+        "Worship"
+      ],
+      "deezerFans": 6474
+    }
+  },
+  "Polka": {
+    "artist": "Polkaholix",
+    "songCount": 43,
+    "albumCount": 3,
+    "details": {
+      "id": "56d95a45cc2ddd0c0f6b97b1",
+      "genres": [
+        "Folk Rock",
+        "Polka",
+        "Punk Rock",
+        "Rock",
+        "Rock 'N' Roll",
+        "Ska"
+      ],
+      "deezerFans": 186
+    }
+  },
+  "Hardstyle": {
+    "artist": "Project One",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d95bafcc2ddd0c0f6b99b6",
+      "genres": [
+        "Hardstyle"
+      ],
+      "deezerFans": 40
+    }
+  },
+  "Pimba": {
+    "artist": "Quim Barreiros",
+    "songCount": 17,
+    "albumCount": 2,
+    "details": {
+      "id": "56d95cedcc2ddd0c0f6b9b83",
+      "genres": [],
+      "deezerFans": 6571
+    }
+  },
+  "Death  metal": {
+    "artist": "Quo Vadis",
+    "songCount": 18,
+    "albumCount": 1,
+    "details": {
+      "id": "56d95cfbcc2ddd0c0f6b9ba4",
+      "genres": [
+        "Technical Death Metal",
+        "Melodic Death Metal",
+        "Progressive Metal"
+      ],
+      "deezerFans": 1821
+    }
+  },
+  "Cantopop": {
+    "artist": "Raidas",
+    "songCount": 41,
+    "albumCount": 4,
+    "details": {
+      "id": "56d95dc8cc2ddd0c0f6b9cc0",
+      "genres": [
+        "Cantopop",
+        "Electronic"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Forr&#xf3;&#x200e;": {
+    "artist": "Rastapé",
+    "songCount": 68,
+    "albumCount": 5,
+    "details": {
+      "id": "56d95e94cc2ddd0c0f6b9df7",
+      "genres": [],
+      "deezerFans": 9872
+    }
+  },
+  "Breakcore": {
+    "artist": "Renard",
+    "songCount": 165,
+    "albumCount": 14,
+    "details": {
+      "id": "56d9608acc2ddd0c0f6ba0db",
+      "genres": [
+        "Ambient",
+        "Breakcore",
+        "Drum And Bass",
+        "EDM",
+        "Electronic",
+        "Happy Hardcore",
+        "IDM",
+        "Noise"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Speedcore": {
+    "artist": "Renard",
+    "songCount": 18,
+    "albumCount": 2,
+    "details": {
+      "id": "56d9608acc2ddd0c0f6ba0db",
+      "genres": [
+        "Ambient",
+        "Breakcore",
+        "Drum And Bass",
+        "EDM",
+        "Electronic",
+        "Happy Hardcore",
+        "IDM",
+        "Noise"
+      ],
+      "deezerFans": 0
+    }
+  },
+  "Alpine new wave": {
+    "artist": "Ringsgwandl",
+    "songCount": 148,
+    "albumCount": 10,
+    "details": {
+      "id": "56d96212cc2ddd0c0f6ba301",
+      "genres": [
+        "Alpine New Wave",
+        "Comedy",
+        "Folk",
+        "Parody"
+      ],
+      "deezerFans": 129
+    }
+  },
+  "Free jazz": {
+    "artist": "Robert Wyatt",
+    "songCount": 9,
+    "albumCount": 1,
+    "details": {
+      "id": "56d962e8cc2ddd0c0f6ba459",
+      "genres": [
+        "Canterbury",
+        "Jazz Fusion",
+        "Progressive Rock",
+        "Experimental",
+        "Avant-Pop"
+      ],
+      "deezerFans": 11068
+    }
+  },
+  "Soundtrack/television": {
+    "artist": "Schoolhouse Rock",
+    "songCount": 38,
+    "albumCount": 4,
+    "details": {
+      "id": "56d9690ecc2ddd0c0f6bad50",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "Hard trance": {
+    "artist": "Scooter",
+    "songCount": 60,
+    "albumCount": 3,
+    "details": {
+      "id": "56d96926cc2ddd0c0f6bad7b",
+      "genres": [
+        "Techno",
+        "Rave",
+        "EDM",
+        "Eurodance"
+      ],
+      "deezerFans": 108215
+    }
+  },
+  "Soundtrack/musical": {
+    "artist": "Sherman Edwards",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d96c05cc2ddd0c0f6bb209",
+      "genres": [],
+      "deezerFans": 0
+    }
+  },
+  "M&#xfa;sica popular portuguesa": {
+    "artist": "Sérgio Godinho",
+    "songCount": 119,
+    "albumCount": 11,
+    "details": {
+      "id": "56d97770cc2ddd0c0f6bc3c9",
+      "genres": [
+        "Singer-Songwriter",
+        "Música Popular Portuguesa",
+        "Ballad",
+        "Protest Song",
+        "Folk"
+      ],
+      "deezerFans": 4234
+    }
+  },
+  "Raw rock": {
+    "artist": "Showbread",
+    "songCount": 47,
+    "albumCount": 4,
+    "details": {
+      "id": "56d96c85cc2ddd0c0f6bb2b3",
+      "genres": [
+        "Raw Rock"
+      ],
+      "deezerFans": 855
+    }
+  },
+  "Lambada": {
+    "artist": "Sidney Magal",
+    "songCount": 10,
+    "albumCount": 1,
+    "details": {
+      "id": "56d96ce5cc2ddd0c0f6bb334",
+      "genres": [
+        "Brega",
+        "Lambada"
+      ],
+      "deezerFans": 1208
+    }
+  },
+  "Swamp blues": {
+    "artist": "Slim Harpo",
+    "songCount": 25,
+    "albumCount": 1,
+    "details": {
+      "id": "56d96f0bcc2ddd0c0f6bb698",
+      "genres": [
+        "Blues",
+        "Louisiana Blues",
+        "Harmonica Blues",
+        "Swamp Blues"
+      ],
+      "deezerFans": 42428
+    }
+  },
+  "Electric folk": {
+    "artist": "Steeleye Span",
+    "songCount": 55,
+    "albumCount": 5,
+    "details": {
+      "id": "56d97326cc2ddd0c0f6bbd1c",
+      "genres": [],
+      "deezerFans": 2236
+    }
+  },
+  "Honky tonk": {
+    "artist": "Tammy Wynette",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d97860cc2ddd0c0f6bc51b",
+      "genres": [
+        "Country",
+        "Nashville Sound"
+      ],
+      "deezerFans": 34028
+    }
+  },
+  "J-rap": {
+    "artist": "Teriyaki Boyz",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d979b6cc2ddd0c0f6bc734",
+      "genres": [],
+      "deezerFans": 4898
+    }
+  },
+  "Singer-songwriter&#x200e;": {
+    "artist": "The Bear That Wasn't",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d97b0dcc2ddd0c0f6bc91b",
+      "genres": [
+        "Singer-Songwriter‎",
+        "Indie Folk‎"
+      ],
+      "deezerFans": 556
+    }
+  },
+  "Cool jazz": {
+    "artist": "The Dave Brubeck Quartet",
+    "songCount": 26,
+    "albumCount": 2,
+    "details": {
+      "id": "56d97d4dcc2ddd0c0f6bcbb2",
+      "genres": [
+        "Jazz",
+        "Cool Jazz",
+        "West Coast Jazz",
+        "Third Stream"
+      ],
+      "deezerFans": 131514
+    }
+  },
+  "Post-punk&#x200e;": {
+    "artist": "The Deepsea Goes",
+    "songCount": 20,
+    "albumCount": 4,
+    "details": {
+      "id": "56d97d64cc2ddd0c0f6bcbd6",
+      "genres": [
+        "Post-Punk",
+        "Indie Rock",
+        "Noise Rock"
+      ],
+      "deezerFans": 139
+    }
+  },
+  "Punkabilly": {
+    "artist": "The Living End",
+    "songCount": 20,
+    "albumCount": 1,
+    "details": {
+      "id": "56d980eecc2ddd0c0f6bd0a7",
+      "genres": [
+        "Alternative Rock",
+        "Psychobilly",
+        "Punk Rock"
+      ],
+      "deezerFans": 5450
+    }
+  },
+  "Gypsy jazz": {
+    "artist": "Thomas Dutronc",
+    "songCount": 14,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98784cc2ddd0c0f6bda04",
+      "genres": [],
+      "deezerFans": 87978
+    }
+  },
+  "Electronic&#x200e;": {
+    "artist": "The Notwist",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98267cc2ddd0c0f6bd2eb",
+      "genres": [],
+      "deezerFans": 8771
+    }
+  },
+  "Southern gospel": {
+    "artist": "The Speer Family",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9848ecc2ddd0c0f6bd5d9",
+      "genres": [
+        "Gospel",
+        "Christian",
+        "Southern Gospel",
+        "Religious"
+      ],
+      "deezerFans": 5
+    }
+  },
+  "Post-industrial": {
+    "artist": "The Young Gods",
+    "songCount": 51,
+    "albumCount": 5,
+    "details": {
+      "id": "56d986c3cc2ddd0c0f6bd8d9",
+      "genres": [],
+      "deezerFans": 6326
+    }
+  },
+  "Progressive rock&#x200f;&#x200e;": {
+    "artist": "Tides Of Man",
+    "songCount": 11,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98818cc2ddd0c0f6bdafe",
+      "genres": [
+        "Progressive Rock"
+      ],
+      "deezerFans": 1604
+    }
+  },
+  "Chamber music": {
+    "artist": "Tin Hat Trio",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d988cfcc2ddd0c0f6bdbea",
+      "genres": [],
+      "deezerFans": 664
+    }
+  },
+  "Hamburger schule": {
+    "artist": "Tocotronic",
+    "songCount": 102,
+    "albumCount": 7,
+    "details": {
+      "id": "56d98961cc2ddd0c0f6bdcb1",
+      "genres": [
+        "Alternative Rock",
+        "Hamburger Schule"
+      ],
+      "deezerFans": 10114
+    }
+  },
+  "Visual kei&#x200e;": {
+    "artist": "UnsraW",
+    "songCount": 10,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98e93cc2ddd0c0f6be457",
+      "genres": [
+        "Visual Kei"
+      ],
+      "deezerFans": 936
+    }
+  },
+  "Gothic rock&#x200f;&#x200e;": {
+    "artist": "Unto Ashes",
+    "songCount": 4,
+    "albumCount": 1,
+    "details": {
+      "id": "56d98ebccc2ddd0c0f6be46b",
+      "genres": [],
+      "deezerFans": 306
+    }
+  },
+  "Milonga": {
+    "artist": "Vítor Ramil",
+    "songCount": 12,
+    "albumCount": 1,
+    "details": {
+      "id": "56d99205cc2ddd0c0f6be992",
+      "genres": [
+        "Singer-Songwriter",
+        "Brazilian",
+        "MPB",
+        "Folk"
+      ],
+      "deezerFans": 8143
+    }
+  },
+  "Native american": {
+    "artist": "Walela",
+    "songCount": 13,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9922fcc2ddd0c0f6be9e1",
+      "genres": [],
+      "deezerFans": 74
+    }
+  },
+  "Pagan metal&#x200e;": {
+    "artist": "Ymyrgar",
+    "songCount": 7,
+    "albumCount": 1,
+    "details": {
+      "id": "56d9969ccc2ddd0c0f6bf0d9",
+      "genres": [],
+      "deezerFans": 30
+    }
+  }
+}
