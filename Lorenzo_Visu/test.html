@@ -87,8 +87,22 @@
 
   <div id="tooltip" class="tooltip">
     <span class="tooltip-close">Fermer</span>
-    <svg id="tooltip-chart"></svg>
+    <div id="tooltip-country-name"></div> <!-- Conteneur pour le nom du pays -->
+    <div id="tooltip-chart-container">
+      <svg id="tooltip-chart"></svg>
+    </div>
+    <div id="tooltip-selected-genre" style="text-align: center; margin-top: 10px; font-weight: bold;">
+      Genre sélectionné : Aucun
+    </div>
+    <div id="tooltip-buttons" style="display: none; text-align: center; margin-top: 10px;">
+      <button id="button1">Evolution des genres musicaux les plus publiés par années</button>
+      <button id="button2">Artiste le plus prolifique dans chacun des sous genres du genre selectionné</button>
+    </div>
   </div>
+  
+  
+  
+
 
   <script src="script.js"></script>
 </body>

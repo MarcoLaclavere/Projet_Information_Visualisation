@@ -9,6 +9,8 @@ function getSelectedGenres() {
     return selectedGenres;
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("welcome-modal");
     const closeButton = document.querySelector(".modal-close");
@@ -194,17 +196,20 @@ function showTooltip(countryName, pieData, color) {
     const tooltip = d3.select("#tooltip");
     tooltip.style("display", "block");
 
+    // Ajouter le nom du pays dans le conteneur dédié
+    d3.select("#tooltip-country-name").text(countryName);
+
     const svg = d3.select("#tooltip-chart");
     svg.selectAll("*").remove();
 
-    const radius = 120;
+    const radius = 70; // Ajustez le rayon pour qu'il corresponde au conteneur
+    svg.attr("width", radius * 2).attr("height", radius * 2);
+
     const arc = d3.arc().innerRadius(0).outerRadius(radius);
     const pie = d3.pie().value(d => d.count);
 
-    svg.attr("width", radius * 2).attr("height", radius * 2);
-
     const pieGroup = svg.append("g")
-        .attr("transform", `translate(${radius}, ${radius + 20})`);
+        .attr("transform", `translate(${radius}, ${radius})`);
 
     pieGroup.selectAll("path")
         .data(pie(pieData))
@@ -212,25 +217,32 @@ function showTooltip(countryName, pieData, color) {
         .append("path")
         .attr("d", arc)
         .attr("fill", d => color(d.data.genre))
+        .on("click", function(event, d) {
+            event.stopPropagation();
+            d3.select("#tooltip-buttons").style("display", "block");
+
+            // Mettre à jour le texte du genre sélectionné
+            d3.select("#tooltip-selected-genre").text(`Genre sélectionné : ${d.data.genre}`);
+            console.log(`Genre sélectionné : ${d.data.genre}`);
+        })
         .append("title")
         .text(d => `${d.data.genre}: ${d.data.count}`);
 
-    svg.append("text")
-        .attr("x", radius)
-        .attr("y", 10)
-        .attr("text-anchor", "middle")
-        .text(countryName)
-        .style("font-weight", "bold");
-
-    // Ajoutez le comportement de zoom
     const zoom = d3.zoom()
-        .scaleExtent([1, 8]) // Limite de zoom : entre 1x et 3x
+        .scaleExtent([1, 8])
         .on("zoom", (event) => {
             pieGroup.attr("transform", event.transform);
         });
 
     svg.call(zoom);
 
-    d3.select(".tooltip-close").on("click", () => tooltip.style("display", "none"));
+    d3.select(".tooltip-close").on("click", () => {
+        tooltip.style("display", "none");
+        d3.select("#tooltip-buttons").style("display", "none");
+        d3.select("#tooltip-selected-genre").text("Genre sélectionné : Aucun"); // Réinitialiser le texte du genre sélectionné
+    });
 }
+
+
+
 

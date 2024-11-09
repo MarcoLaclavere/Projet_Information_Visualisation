@@ -59,7 +59,13 @@ svg {
     color: white;
     font-weight: bold;
   }
-  
+  #tooltip-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
   
   .modal-content {
     position: absolute;
@@ -95,7 +101,16 @@ svg {
     font-size: 10px;
   }
   
-  /* Styles pour le tooltip */
+  
+
+
+  
+  .tooltip-close {
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+  }
+  
   .tooltip {
     position: fixed;
     top: 10%;
@@ -106,15 +121,41 @@ svg {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     display: none;
     z-index: 10;
-    width: 300px; /* Increase width */
-    height: 300px; /* Increase height */
-    overflow-y: auto; /* Add scroll if necessary */
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
 }
 
-  
-  .tooltip-close {
-    cursor: pointer;
+#tooltip-country-name {
     font-weight: bold;
-    color: red;
-  }
-  
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#tooltip-chart-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centre horizontalement le conteneur */
+  margin-top: 10px; /* Ajustement pour éviter le chevauchement */
+}
+
+
+#tooltip-chart {
+    width: 100%;
+    height: 100%;
+}
+
+#tooltip-buttons button {
+  display: block;
+  width: 100%; /* Prend toute la largeur du conteneur */
+  margin: 5px 0; /* Espace entre les boutons */
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
