@@ -1,221 +1,222 @@
-
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Albums Platform Availability Chart</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar Chart - Nombre d'albums par plateforme</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    select {
+      font-size: 16px;
+      margin: 20px;
+    }
+    .chart {
+      width: 800px;
+      margin: 0 auto;
+    }
+    .bar:hover {
+      fill: orange;
+    }
+    .axis-label {
+      font-size: 14px;
+    }
+    .checkbox-container {
+      width: 800px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .platform-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .color-box {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .bar-label {
+      fill: black;
+      text-anchor: middle;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
-    <h2>Availability of Albums by Platform</h2>
-    <div id="chart"></div>
-    <style>
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 24px;
-            margin: 5px;
-        }
+  <h2>Graphique des albums par plateforme</h2>
+  
+  <label for="genreSelect">Sélectionnez un genre: </label>
+  <select id="genreSelect">
+    <option value="any">Any</option>
+  </select>
 
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+  <div id="chart" class="chart"></div>
+  
+  <div id="checkboxes" class="checkbox-container"></div>
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 24px;
-        }
+  <script>
+    // Définir un objet avec des couleurs pour chaque plateforme
+    const platformColors = {
+      "urlSpotify": "#1DB954",
+      "urlITunes": "#FF3B30",
+      "urlAmazon": "#FF9900",
+      "urlDeezer": "#0060F3",
+      "urlDiscogs": "#0099FF",
+      "urlMusicBrainz": "#B7D7D7"
+    };
 
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 18px;
-            width: 18px;
-            left: 3px;
-            bottom: 3px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
+    // Définir les noms d'affichage des plateformes
+    const platformNames = {
+      "urlSpotify": "Spotify",
+      "urlITunes": "iTunes",
+      "urlAmazon": "Amazon",
+      "urlDeezer": "Deezer",
+      "urlDiscogs": "Discogs",
+      "urlMusicBrainz": "MusicBrainz"
+    };
 
-        input:checked + .slider {
-            background-color: #4CAF50;
-        }
+    // État des plateformes visibles
+    let visiblePlatforms = new Set(Object.keys(platformColors));
 
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
-    </style>
+    // Variable pour stocker les données
+    let chartData;
 
-    <div id="filters">
-        <label>Spotify <div class="switch"><input type="checkbox" checked onchange="togglePlatform('Spotify')"><span class="slider"></span></div></label>
-        <label>iTunes <div class="switch"><input type="checkbox" checked onchange="togglePlatform('iTunes')"><span class="slider"></span></div></label>
-        <label>Amazon <div class="switch"><input type="checkbox" checked onchange="togglePlatform('Amazon')"><span class="slider"></span></div></label>
-        <label>Deezer <div class="switch"><input type="checkbox" checked onchange="togglePlatform('Deezer')"><span class="slider"></span></div></label>
-        <label>Discogs <div class="switch"><input type="checkbox" checked onchange="togglePlatform('Discogs')"><span class="slider"></span></div></label>
-        <label>MusicBrainz <div class="switch"><input type="checkbox" checked onchange="togglePlatform('MusicBrainz')"><span class="slider"></span></div></label>
-    </div>
+    // Fonction pour dessiner le graphique
+    function drawChart(genre) {
+      const genreData = chartData[genre];
+      
+      const margin = { top: 30, right: 40, bottom: 40, left: 60 };
+      const width = 800 - margin.left - margin.right;
+      const height = 500 - margin.top - margin.bottom;
 
-    <script>
-        // Charger les données JSON
-        d3.json('json/album.json').then(data => {
-            // Compter le nombre d'albums disponibles sur chaque plateforme
-            let platformCounts = {
-                Spotify: 0,
-                iTunes: 0,
-                Amazon: 0,
-                Deezer: 0,
-                Discogs: 0,
-                MusicBrainz: 0
-            };
+      const svg = d3.select("#chart").html("").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            data.forEach(album => {
-                if (album.urlSpotify) platformCounts.Spotify += 1;
-                if (album.urlITunes) platformCounts.iTunes += 1;
-                if (album.urlAmazon) platformCounts.Amazon += 1;
-                if (album.urlDeezer) platformCounts.Deezer += 1;
-                if (album.urlDiscogs) platformCounts.Discogs += 1;
-                if (album.urlMusicBrainz) platformCounts.MusicBrainz += 1;
-            });
+      // Filtrer les plateformes visibles
+      const platforms = Array.from(visiblePlatforms);
+      const platformCounts = platforms.map(platform => ({
+        platform: platform,
+        count: genreData[platform] || 0
+      }));
 
-            let displayedPlatforms = {
-                Spotify: true,
-                iTunes: true,
-                Amazon: true,
-                Deezer: true,
-                Discogs: true,
-                MusicBrainz: true
-            };
+      const x = d3.scaleBand()
+        .domain(platforms)
+        .range([0, width])
+        .padding(0.1);
 
-            // Transformer les données pour D3
-            const chartData = Object.entries(platformCounts).map(([platform, count]) => ({
-                platform: platform,
-                count: count
-            }));
+      const y = d3.scaleLinear()
+        .domain([0, d3.max(platformCounts, d => d.count)])
+        .nice()
+        .range([height, 0]);
 
-            // Dimensions de la bar chart
-            const width = 500;
-            const height = 300;
-            const margin = {top: 20, right: 30, bottom: 40, left: 60};
-
-            // Créer une échelle pour l'axe Y
-            const yScale = d3.scaleLinear()
-                .domain([0, d3.max(chartData, d => d.count)])
-                .range([height - margin.bottom, margin.top]);
-
-            // Créer une échelle pour l'axe X
-            const xScale = d3.scaleBand()
-                .domain(chartData.map(d => d.platform))
-                .range([margin.left, width - margin.right])
-                .padding(0.1);
-
-            // Ajouter un conteneur SVG pour la bar chart
-            const svg = d3.select("#chart")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height);
-
-            // Fonction pour afficher/mettre à jour le graphique
-            function updateChart() {
-                const filteredData = chartData.filter(d => displayedPlatforms[d.platform]);
-
-                // Mise à jour des domaines des échelles
-                xScale.domain(filteredData.map(d => d.platform));
-                console.log(d3.max(filteredData, d => d.count));
-                yScale.domain([0, d3.max(filteredData, d => d.count)]);
-
-                // Lier les données filtrées
-                const bars = svg.selectAll(".bar")
-                    .data(filteredData, d => d.platform);
-
-                // Sortie : supprimer les barres non présentes dans les données filtrées
-                bars.exit().remove();
-
-                // Entrée + Mise à jour : ajouter des nouvelles barres et mettre à jour les existantes
-                bars.enter()
-                    .append("rect")
-                    .attr("class", "bar")
-                    .merge(bars)
-                    .attr("x", d => xScale(d.platform))
-                    .attr("y", d => yScale(d.count))
-                    .attr("width", xScale.bandwidth())
-                    .attr("height", 0) // hauteur initiale à 0 pour l'animation d'entrée
-                    .transition() // Ajouter une transition lors de l'entrée
-                    .duration(500)
-                    .attr("y", d => yScale(d.count))
-                    .attr("height", d => height - margin.bottom - yScale(d.count))
-                    .attr("fill", "steelblue");
-
-                bars.transition() // Ajouter une transition pour les barres mises à jour
-                    .duration(500)
-                    .attr("x", d => xScale(d.platform))
-                    .attr("y", d => yScale(d.count))
-                    .attr("height", d => height - margin.bottom - yScale(d.count));
-                
-                // Mise à jour de l'axe X
-                svg.select(".x-axis")
-                    .call(d3.axisBottom(xScale));
-
-            
-                svg.select(".y-axis")
-                    .transition()  // Ajoute une transition pour rendre le changement plus fluide
-                    .duration(500)
-                    .call(d3.axisLeft(yScale).ticks(5));
-
-
-                // Ajout de labels de texte
-                const labels = svg.selectAll(".text")
-                    .data(filteredData, d => d.platform);
-
-                labels.exit().remove();
-
-                labels.enter()
-                    .append("text")
-                    .attr("class", "text")
-                    .merge(labels)
-                    .attr("x", d => xScale(d.platform) + xScale.bandwidth() / 2)
-                    .attr("y", d => yScale(d.count) - 5)
-                    .attr("text-anchor", "middle")
-                    .text(d => d.count)
-                    .attr("fill", "black")
-                    .attr("font-size", '12px');
-            }
-
-            // Ajouter les axes pour la première fois
-            svg.append("g")
-                .attr("class", "x-axis")
-                .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom(xScale))
-                .attr("font-size", '12px');
-
-            svg.append("g")
-                .attr("class", "y-axis")
-                .attr("transform", `translate(${margin.left},0)`)
-                .call(d3.axisLeft(yScale).ticks(5))
-                .attr("font-size", '12px');
-
-            // Fonction pour gérer le changement d'état des interrupteurs
-            function togglePlatform(platform) {
-                displayedPlatforms[platform] = !displayedPlatforms[platform];
-                updateChart();
-            }
-
-            // Affichage initial
-            updateChart();
-
-            // Ajouter la fonction togglePlatform en global pour les événements onchange
-            window.togglePlatform = togglePlatform;
+      // Dessiner les barres
+      svg.selectAll(".bar")
+        .data(platformCounts)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.platform))
+        .attr("y", d => y(d.count))
+        .attr("width", x.bandwidth())
+        .attr("height", d => height - y(d.count))
+        .attr("fill", d => platformColors[d.platform])
+        .on("mouseover", function(event, d) {
+          d3.select(this).style("fill", "orange");
+        })
+        .on("mouseout", function(event, d) {
+          d3.select(this).style("fill", platformColors[d.platform]);
         });
-    </script>
+
+      // Ajouter les labels au-dessus des barres
+      svg.selectAll(".bar-label")
+        .data(platformCounts)
+        .enter()
+        .append("text")
+        .attr("class", "bar-label")
+        .attr("x", d => x(d.platform) + x.bandwidth() / 2)
+        .attr("y", d => y(d.count) - 5)
+        .text(d => d.count);
+
+      svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).tickFormat(d => platformNames[d]))
+        .selectAll(".tick text")
+        .style("text-anchor", "middle")
+        .style("font-size", "14px");
+
+      svg.append("g")
+        .attr("class", "y-axis")
+        .call(d3.axisLeft(y))
+        .selectAll(".tick text")
+        .style("font-size", "14px");
+    }
+
+    // Fonction pour créer les checkboxes
+    function createCheckboxes() {
+      const container = d3.select("#checkboxes");
+      container.html("");
+
+      Object.entries(platformColors).forEach(([platform, color]) => {
+        const checkboxDiv = container.append("div")
+          .attr("class", "platform-checkbox");
+
+        checkboxDiv.append("span")
+          .attr("class", "color-box")
+          .style("background-color", color);
+
+        checkboxDiv.append("input")
+          .attr("type", "checkbox")
+          .attr("id", platform + "-checkbox")
+          .attr("checked", visiblePlatforms.has(platform))
+          .on("change", function() {
+            if (this.checked) {
+              visiblePlatforms.add(platform);
+            } else {
+              visiblePlatforms.delete(platform);
+            }
+            const selectedGenre = d3.select("#genreSelect").property("value");
+            drawChart(selectedGenre);
+          });
+
+        checkboxDiv.append("label")
+          .attr("for", platform + "-checkbox")
+          .text(platformNames[platform]);
+      });
+    }
+
+    // Charger les données
+    d3.json('../json/stats-platform.json').then(data => {
+      // Stocker les données globalement
+      chartData = data;
+      
+      const genres = Object.keys(data).filter(genre => genre !== 'any');
+      
+      const genreSelect = d3.select('#genreSelect');
+      genres.forEach(genre => {
+        genreSelect.append('option').text(genre).attr('value', genre);
+      });
+
+      // Créer les checkboxes initiaux
+      createCheckboxes();
+      
+      // Initialiser le graphique
+      drawChart("any");
+
+      // Mettre à jour le graphique lors du changement de genre
+      genreSelect.on("change", function() {
+        drawChart(this.value);
+      });
+    });
+  </script>
 </body>
 </html>

@@ -18,7 +18,13 @@ function extractEssentialInfo(data) {
   const simplifiedData = data.map(item => ({
     name: item.name,                           // Nom de l'album
     date : item.dateRelease,                   // Date de publication
-    genre: item.genre                          // Style de musique
+    genre: item.genre,                          // Style de musique
+    urlSpotify: !!item.urlSpotify,          // Présence de l'URL Spotify
+    urlITunes: !!item.urlITunes,            // Présence de l'URL iTunes
+    urlAmazon: !!item.urlAmazon,            // Présence de l'URL Amazon
+    urlDeezer: !!item.urlDeezer,            // Présence de l'URL Deezer
+    urlDiscogs: !!item.urlDiscogs,          // Présence de l'URL Discogs
+    urlMusicBrainz: !!item.urlMusicBrainz   // Présence de l'URL MusicBrainz
   }));
 
   // Sauvegarder les données simplifiées dans un nouveau fichier JSON
