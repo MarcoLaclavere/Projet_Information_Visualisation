@@ -115,8 +115,7 @@
         .padding(0.1);
 
       const y = d3.scaleLinear()
-        .domain([0, d3.max(platformCounts, d => d.count)])
-        .nice()
+        .domain([0, d3.max(platformCounts, d => d.count)]).nice()
         .range([height, 0]);
 
       // Dessiner les barres
@@ -134,6 +133,11 @@
         })
         .on("mouseout", function(event, d) {
           d3.select(this).style("fill", platformColors[d.platform]);
+        })
+        .on("click", function(event, d) {
+          // Rediriger vers stackedBar.html avec la plateforme sélectionnée
+          const genre = d3.select("#genreSelect").property("value");
+          window.location.href = `../Marco_Visu/stackedBar.html?platform=${d.platform}&genre=${genre}`;
         });
 
       // Ajouter les labels au-dessus des barres
@@ -208,7 +212,6 @@
 
       // Créer les checkboxes initiaux
       createCheckboxes();
-      
 
       // Récupérer l'URL actuelle
       const urlParams = new URLSearchParams(window.location.search);
@@ -216,23 +219,16 @@
       // Récupérer la valeur de 'genre'
       const genre = urlParams.get('genre');
 
-      //en faire un stirng
+      // en faire un stirng
       console.log(String(genre));
 
       console.log(genre); // Affiche la valeur de genre dans la console
       if (String(genre) == "undefined") {
         genreSelect.property("value", "any");
-        
-      }
-      else {
+      } else {
         genreSelect.property("value", genre);
         drawChart(genre);
       }
-      
-
-
-
-
 
       // Mettre à jour le graphique lors du changement de genre
       genreSelect.on("change", function() {
