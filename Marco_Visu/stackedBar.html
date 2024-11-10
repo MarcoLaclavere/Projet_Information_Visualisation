@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacked Bar Chart - Artists by Record Label and Genre</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #stackedbar {
+      margin-top: 20px;
+    }
+    #platform-select, #hide-misc-checkbox {
+      margin: 10px;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 3px;
+      pointer-events: none;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Nombre d'artistes par recordLabel et genre</h2>
+
+  <label for="platform-select">Sélectionnez une plateforme :</label>
+  <select id="platform-select">
+    <option value="any">Any</option>
+    <option value="Spotify">Spotify</option>
+    <option value="iTunes">iTunes</option>
+    <option value="Amazon">Amazon</option>
+    <option value="Deezer">Deezer</option>
+    <option value="Discogs">Discogs</option>
+    <option value="MusicBrainz">MusicBrainz</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="hide-misc-checkbox">
+    Cacher le genre "Miscellaneous"
+  </label>
+
+  <div id="stackedbar"></div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script>
+    const margin = { top: 20, right: 30, bottom: 50, left: 40 };
+    const width = 800 - margin.left - margin.right;
+    const height = 500 - margin.top - margin.bottom;
+
+    const svg = d3.select("#stackedbar")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const tooltip = d3.select("#tooltip");
+
+    d3.json("../json/artist-simplified.json").then(data => {
+    // Fonction pour convertir le nom de l'URL en nom de plateforme
+    function getPlatformFromUrl(url) {
+        const platformMap = {
+        urlSpotify: "Spotify",
+        urlITunes: "iTunes",
+        urlAmazon: "Amazon",
+        urlDeezer: "Deezer",
+        urlDiscogs: "Discogs",
+        urlMusicBrainz: "MusicBrainz"
+        };
+        return platformMap[url] || "any";
+    }
+
+    // Fonction pour convertir le nom de la plateforme en URL
+    function getUrlFromPlatform(platform) {
+        const urlMap = {
+        "Spotify": "urlSpotify",
+        "iTunes": "urlITunes",
+        "Amazon": "urlAmazon",
+        "Deezer": "urlDeezer",
+        "Discogs": "urlDiscogs",
+        "MusicBrainz": "urlMusicBrainz"
+        };
+        return urlMap[platform] || "any";
+    }
+
+    function prepareData(selectedPlatform, hideMisc) {
+        // Filtrer d'abord par plateforme
+        let filteredData = data;
+        if (selectedPlatform !== "any") {
+        filteredData = data.filter(d => d[selectedPlatform]);
+        }
+
+        // Filtrer pour exclure les entrées sans recordLabel
+        filteredData = filteredData.filter(d => d.recordLabel && d.recordLabel.length > 0 && d.recordLabel[0]);
+
+        if (hideMisc) {
+        filteredData = filteredData.filter(d => d.music_style[0] !== "Miscellaneous");
+        }
+
+        const genreLabelCount = d3.rollups(
+        filteredData,
+        v => v.length,
+        d => d.music_style[0],
+        d => d.recordLabel[0]
+        );
+
+        const stackData = [];
+        genreLabelCount.forEach(([genre, labels]) => {
+        const entry = { genre: genre };
+        labels.sort((a, b) => b[1] - a[1]);
+        labels.forEach(([label, count]) => {
+            entry[label] = count;
+        });
+        stackData.push(entry);
+        });
+
+        return stackData;
+    }
+
+    function drawChart(selectedPlatform, hideMisc) {
+        const stackData = prepareData(selectedPlatform, hideMisc);
+
+        const x = d3.scaleBand()
+        .domain(stackData.map(d => d.genre))
+        .range([0, width])
+        .padding(0.2);
+
+        const y = d3.scaleLinear()
+        .domain([0, d3.max(stackData, d => d3.sum(Object.values(d).slice(1)))])
+        .range([height, 0]);
+
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        const stack = d3.stack()
+        .keys(d3.union(...stackData.map(d => Object.keys(d).slice(1))))
+        .value((d, key) => d[key] || 0);
+
+        svg.selectAll("g.layer").remove();
+
+        const layer = svg.selectAll("g.layer")
+        .data(stack(stackData), d => d.key)
+        .join("g")
+        .attr("class", "layer")
+        .attr("fill", d => color(d.key));
+
+        layer.selectAll("rect")
+        .data(d => d, e => e.data.genre)
+        .join("rect")
+        .attr("x", d => x(d.data.genre))
+        .attr("y", d => y(d[1]))
+        .attr("height", d => y(d[0]) - y(d[1]))
+        .attr("width", x.bandwidth())
+        .on("mouseover", function(event, d) {
+            tooltip.transition().duration(200).style("opacity", 0.9);
+            tooltip.html(`<strong>Label:</strong> ${d3.select(this.parentNode).datum().key}<br><strong>Count:</strong> ${d[1] - d[0]}`)
+            .style("left", `${event.pageX + 5}px`)
+            .style("top", `${event.pageY - 28}px`);
+        })
+        .on("mouseout", function() {
+            tooltip.transition().duration(500).style("opacity", 0);
+        });
+
+        svg.selectAll(".x-axis").remove();
+        svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(x));
+
+        svg.selectAll(".y-axis").remove();
+        svg.append("g")
+        .attr("class", "y-axis")
+        .call(d3.axisLeft(y));
+    }
+
+    function updateChart() {
+        const selectedPlatform = d3.select("#platform-select").property("value");
+        const hideMisc = d3.select("#hide-misc-checkbox").property("checked");
+        const platformUrl = getUrlFromPlatform(selectedPlatform);
+        drawChart(platformUrl, hideMisc);
+    }
+
+    function updateFromURL() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedPlatform = urlParams.get('platform');
+
+        if (selectedPlatform) {
+        const platformName = getPlatformFromUrl(selectedPlatform);
+        d3.select("#platform-select").property("value", platformName);
+        drawChart(selectedPlatform, false);
+        } else {
+        d3.select("#platform-select").property("value", "any");
+        drawChart("any", false);
+        }
+    }
+
+    // Configurez les événements de changement
+    d3.select("#platform-select").on("change", updateChart);
+    d3.select("#hide-misc-checkbox").on("change", updateChart);
+
+    // Écoutez les changements d'URL
+    window.addEventListener('popstate', updateFromURL);
+
+    // Initialisez le graphique
+    updateFromURL();
+    });
+  </script>
+
+</body>
+</html>
