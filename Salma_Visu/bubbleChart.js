@@ -14,6 +14,10 @@ const DEFAULT_CATEGORIES = [
     'Country',
     'Folk'
 ];
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const trigger = document.getElementById('genreDropdownTrigger');
     const menu = document.getElementById('genreFilter');

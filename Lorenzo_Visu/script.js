@@ -9,6 +9,33 @@ function getSelectedGenres() {
     return selectedGenres;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const firstButton = document.getElementById("button1");
+    const secondButton = document.getElementById("button2");
+
+    firstButton.addEventListener("click", function() {
+        const selectedGenre = document.getElementById("tooltip-selected-genre").innerText.replace("Genre sélectionné : ", "").trim();
+        if (selectedGenre && selectedGenre !== "Aucun") {
+            const url = `../Clement_Visu/visu.html?genre=${encodeURIComponent(selectedGenre)}`;
+            window.location.href = url;
+        } else {
+            alert("Veuillez sélectionner un genre avant de continuer.");
+        }
+    });
+    
+
+    secondButton.addEventListener("click", function() {
+        const selectedGenre = document.getElementById("tooltip-selected-genre").innerText.replace("Genre sélectionné : ", "").trim();
+        if (selectedGenre && selectedGenre !== "Aucun") {
+            const url = `../Salma_Visu/bubbleChart.html?genre=${encodeURIComponent(selectedGenre)}`;
+            window.location.href = url;
+        } else {
+            alert("Veuillez sélectionner un genre avant de continuer.");
+        }
+    });
+});
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
