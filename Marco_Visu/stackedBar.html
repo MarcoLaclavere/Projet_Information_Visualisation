@@ -12,7 +12,7 @@
     #stackedbar {
       margin-top: 20px;
     }
-    #platform-select, #hide-misc-checkbox {
+    #platform-select, #hide-misc-checkbox, #hide-top-labels-checkbox {
       margin: 10px;
     }
     .tooltip {
@@ -42,15 +42,20 @@
   </select>
 
   <label>
-    <input type="checkbox" id="hide-misc-checkbox">
+    <input type="checkbox" id="hide-misc-checkbox" checked>
     Cacher le genre "Miscellaneous"
+  </label>
+
+  <label>
+    <input type="checkbox" id="hide-top-labels-checkbox" checked>
+    Afficher seulement les 10 premiers recordLabels
   </label>
 
   <div id="stackedbar"></div>
   <div class="tooltip" id="tooltip"></div>
 
   <script>
-    const margin = { top: 20, right: 30, bottom: 50, left: 40 };
+    const margin = { top: 20, right: 30, bottom: 50, left: 150 };  // Augmenté la marge gauche pour les labels
     const width = 800 - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
@@ -90,7 +95,7 @@
         return urlMap[platform] || "any";
     }
 
-    function prepareData(selectedPlatform, hideMisc) {
+    function prepareData(selectedPlatform, hideMisc, showTopLabels) {
         // Filtrer d'abord par plateforme
         let filteredData = data;
         if (selectedPlatform !== "any") {
@@ -121,20 +126,40 @@
         stackData.push(entry);
         });
 
+        if (showTopLabels) {
+            const labelCount = {};
+            stackData.forEach(d => {
+                Object.keys(d).slice(1).forEach(label => {
+                    labelCount[label] = (labelCount[label] || 0) + d[label];
+                });
+            });
+            const topLabels = Object.entries(labelCount)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10)
+                .map(d => d[0]);
+            stackData.forEach(d => {
+                Object.keys(d).slice(1).forEach(label => {
+                    if (!topLabels.includes(label)) {
+                        delete d[label];
+                    }
+                });
+            });
+        }
+
         return stackData;
     }
 
-    function drawChart(selectedPlatform, hideMisc) {
-        const stackData = prepareData(selectedPlatform, hideMisc);
+    function drawChart(selectedPlatform, hideMisc, showTopLabels) {
+        const stackData = prepareData(selectedPlatform, hideMisc, showTopLabels);
 
-        const x = d3.scaleBand()
+        const y = d3.scaleBand()  // Maintenant y est l'échelle des genres
         .domain(stackData.map(d => d.genre))
-        .range([0, width])
+        .range([0, height])
         .padding(0.2);
 
-        const y = d3.scaleLinear()
+        const x = d3.scaleLinear()  // x est maintenant l'échelle linéaire
         .domain([0, d3.max(stackData, d => d3.sum(Object.values(d).slice(1)))])
-        .range([height, 0]);
+        .range([0, width]);
 
         const color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -153,10 +178,10 @@
         layer.selectAll("rect")
         .data(d => d, e => e.data.genre)
         .join("rect")
-        .attr("x", d => x(d.data.genre))
-        .attr("y", d => y(d[1]))
-        .attr("height", d => y(d[0]) - y(d[1]))
-        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.data.genre))
+        .attr("x", d => x(d[0]))
+        .attr("width", d => x(d[1]) - x(d[0]))
+        .attr("height", y.bandwidth())
         .on("mouseover", function(event, d) {
             tooltip.transition().duration(200).style("opacity", 0.9);
             tooltip.html(`<strong>Label:</strong> ${d3.select(this.parentNode).datum().key}<br><strong>Count:</strong> ${d[1] - d[0]}`)
@@ -182,8 +207,9 @@
     function updateChart() {
         const selectedPlatform = d3.select("#platform-select").property("value");
         const hideMisc = d3.select("#hide-misc-checkbox").property("checked");
+        const showTopLabels = d3.select("#hide-top-labels-checkbox").property("checked");
         const platformUrl = getUrlFromPlatform(selectedPlatform);
-        drawChart(platformUrl, hideMisc);
+        drawChart(platformUrl, hideMisc, showTopLabels);
     }
 
     function updateFromURL() {
@@ -193,24 +219,24 @@
         if (selectedPlatform) {
         const platformName = getPlatformFromUrl(selectedPlatform);
         d3.select("#platform-select").property("value", platformName);
-        drawChart(selectedPlatform, false);
         } else {
         d3.select("#platform-select").property("value", "any");
-        drawChart("any", false);
         }
+        
+        drawChart(selectedPlatform || "any", true, true);
     }
 
     // Configurez les événements de changement
     d3.select("#platform-select").on("change", updateChart);
     d3.select("#hide-misc-checkbox").on("change", updateChart);
+    d3.select("#hide-top-labels-checkbox").on("change", updateChart);
 
     // Écoutez les changements d'URL
     window.addEventListener('popstate', updateFromURL);
 
     // Initialisez le graphique
     updateFromURL();
-    });
+  });
   </script>
-
 </body>
 </html>
