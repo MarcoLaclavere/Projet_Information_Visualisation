@@ -433,6 +433,11 @@ const genresMap = new Map([
         "virtuoso", "yodeling","Children's music &#x200e;","43:40"
       ]]
 ]);
+const findKey = (map, val) => {
+    console.log("searching for : "+val.toLowerCase())
+    for (let [k, arr] of map) if (arr.includes(val.toLowerCase())) return { found: true, key: k };
+    return { found: false, key: null };
+  };
 
 async function loadProcessedData() {
     try {
@@ -529,8 +534,6 @@ function updateSubCategoriesDropdown(allowedSubCategories, data) {
     genres.forEach(genre => {
         const genreKey = Object.keys(data).find(key => key.toLowerCase() === genre.toLowerCase());
         if (genreKey) {
-            console.log("genr Key : "+genreKey)
-            console.log("genr 3ad : "+genre)
             createCheckboxItem(subCategoryItems, `genre-${genre}`, genre, true);
         }
     });
@@ -748,13 +751,18 @@ function showArtistDetails(data) {
                 </a>` : ''}
         </div>
     `;
-
+    const resSearch=findKey(genresMap,genre); 
+    const mainGenre=`
+        ${resSearch.found ? 
+        `<p><strong>Catégorie principale:</strong> ${resSearch.key}</p>`
+        : ''}`;
     modalContent.innerHTML = `
         <div class="artist-image-container">
             ${imageHtml}
         </div>
         <h2>${artist.artist}</h2>
         <div style="margin: 20px 0;">
+            ${mainGenre}
             <p><strong>Genre:</strong> ${genre}</p>
             <p><strong>Nombre de chansons:</strong> ${artist.songCount}</p>
             <p><strong>Nombre d'albums:</strong> ${artist.albumCount}</p>
@@ -881,14 +889,23 @@ function createBubbleChart(data) {
         tooltip.transition()
             .duration(200)
             .style("opacity", .9);
-
+        const searchRes=findKey(genresMap,d[0]); 
+        const mainGenre=`${searchRes.found ? `<span style="color: #666;">Catégorie: <strong>${searchRes.key}</strong></span><br/>`: ''}`;
         // Create tooltip content
         tooltip.html(`
             <strong>${d[1].artist}</strong><br/>
+            ${mainGenre}
             <span style="color: #666;">Genre: <strong>${d[0]}</strong></span><br/>
             <span style="color: #666;">Nombre de chansons: <strong>${d[1].songCount}</strong></span><br/>
             <span style="color: #666;">Nombre d'albums: <strong>${d[1].albumCount}</strong></span><br/>
-            <button class="tooltip-button" ><i class="fas fa-info-circle"></i> Details d'artiste</button>
+            <hr>
+            <button class="tooltip-button" ><i class="fas fa-info-circle"></i>  Afficher le profile d'artiste</button><br/>
+            ${ searchRes.found ? 
+                `
+                <button class="catStats-button" ><i class="fas fa-chart-bar"></i> Afficher les stats de ${searchRes.key} par platforme</button><br/>
+                <button class="cat-button" ><i class="fas fa-chart-line"></i>  Afficher l'evolution de ${searchRes.key} par année </button><br/>
+                `
+            :''}
         `)
         .style("left", (event.pageX + 10) + "px")
         .style("top", (event.pageY - 10) + "px");
@@ -901,6 +918,14 @@ function createBubbleChart(data) {
                 tooltip.transition()
                     .duration(200)
                     .style("opacity", 0);
+            });
+        tooltip.select(".cat-button")
+            .on("click", () => {
+                window.location.href = `../Clement_Visu/visu.html?genre=${encodeURIComponent(searchRes.key)}`;
+            });
+        tooltip.select(".catStats-button")
+            .on("click", () => {
+                window.location.href = `../Krysto_Visu/barChart.html?genre=${encodeURIComponent(searchRes.key)}`;
             });
     })
     .on("mouseout", function(event) {
