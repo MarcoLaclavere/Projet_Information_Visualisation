@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Graphique en Aire Empilée</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <style>
+        #checkboxContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .genre-label {
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        #instructions {
+            font-style: italic;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
+    <h2>Graphique en Aire Empilée</h2>
+    <p id="instructions">Cliquez sur les checkboxes pour faire apparaître/disparaître les courbes et sur les légendes
+        pour les mettre en couleur.</p>
+    <button onclick="scrollToGraph()">Aller au graphique</button>
+    <button id="resetZoom">Réinitialiser le zoom</button>
+    <button id="selectAll">Tout sélectionner</button>
+    <button id="deselectAll">Tout désélectionner</button>
+    <button id="fullColor">Tout en couleur</button>
+    <button id="grayScale">Tout en gris</button>
+    <div id="checkboxContainer"></div>
     <canvas id="stackedAreaChart"></canvas>
+
     <script>
-        // Charger le fichier JSON et dessiner le graphique
+        function scrollToGraph() {
+            document.getElementById("stackedAreaChart").scrollIntoView({ behavior: "smooth" });
+        }
+
         fetch("../json/year-genre-counts.json")
             .then(response => response.json())
             .then(data => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const highlightedGenre = urlParams.get("genre");
+
                 const years = Object.keys(data).sort();
                 const genres = Array.from(new Set(years.flatMap(year => Object.keys(data[year]))));
 
-                const datasets = genres.map(genre => ({
+                const colors = [
+                    'rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)',
+                    'rgba(75, 192, 192, 0.5)', 'rgba(153, 102, 255, 0.5)', 'rgba(255, 159, 64, 0.5)',
+                    'rgba(46, 204, 113, 0.5)', 'rgba(241, 196, 15, 0.5)', 'rgba(52, 152, 219, 0.5)',
+                    'rgba(231, 76, 60, 0.5)', 'rgba(123, 104, 238, 0.5)', 'rgba(32, 178, 170, 0.5)',
+                    'rgba(255, 99, 71, 0.5)', 'rgba(220, 20, 60, 0.5)', 'rgba(138, 43, 226, 0.5)',
+                    'rgba(0, 191, 255, 0.5)', 'rgba(218, 112, 214, 0.5)'
+                ];
+
+                const datasets = genres.map((genre, index) => ({
                     label: genre,
                     data: years.map(year => data[year][genre] || 0),
-                    fill: true
+                    fill: true,
+                    backgroundColor: genre === highlightedGenre ? colors[index % colors.length] : 'rgba(200, 200, 200, 0.2)',
+                    borderColor: genre === highlightedGenre ? colors[index % colors.length] : 'rgba(200, 200, 200, 0.5)',
+                    hidden: false
                 }));
 
-                // Créer le graphique
                 const chart = new Chart(document.getElementById("stackedAreaChart"), {
                     type: "line",
                     data: {
@@ -30,38 +89,148 @@
                     },
                     options: {
                         plugins: {
+                            zoom: {
+                                pan: {
+                                    enabled: true,
+                                    mode: 'x',
+                                    modifierKey: 'ctrl',
+                                    threshold: 10
+                                },
+                                zoom: {
+                                    wheel: {
+                                        enabled: true,
+                                        modifierKey: 'ctrl'
+                                    },
+                                    pinch: {
+                                        enabled: true,
+                                        modifierKey: 'ctrl'
+                                    },
+                                    mode: 'x',
+                                    limits: {
+                                        x: { min: 'original', max: 'original' },
+                                        y: { min: 0 }
+                                    }
+                                }
+                            },
+                            legend: {
+                                onClick: (e, legendItem) => {
+                                    const index = legendItem.datasetIndex;
+                                    const isGrayScale = datasets[index].backgroundColor.includes("200, 200, 200");
+
+                                    datasets[index].backgroundColor = isGrayScale
+                                        ? colors[index % colors.length]
+                                        : 'rgba(200, 200, 200, 0.2)';
+                                    datasets[index].borderColor = isGrayScale
+                                        ? colors[index % colors.length]
+                                        : 'rgba(200, 200, 200, 0.5)';
+
+                                    const label = document.querySelector(`label[for="checkbox-${datasets[index].label}"]`);
+                                    label.style.color = isGrayScale
+                                        ? colors[index % colors.length].replace("0.5", "1")
+                                        : 'rgba(200, 200, 200, 0.7)';
+
+                                    chart.update();
+                                }
+                            },
                             title: {
                                 display: true,
-                                text: "Nombre de musiques publiées par genre et par année"
+                                text: "Nombre d'albums publiés par genre et par année"
                             }
                         },
                         scales: {
-                            x: {
-                                title: {
-                                    display: true,
-                                    text: "Année"
-                                }
-                            },
-                            y: {
-                                stacked: true,
-                                title: {
-                                    display: true,
-                                    text: "Nombre de publications"
-                                }
-                            }
+                            x: { title: { display: true, text: "Année" } },
+                            y: { stacked: true, title: { display: true, text: "Nombre de publications" } }
                         },
-                        onClick: function(evt, elements) {
+                        onClick: function (evt, elements) {
                             if (elements && elements.length > 0) {
                                 const datasetIndex = elements[0].datasetIndex;
                                 const clickedGenre = datasets[datasetIndex].label;
-                                console.log("Genre cliqué:", clickedGenre);
-                                // Décommenter la ligne suivante pour activer la redirection
                                 window.location.href = `../Krysto_Visu/barChart.html?genre=${encodeURIComponent(clickedGenre)}`;
                             }
                         }
                     }
                 });
+
+                document.getElementById("resetZoom").addEventListener("click", () => {
+                    chart.resetZoom();
+                });
+
+                function updateChartVisibility() {
+                    genres.forEach((genre, index) => {
+                        chart.data.datasets[index].hidden = !document.getElementById(`checkbox-${genre}`).checked;
+                    });
+                    chart.update();
+                }
+
+                const checkboxContainer = document.getElementById("checkboxContainer");
+                genres.forEach((genre, index) => {
+                    const color = colors[index % colors.length].replace("0.5", "0.2");
+
+                    const checkboxItem = document.createElement("div");
+                    checkboxItem.className = "checkbox-item";
+
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.id = `checkbox-${genre}`;
+                    checkbox.checked = true;
+                    checkbox.addEventListener("change", updateChartVisibility);
+
+                    const label = document.createElement("label");
+                    label.htmlFor = `checkbox-${genre}`;
+                    label.innerText = genre;
+                    label.className = "genre-label";
+                    label.style.backgroundColor = color;
+
+                    label.style.color = genre === highlightedGenre
+                        ? colors[index % colors.length].replace("0.5", "1")
+                        : 'rgba(200, 200, 200, 0.7)';
+
+                    checkboxItem.appendChild(checkbox);
+                    checkboxItem.appendChild(label);
+                    checkboxContainer.appendChild(checkboxItem);
+                });
+
+                document.getElementById("selectAll").addEventListener("click", () => {
+                    genres.forEach(genre => {
+                        document.getElementById(`checkbox-${genre}`).checked = true;
+                    });
+                    updateChartVisibility();
+                });
+
+                document.getElementById("deselectAll").addEventListener("click", () => {
+                    genres.forEach(genre => {
+                        document.getElementById(`checkbox-${genre}`).checked = false;
+                    });
+                    updateChartVisibility();
+                });
+
+                document.getElementById("fullColor").addEventListener("click", () => {
+                    datasets.forEach((ds, i) => {
+                        ds.backgroundColor = colors[i % colors.length];
+                        ds.borderColor = colors[i % colors.length];
+                    });
+
+                    const checkboxes = document.querySelectorAll('.genre-label');
+                    checkboxes.forEach((label, index) => {
+                        label.style.color = colors[index % colors.length].replace("0.5", "1");
+                    });
+                    chart.update();
+                });
+
+                document.getElementById("grayScale").addEventListener("click", () => {
+                    datasets.forEach(ds => {
+                        ds.backgroundColor = 'rgba(200, 200, 200, 0.2)';
+                        ds.borderColor = 'rgba(200, 200, 200, 0.5)';
+                    });
+
+                    const checkboxes = document.querySelectorAll('.genre-label');
+                    checkboxes.forEach(label => {
+                        label.style.color = 'rgba(200, 200, 200, 0.7)';
+                    });
+                    chart.update();
+                });
             });
     </script>
 </body>
+
 </html>
