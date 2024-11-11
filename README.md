@@ -1,5 +1,7 @@
 # Projet_Information_Visualisation
 
+Pour pouvoir lancer le projet correctement, il faut suivre les étapes suivantes:
+
 Téléchargez la db en local
 
 extraire le dossier json avec les différents fichiers albums.json etc..
@@ -16,3 +18,4 @@ node ./Krysto_Visu/getPlatformStats.js
 
 npm start
 
+Vous trouverez également la descritpion du projet à la racine, sous le format pdf.
