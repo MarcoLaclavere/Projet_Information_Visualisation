@@ -31,7 +31,7 @@ async function loadJSONWithStream(filePath) {
 
 async function saveJSON(data, outputPath) {
     return new Promise((resolve, reject) => {
-        writeFile(outputPath, JSON.stringify(data, null, 2), 'utf8', (err) => {
+        writeFile(outputPath, JSON.stringify(data, null, 2), 'utf-8', (err) => {
             if (err) reject(err);
             else resolve();
         });
@@ -95,7 +95,7 @@ async function processWasabiData(songsPath, albumsPath, artistsPath, outputPath)
         // Créer une promesse pour le traitement du stream song.json (car le fichier est tres large ...)
         // NB: poure le traitement de ces donnees il prend ~10 min. 
         await new Promise((resolve, reject) => {
-            const songsStream = createReadStream(songsPath, { encoding: 'utf8' });
+            const songsStream = createReadStream(songsPath, { encoding: 'utf-8' });
             const parser = JSONStream.parse('*');
 
             songsStream
@@ -131,8 +131,14 @@ async function processWasabiData(songsPath, albumsPath, artistsPath, outputPath)
                             albumCount: new Set(),
                             details: {
                                 id: artistId,
-                                genres: artist.genres || [],
-                                deezerFans: artist.deezerFans || 0
+                                deezerFans: artist.deezerFans || 0,
+                                urlDeezer: artist.urlDeezer || "",
+                                picture: artist.picture || {},
+                                urlWikipedia : artist.urlWikipedia,
+                                urlOfficialWebsite : artist.urlOfficialWebsite,
+                                urlFacebook: artist.urlFacebook,
+                                urlMySpace: artist.urlMySpace,
+                                urlTwitter: artist.urlTwitter
                             }
                         });
                     }

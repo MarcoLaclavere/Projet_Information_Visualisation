@@ -433,6 +433,11 @@ const genresMap = new Map([
         "virtuoso", "yodeling","Children's music &#x200e;","43:40"
       ]]
 ]);
+const findKey = (map, val) => {
+    console.log("searching for : "+val.toLowerCase())
+    for (let [k, arr] of map) if (arr.includes(val.toLowerCase())) return { found: true, key: k };
+    return { found: false, key: null };
+  };
 
 async function loadProcessedData() {
     try {
@@ -529,8 +534,6 @@ function updateSubCategoriesDropdown(allowedSubCategories, data) {
     genres.forEach(genre => {
         const genreKey = Object.keys(data).find(key => key.toLowerCase() === genre.toLowerCase());
         if (genreKey) {
-            console.log("genr Key : "+genreKey)
-            console.log("genr 3ad : "+genre)
             createCheckboxItem(subCategoryItems, `genre-${genre}`, genre, true);
         }
     });
@@ -715,6 +718,90 @@ function updateMetrics(data) {
     document.getElementById('songCount').textContent = totalSongs.toLocaleString();
 }
 
+function showArtistDetails(data) {
+    const artist=data[1];
+    const genre=data[0]
+    const modal = document.getElementById('artistModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    // Create image HTML
+    const imageHtml = artist.details.picture?.standard ? 
+    `<img src="${artist.details.picture.standard}" alt="${artist.artist}" class="artist-image">` :
+    `<div class="no-image">
+        <i class="fas fa-user"></i>
+     </div>`;
+
+    const socialLinks = `
+        <div class="social-links">
+            ${artist.details.urlWikipedia ? 
+                `<a href="${artist.details.urlWikipedia}" target="_blank" class="social-link" title="Wikipedia">
+                    <i class="fab fa-wikipedia-w"></i>
+                </a>` : ''}
+            ${artist.details.urlFacebook ? 
+                `<a href="${artist.details.urlFacebook}" target="_blank" class="social-link" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>` : ''}
+            ${artist.details.urlTwitter ? 
+                `<a href="${artist.details.urlTwitter}" target="_blank" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>` : ''}
+            ${artist.details.urlDeezer ? 
+                `<a href="${artist.details.urlDeezer}" target="_blank" class="social-link" title="Deezer">
+                    <i class="fab fa-deezer"></i>
+                </a>` : ''}
+        </div>
+    `;
+    const resSearch=findKey(genresMap,genre); 
+    const mainGenre=`
+        ${resSearch.found ? 
+        `<p><strong>Catégorie principale:</strong> ${resSearch.key}</p>`
+        : ''}`;
+    modalContent.innerHTML = `
+        <div class="artist-image-container">
+            ${imageHtml}
+        </div>
+        <h2>${artist.artist}</h2>
+        <div style="margin: 20px 0;">
+            ${mainGenre}
+            <p><strong>Genre:</strong> ${genre}</p>
+            <p><strong>Nombre de chansons:</strong> ${artist.songCount}</p>
+            <p><strong>Nombre d'albums:</strong> ${artist.albumCount}</p>
+            ${artist.details.deezerFans ? 
+                `<p><strong>Fans Deezer:</strong> ${artist.details.deezerFans.toLocaleString()}</p>` : 
+                ''}
+        </div>
+        ${artist.details.urlOfficialWebsite ? 
+            `<p><strong>Site officiel:</strong> <a href="${artist.details.urlOfficialWebsite}" target="_blank">Cliquez ici</a></p>` : 
+            ''}
+        ${socialLinks}
+    `;
+    
+    const artistImage = modalContent.querySelector('.artist-image');
+    if (artistImage) {
+        artistImage.onerror = function() {
+            this.parentElement.innerHTML = `
+                <div class="no-image">
+                    <i class="fas fa-user"></i>
+                </div>`;
+        };
+    }
+
+    modal.style.display = "block";
+    
+    // Close button functionality
+    const closeBtn = document.querySelector('.close-button');
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    // Click outside to close
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+}
+
 function createBubbleChart(data) {
     // Dimensions et marges
     const width = 1000;
@@ -783,38 +870,69 @@ function createBubbleChart(data) {
         .style("opacity", 0);
     // Ajouter les bulles
     svg.selectAll("circle")
-        .data(Object.entries(data))
-        .join("circle")
-        .attr("class", "bubble")
-        .attr("cx", d => xScale(d[0]) + xScale.bandwidth() / 2)
-        .attr("cy", d => yScale(d[1].songCount))
-        .attr("r", d => radiusScale(d[1].albumCount))
-        .attr("fill", d => colorScale(d[0]))
-        .attr("opacity", 0.7)
-        .attr("stroke", "white")
-        .attr("stroke-width", 1)
-        .on("mouseover", function (event, d) {
-            d3.select(this)
-                .transition()
-                .duration(200)
-                .attr("opacity", 0.9);
+    .data(Object.entries(data))
+    .join("circle")
+    .attr("class", "bubble")
+    .attr("cx", d => xScale(d[0]) + xScale.bandwidth() / 2)
+    .attr("cy", d => yScale(d[1].songCount))
+    .attr("r", d => radiusScale(d[1].albumCount))
+    .attr("fill", d => colorScale(d[0]))
+    .attr("opacity", 0.7)
+    .attr("stroke", "white")
+    .attr("stroke-width", 1)
+    .on("mouseover", function(event, d) {
+        const circle = d3.select(this);
+        circle.transition()
+            .duration(200)
+            .attr("opacity", 0.9);
 
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-
-            tooltip.html(`
-                <strong>${d[1].artist}</strong><br/>
-                Genre: ${d[0]}<br/>
-                Nombre de chansons: ${d[1].songCount}<br/>
-                Nombre d'albums: ${d[1].albumCount}<br/>
-                ${d[1].details.deezerFans ?
-                    `Fans Deezer: ${d[1].details.deezerFans.toLocaleString()}` : ''}
-            `)
-                .style("left", (event.pageX + 10) + "px")
-                .style("top", (event.pageY - 10) + "px");
-        })
-        .on("mouseout", function () {
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+        const searchRes=findKey(genresMap,d[0]); 
+        const mainGenre=`${searchRes.found ? `<span style="color: #666;">Catégorie: <strong>${searchRes.key}</strong></span><br/>`: ''}`;
+        // Create tooltip content
+        tooltip.html(`
+            <strong>${d[1].artist}</strong><br/>
+            ${mainGenre}
+            <span style="color: #666;">Genre: <strong>${d[0]}</strong></span><br/>
+            <span style="color: #666;">Nombre de chansons: <strong>${d[1].songCount}</strong></span><br/>
+            <span style="color: #666;">Nombre d'albums: <strong>${d[1].albumCount}</strong></span><br/>
+            <hr>
+            <button class="tooltip-button" ><i class="fas fa-info-circle"></i>  Afficher le profile d'artiste</button><br/>
+            ${ searchRes.found ? 
+                `
+                <button class="catStats-button" ><i class="fas fa-chart-bar"></i> Afficher les stats de ${searchRes.key} par platforme</button><br/>
+                <button class="cat-button" ><i class="fas fa-chart-line"></i>  Afficher l'evolution de ${searchRes.key} par année </button><br/>
+                `
+            :''}
+        `)
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 10) + "px");
+        
+        // Add click event to the button inside tooltip
+        tooltip.select(".tooltip-button")
+            .on("click", () => {
+                showArtistDetails(d);
+                // Optionally hide tooltip after showing details
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", 0);
+            });
+        tooltip.select(".cat-button")
+            .on("click", () => {
+                window.location.href = `../Clement_Visu/visu.html?genre=${encodeURIComponent(searchRes.key)}`;
+            });
+        tooltip.select(".catStats-button")
+            .on("click", () => {
+                window.location.href = `../Krysto_Visu/barChart.html?genre=${encodeURIComponent(searchRes.key)}`;
+            });
+    })
+    .on("mouseout", function(event) {
+        // Only hide tooltip if we're not hovering over it
+        const tooltipNode = tooltip.node();
+        const relatedTarget = event.relatedTarget;
+        if (!tooltipNode.contains(relatedTarget)) {
             d3.select(this)
                 .transition()
                 .duration(200)
@@ -823,7 +941,8 @@ function createBubbleChart(data) {
             tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
-        });
+        }
+    });
 
 }
 
@@ -836,5 +955,7 @@ async function init() {
         console.error('Erreur d\'initialisation:', error);
     }
 }
-
+// Update time once loaded. 
+const dt = new Date(); 
+document.getElementById('updateTime').outerHTML = `<time datetime="${dt.toISOString().split('.')[0]}">${dt.toLocaleDateString('fr-FR',{day:'2-digit',month:'short',year:'numeric'}) + ' ' + dt.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}</time>`;
 init();
