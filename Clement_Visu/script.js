@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Charger le fichier JSON
-let data = JSON.parse(fs.readFileSync("./json/album-simplified-unique.json", "utf8"));
+let data = JSON.parse(fs.readFileSync("./json/album-simplified.json", "utf8"));
 
 // Structure de données pour stocker les comptages par année et par genre
 const yearGenreCounts = {};

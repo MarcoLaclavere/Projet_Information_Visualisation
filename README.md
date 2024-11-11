@@ -10,8 +10,6 @@ executer dans l'ordre les commandes suivantes:
 
 node dataCleaning.js (prend un peu de temps)
 
-node ./Clement_Visu/doublon.js
-
 node ./Clement_Visu/script.js
 
 node ./Krysto_Visu/getPlatformStats.js

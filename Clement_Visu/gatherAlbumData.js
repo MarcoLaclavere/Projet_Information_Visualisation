@@ -16,9 +16,9 @@ function extractEssentialInfo(data) {
 
   // Si le fichier n'existe pas, extraire les informations essentielles
   const simplifiedData = data.map(item => ({
-    name: item.name,                           // Nom de l'album
+    name: item.title,                           // Nom de l'album
     date : item.dateRelease,                   // Date de publication
-    genre: item.genre,                          // Style de musique
+    genre: item.genre,                         // Style de musique
     urlSpotify: !!item.urlSpotify,          // Présence de l'URL Spotify
     urlITunes: !!item.urlITunes,            // Présence de l'URL iTunes
     urlAmazon: !!item.urlAmazon,            // Présence de l'URL Amazon
