@@ -1,5 +1,8 @@
 # Projet_Information_Visualisation
 
+
+Auteurs : DAGUES DE LA HELLERIE Krysto, CHATELAIN Clément, FROMENT Lorenzo, TALIB Salma, LACLAVERE Marco
+
 Pour pouvoir lancer le projet correctement, il faut suivre les étapes suivantes:
 
 Téléchargez la db en local
