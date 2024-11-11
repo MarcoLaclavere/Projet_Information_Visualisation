@@ -955,5 +955,7 @@ async function init() {
         console.error('Erreur d\'initialisation:', error);
     }
 }
-
+// Update time once loaded. 
+const dt = new Date(); 
+document.getElementById('updateTime').outerHTML = `<time datetime="${dt.toISOString().split('.')[0]}">${dt.toLocaleDateString('fr-FR',{day:'2-digit',month:'short',year:'numeric'}) + ' ' + dt.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}</time>`;
 init();
