@@ -51,6 +51,11 @@
     Afficher seulement les 10 premiers recordLabels
   </label>
 
+  <label>
+    <input type="checkbox" id="hide-other-label-checkbox" checked>
+    Cacher les record labels "other"
+  </label>
+
   <div id="stackedbar"></div>
   <div class="tooltip" id="tooltip"></div>
 
@@ -95,18 +100,30 @@
         return urlMap[platform] || "any";
     }
 
-    function prepareData(selectedPlatform, hideMisc, showTopLabels) {
+    function prepareData(selectedPlatform, hideMisc, showTopLabels, hideOtherLabel) {
         // Filtrer d'abord par plateforme
         let filteredData = data;
         if (selectedPlatform !== "any") {
-        filteredData = data.filter(d => d[selectedPlatform]);
+          filteredData = data.filter(d => d && d[selectedPlatform]);
         }
-
         // Filtrer pour exclure les entrées sans recordLabel
-        filteredData = filteredData.filter(d => d.recordLabel && d.recordLabel.length > 0 && d.recordLabel[0]);
+        if(hideOtherLabel) {
+          filteredData = filteredData.filter(d => d && d.recordLabel && d.recordLabel.length > 0 && d.recordLabel[0] && d.recordLabel[0]!="other");
+        } else {
+          filteredData = filteredData.map(d => {
+            if (!d.recordLabel || d.recordLabel.length === 0) {
+              d.recordLabel = ["other"];
+            }
+            return d
+          });
+        }
+        
+        filteredData.forEach(d => {
+          if(d && !d.music_style) d.music_style = "Miscellaneous"
+        });
 
         if (hideMisc) {
-        filteredData = filteredData.filter(d => d.music_style[0] !== "Miscellaneous");
+          filteredData = filteredData.filter(d => d.music_style[0] !== "Miscellaneous");
         }
 
         const genreLabelCount = d3.rollups(
@@ -149,8 +166,8 @@
         return stackData;
     }
 
-    function drawChart(selectedPlatform, hideMisc, showTopLabels) {
-        const stackData = prepareData(selectedPlatform, hideMisc, showTopLabels);
+    function drawChart(selectedPlatform, hideMisc, showTopLabels, hideOtherLabel) {
+        const stackData = prepareData(selectedPlatform, hideMisc, showTopLabels, hideOtherLabel);
 
         const y = d3.scaleBand()  // Maintenant y est l'échelle des genres
         .domain(stackData.map(d => d.genre))
@@ -208,8 +225,9 @@
         const selectedPlatform = d3.select("#platform-select").property("value");
         const hideMisc = d3.select("#hide-misc-checkbox").property("checked");
         const showTopLabels = d3.select("#hide-top-labels-checkbox").property("checked");
+        const hideOtherLabel = d3.select("#hide-other-label-checkbox").property("checked");
         const platformUrl = getUrlFromPlatform(selectedPlatform);
-        drawChart(platformUrl, hideMisc, showTopLabels);
+        drawChart(platformUrl, hideMisc, showTopLabels,hideOtherLabel);
     }
 
     function updateFromURL() {
@@ -223,13 +241,14 @@
         d3.select("#platform-select").property("value", "any");
         }
         
-        drawChart(selectedPlatform || "any", true, true);
+        drawChart(selectedPlatform || "any", true, true,true);
     }
 
     // Configurez les événements de changement
     d3.select("#platform-select").on("change", updateChart);
     d3.select("#hide-misc-checkbox").on("change", updateChart);
     d3.select("#hide-top-labels-checkbox").on("change", updateChart);
+    d3.select("#hide-other-label-checkbox").on("change", updateChart);
 
     // Écoutez les changements d'URL
     window.addEventListener('popstate', updateFromURL);
